@@ -216,9 +216,9 @@
       {
         "kind": "double",
         "title": "Banker Double",
-        "stake": 10.0,
+        "stake": 5.0,
         "status": "won",
-        "returns": 15.1,
+        "returns": 7.55,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -257,7 +257,7 @@
       {
         "kind": "treble",
         "title": "Treble",
-        "stake": 10.0,
+        "stake": 4.0,
         "status": "lost",
         "returns": 0.0,
         "note": null,
