@@ -247,9 +247,16 @@ class OddsClient:
             price_source=source,
         )
 
-    def fetch_league(self, league: dict, target: date,
-                     use_cache: bool = True) -> list[Fixture]:
-        """Fetch and parse one league's 15:00 fixtures for the target date."""
+    def fetch_league(self, league: dict, target: date, use_cache: bool = True,
+                     now: datetime | None = None) -> tuple[list[Fixture], int]:
+        """One league's 15:00 fixtures for the target date, pre-match only.
+
+        Returns the fixtures and a count of those dropped for having kicked
+        off. The /odds endpoint keeps serving a fixture once it is under way,
+        but the prices become in-play: a team two goals up shortens to about
+        1.01, which is not a 99% pre-match shot and must never reach the
+        selection engine.
+        """
         params = {
             "regions": self.region,
             "bookmakers": self.bookmaker,
@@ -271,20 +278,27 @@ class OddsClient:
                 use_cache=use_cache,
             )
 
-        fixtures = []
+        now = now or datetime.now(timezone.utc)
+        fixtures: list[Fixture] = []
+        in_play = 0
         for event in events:
             if not self.is_target_kickoff(event.get("commence_time", ""), target):
                 continue
             fixture = self._parse_event(event, league)
-            if fixture is not None:
-                fixtures.append(fixture)
-        return fixtures
+            if fixture is None:
+                continue
+            if fixture.kickoff <= now:
+                in_play += 1
+                continue
+            fixtures.append(fixture)
+        return fixtures, in_play
 
-    def fetch_card(self, target: date, use_cache: bool = True) -> tuple[list[Fixture], list[str]]:
-        """The full 15:00 card across every configured league.
+    def fetch_card(self, target: date, use_cache: bool = True,
+                   now: datetime | None = None) -> tuple[list[Fixture], list[str]]:
+        """The full 15:00 card across every configured league, pre-match only.
 
-        Returns the fixtures plus any per-league warnings, so one dead league
-        doesn't take down the whole page.
+        Returns the fixtures plus any warnings, so one dead league doesn't take
+        down the whole page.
         """
         if self.demo_mode:
             return self._load_demo_card(), [
@@ -294,13 +308,23 @@ class OddsClient:
 
         fixtures: list[Fixture] = []
         warnings: list[str] = []
+        in_play = 0
         for league in self.config["leagues"]:
             try:
-                fixtures.extend(self.fetch_league(league, target, use_cache))
+                found, started = self.fetch_league(league, target, use_cache, now)
+                fixtures.extend(found)
+                in_play += started
             except RateLimitError:
                 raise
             except (OddsAPIError, requests.RequestException) as e:
                 warnings.append(f"{league['name']}: could not load odds ({e}).")
+
+        if in_play:
+            warnings.append(
+                f"{in_play} fixture{'s' if in_play != 1 else ''} already kicked "
+                "off, so the prices are in-play and have been excluded. A coupon "
+                "is only meaningful before 15:00."
+            )
 
         fixtures.sort(key=lambda f: (
             [lg["key"] for lg in self.config["leagues"]].index(f.league_key),

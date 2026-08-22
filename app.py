@@ -60,7 +60,13 @@ def next_saturday(from_date: date | None = None) -> date:
 
 
 def build_card(target: date, use_cache: bool = True):
-    """Fetch the 15:00 card and turn it into a slip of recommendations."""
+    """Fetch the 15:00 card and turn it into a slip of recommendations.
+
+    Once the matches kick off the odds feed switches to in-play prices, which
+    are excluded upstream. At that point the live card is empty, so the slip
+    logged before kick-off is served instead — that's the coupon that was
+    actually recommended, and rebuilding it later would be revisionist.
+    """
     client = get_client()
     config = client.config
 
@@ -69,6 +75,17 @@ def build_card(target: date, use_cache: bool = True):
         devig.apply(fixture, config["devig"]["method"])
 
     slip = selector.build_slip(fixtures, config, slip_date=target.isoformat())
+
+    if not fixtures:
+        record = store.get_slip(target.isoformat())
+        if record:
+            slip.bets = store.bets_from_slip(record)
+            slip.generated_at = record.get("generated_at", slip.generated_at)
+            warnings.append(
+                "These are the bets as they stood before kick-off. Prices have "
+                "moved since and the card is no longer live."
+            )
+
     return slip, warnings
 
 
