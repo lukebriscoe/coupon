@@ -39,13 +39,15 @@ devig:
   method: proportional       # proportional | shin
 
 # ── Bet construction ──────────────────────────────────────────
-stake: 10.0
+stake: 10.0                  # default; each bet below may override it
 
 banker:
+  stake: 10.0
   min_probability: 0.60      # a banker must genuinely be odds-on to land
   min_odds: 1.50             # ...but must still pay something on a tenner
 
 underdog_acca:
+  stake: 1.0                 # long odds, tiny hit rate — stake it accordingly
   # Back a team when its OPPONENT is priced at 4/1 (5.00 decimal) or longer.
   opponent_min_odds: 5.00
   # Above this many legs the literal acca is a lottery, so also show a system bet.
@@ -70,14 +72,16 @@ accumulators:
   - legs: 3
     name: Treble
     min_odds: 3.0
-  - legs: 4
-    name: Fourfold
-    min_odds: 5.0
-  - legs: 5
-    name: Fivefold
-    min_odds: 8.0
 
-# Markets eligible as accumulator/banker legs, in preference order.
+# Markets eligible as banker, double and accumulator legs.
 eligible_markets:
   - h2h
   - double_chance
+
+double_chance:
+  # Double Chance has three forms. "Team or Draw" (1X / X2) is a natural way to
+  # back a side safely. The third, "Home or Away" (12), only loses on a draw —
+  # placeable, but it's a bet against one outcome rather than a pick, it reads
+  # as nonsense on a coupon, and it's the form our derived pricing is least
+  # reliable on. Off by default.
+  allow_home_or_away: false

@@ -1,14 +1,17 @@
 # Coupon
 
 Every Saturday, Coupon reads the Sky Bet prices for every UK football fixture kicking
-off at 15:00 and recommends six bets on a £10 stake.
+off at 15:00 and recommends four bets.
 
-| Bet | What it is |
-|---|---|
-| **Banker of the Day** | The single selection with the best profit at genuinely high confidence |
-| **Opponents 4/1+ Acca** | Every team whose opponent is priced at 4/1 or longer, in one accumulator |
-| **Banker Double** | The two-leg combination most likely to land, at a price worth placing |
-| **Treble / Fourfold / Fivefold** | The safest legs that still clear an odds floor |
+| Bet | Stake | What it is |
+|---|---|---|
+| **Banker of the Day** | £10 | The single selection with the best profit at genuinely high confidence |
+| **Opponents 4/1+ Acca** | £1 | Every team whose opponent is priced at 4/1 or longer, in one accumulator |
+| **Banker Double** | £10 | The two-leg combination most likely to land, at a price worth placing |
+| **Treble** | £10 | The three safest legs that still clear an odds floor |
+
+The 4/1+ acca is staked at a pound because it's a twelve-leg lottery ticket on a busy
+card, not because it's a lesser bet. Stakes are per-bet in `config.yaml`.
 
 Nothing here places a bet. Everything is a recommendation, and every bet shows its
 true probability and expected value next to the potential return.
@@ -46,17 +49,21 @@ placeholders, labelled as such throughout the UI.
 2. **De-vig** — Sky Bet's three prices imply more than 100%; that excess is their
    margin. It's removed so probabilities are comparable across fixtures that are
    juiced by different amounts. Proportional by default, Shin available in config.
-3. **Select** — the six bets are built from the de-vigged pool, one leg per fixture.
+3. **Select** — the four bets are built from the de-vigged pool, one leg per fixture.
 
 ### Design decisions worth knowing
 
 - **A bet can be declined.** If nothing on the card reaches the confidence floor,
   the banker comes back as "no bet" with the reason, rather than the threshold
   being quietly lowered. A card of coin flips has no banker on it.
-- **Double Chance legs are eligible.** On a typical 3pm card, no straight win is a
-  60%+ shot at a payable price. "Team or Draw" usually is. Where the API doesn't
-  return the market, prices are estimated from the match-result probabilities and
-  flagged as estimates.
+- **Double Chance legs are eligible — but only "Team or Draw".** On a typical 3pm
+  card, no straight win is a 60%+ shot at a payable price; "Team or Draw" usually
+  is. Double Chance has a third form, "Home or Away", which loses only on a draw.
+  It's a real market, but it's a bet against one outcome rather than a pick, it
+  reads as nonsense on a coupon ("Forest or Leeds"), and it's the form the derived
+  pricing is least reliable on. Off by default; `double_chance.allow_home_or_away`
+  turns it back on. Where the API doesn't return the market at all, prices are
+  estimated from the match-result probabilities and flagged as estimates.
 - **The 4/1+ acca is literal, with a warning.** Implemented exactly as specified,
   but on a full card it can qualify a dozen teams — and a twelve-leg accumulator of
   60% shots lands about twice in a thousand. Above six legs the app attaches an
@@ -84,7 +91,7 @@ config.yaml          every threshold
 football/
   odds_client.py     The Odds API — caching, credit tracking, 15:00 filter
   devig.py           margin removal, Double Chance derivation
-  selector.py        the six bet builders
+  selector.py        the four bet builders
   models.py          Fixture, Selection, Bet, Slip
   store.py           slip logging and P&L
   settle.py          results and settlement
@@ -95,7 +102,7 @@ football/
 Slips generated from live odds are logged to `data/slips.json`. After the results
 are in, hit **Settle logged bets** — `/scores` is fetched (2 credits per league),
 each leg resolved, and P&L updated. `/performance` breaks the record down by bet
-type, which is the only way to find out whether any of the six actually pays.
+type, which is the only way to find out whether any of the four actually pays.
 
 Demo runs are not logged; there'd be nothing real to measure.
 
@@ -105,6 +112,6 @@ Demo runs are not logged; there'd be nothing real to measure.
 ./venv/bin/python -m pytest tests/ -q
 ```
 
-110 tests. The ones that matter most: de-vigged probabilities always sum to 1;
+116 tests. The ones that matter most: de-vigged probabilities always sum to 1;
 the double is verified optimal by brute force; the 15:00 filter is pinned on both
 sides of the BST/GMT boundary; and one losing leg always sinks an accumulator.

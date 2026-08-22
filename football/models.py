@@ -74,6 +74,9 @@ class Selection:
     odds: float  # decimal
     fair_probability: float  # after margin removal
     price_source: str = SOURCE_SKYBET
+    # Double Chance only: whether a drawn match settles this leg as a winner.
+    # False marks the "Home or Away" (12) form, which loses on a draw.
+    covers_draw: bool = True
 
     @property
     def fixture_label(self) -> str:

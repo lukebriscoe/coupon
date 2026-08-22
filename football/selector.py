@@ -52,13 +52,24 @@ def probability_at_least(probabilities: list[float], k: int) -> float:
 # ── Candidate pool ────────────────────────────────────────────────
 
 def candidate_selections(fixtures: list[Fixture], config: dict) -> list[Selection]:
-    """Every backable selection across the card, in the configured markets."""
+    """Every backable selection across the card, in the configured markets.
+
+    The "Home or Away" form of Double Chance is dropped unless explicitly
+    enabled — it wins on anything but a draw, which is a bet against one
+    outcome rather than a pick, and it reads as gibberish on a coupon.
+    """
     eligible = set(config["eligible_markets"])
+    allow_home_or_away = config.get("double_chance", {}).get(
+        "allow_home_or_away", False)
+
     return [
         selection
         for fixture in fixtures
         for selection in fixture.selections
         if selection.market in eligible
+        and (selection.covers_draw
+             or selection.market != MARKET_DOUBLE_CHANCE
+             or allow_home_or_away)
     ]
 
 
@@ -343,17 +354,21 @@ def _fractional_threshold(decimal_odds: float) -> str:
 def build_slip(fixtures: list[Fixture], config: dict,
                slip_date: str | None = None) -> Slip:
     """Every recommendation for one Saturday's 15:00 card."""
-    stake = config["stake"]
+    default_stake = config["stake"]
     pool = candidate_selections(fixtures, config)
 
+    def stake_for(section: str) -> float:
+        """Each bet may set its own stake; the 4/1+ acca is staked far lower."""
+        return config.get(section, {}).get("stake", default_stake)
+
     bets = [
-        build_banker(pool, config, stake),
-        build_underdog_acca(fixtures, config, stake),
-        build_double(pool, config, stake),
+        build_banker(pool, config, stake_for("banker")),
+        build_underdog_acca(fixtures, config, stake_for("underdog_acca")),
+        build_double(pool, config, stake_for("double")),
     ]
     leg_limits = config.get("accumulator_legs", {})
     bets.extend(
-        build_accumulator(pool, spec, stake, leg_limits)
+        build_accumulator(pool, spec, spec.get("stake", default_stake), leg_limits)
         for spec in config["accumulators"]
     )
 
@@ -368,5 +383,5 @@ def build_slip(fixtures: list[Fixture], config: dict,
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         fixtures=fixtures,
         bets=bets,
-        stake=stake,
+        stake=default_stake,
     )

@@ -123,25 +123,31 @@ def derived_double_chance(fixture: Fixture) -> dict[str, float]:
     }
 
 
-def double_chance_probability(fixture: Fixture, label: str) -> float | None:
-    """True probability of a Double Chance outcome, from the h2h fair prices.
+def double_chance_covers(fixture: Fixture, label: str) -> set[str] | None:
+    """Which two of home/draw/away a Double Chance label settles as a winner.
 
-    Derived from the match-result probabilities rather than by de-vigging the
-    Double Chance market itself, because that market's three outcomes sum to
-    2.0 and providers disagree on how they name them. Returns None when the
-    label can't be matched to a pair of results.
+    Returns None when the label can't be read — providers name this market
+    inconsistently, and guessing would mis-settle the bet later.
     """
-    probs = fixture.fair_probabilities
-    if not probs:
-        return None
-
     normalised = label.casefold()
     covered = {
         key for key in (fixture.home_team, fixture.away_team, fixture.draw_key)
         if key.casefold() in normalised
     }
     # A Double Chance outcome always covers exactly two of the three results.
-    if len(covered) != 2:
+    return covered if len(covered) == 2 else None
+
+
+def double_chance_probability(fixture: Fixture, label: str) -> float | None:
+    """True probability of a Double Chance outcome, from the h2h fair prices.
+
+    Derived from the match-result probabilities rather than by de-vigging the
+    Double Chance market itself, because that market's three outcomes sum to
+    2.0 and providers disagree on how they name them.
+    """
+    probs = fixture.fair_probabilities
+    covered = double_chance_covers(fixture, label) if probs else None
+    if covered is None:
         return None
     return min(sum(probs.get(key, 0.0) for key in covered), 1.0)
 
@@ -157,7 +163,7 @@ def apply(fixture: Fixture, method: str = "proportional") -> Fixture:
     selections: list[Selection] = []
 
     def add(market: str, label: str, odds: float, probability: float,
-            source: str) -> None:
+            source: str, covers_draw: bool = True) -> None:
         selections.append(Selection(
             fixture_id=fixture.id,
             league_key=fixture.league_key,
@@ -170,6 +176,7 @@ def apply(fixture: Fixture, method: str = "proportional") -> Fixture:
             odds=odds,
             fair_probability=probability,
             price_source=source,
+            covers_draw=covers_draw,
         ))
 
     for outcome, price in fixture.h2h_prices.items():
@@ -184,11 +191,14 @@ def apply(fixture: Fixture, method: str = "proportional") -> Fixture:
         dc_source = SOURCE_DERIVED
 
     for outcome, price in dc_prices.items():
-        probability = double_chance_probability(fixture, outcome)
-        if probability is None:
+        covered = double_chance_covers(fixture, outcome)
+        if covered is None:
             # Can't tell which results the label covers — skip rather than guess.
             continue
-        add(MARKET_DOUBLE_CHANCE, outcome, price, probability, dc_source)
+        probability = min(
+            sum(fixture.fair_probabilities.get(k, 0.0) for k in covered), 1.0)
+        add(MARKET_DOUBLE_CHANCE, outcome, price, probability, dc_source,
+            covers_draw=fixture.draw_key in covered)
 
     fixture.selections = selections
     return fixture

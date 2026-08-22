@@ -10,6 +10,44 @@ from football.models import MARKET_DOUBLE_CHANCE
 STAKE = 10.0
 
 
+# ── Which Double Chance forms are backable ────────────────────────
+
+def test_home_or_away_double_chance_is_excluded_by_default(mismatch_card, config):
+    """"Forest or Leeds" wins on anything but a draw — a bet against one
+    outcome rather than a pick, and unreadable on a coupon."""
+    pool = selector.candidate_selections(mismatch_card, config)
+    dc = [s for s in pool if s.market == MARKET_DOUBLE_CHANCE]
+
+    assert dc, "team-or-draw selections should still be available"
+    assert all(s.covers_draw for s in dc)
+
+
+def test_home_or_away_can_be_re_enabled(mismatch_card, config):
+    permissive = {**config, "double_chance": {"allow_home_or_away": True}}
+    pool = selector.candidate_selections(mismatch_card, permissive)
+
+    assert any(not s.covers_draw for s in pool)
+
+
+def test_match_result_selections_are_never_filtered(mismatch_card, config):
+    """The draw-coverage rule applies to Double Chance only."""
+    pool = selector.candidate_selections(mismatch_card, config)
+    labels = {s.label for s in pool if s.market != MARKET_DOUBLE_CHANCE}
+
+    for fixture in mismatch_card:
+        assert fixture.home_team in labels
+        assert fixture.away_team in labels
+        assert "Draw" in labels
+
+
+def test_excluded_form_cannot_reach_any_bet(mismatch_card, config):
+    slip = selector.build_slip(mismatch_card, config)
+    for bet in slip.available_bets:
+        for leg in bet.legs:
+            assert leg.selection.covers_draw, \
+                f"{bet.title} contains a home-or-away leg: {leg.selection.label}"
+
+
 # ── Poisson binomial ──────────────────────────────────────────────
 
 def test_probability_at_least_all_legs_is_the_product():
@@ -297,11 +335,30 @@ def test_accumulator_notes_when_it_cannot_reach_the_target_price(even_card, conf
 
 # ── Whole slip ────────────────────────────────────────────────────
 
-def test_slip_contains_all_six_bets(mismatch_card, config):
+def test_slip_contains_the_four_recommended_bets(mismatch_card, config):
     slip = selector.build_slip(mismatch_card, config)
     assert [b.kind for b in slip.bets] == [
-        "banker", "underdog_acca", "double", "treble", "fourfold", "fivefold",
+        "banker", "underdog_acca", "double", "treble",
     ]
+
+
+def test_each_bet_carries_its_own_stake(mismatch_card, config):
+    """The banker is a tenner; the 4/1+ acca is a pound."""
+    slip = selector.build_slip(mismatch_card, config)
+    stakes = {b.kind: b.stake for b in slip.bets}
+
+    assert stakes["banker"] == 10.0
+    assert stakes["underdog_acca"] == 1.0
+    assert stakes["double"] == 10.0
+    assert stakes["treble"] == 10.0
+
+
+def test_underdog_acca_returns_are_based_on_its_own_stake(mismatch_card, config):
+    slip = selector.build_slip(mismatch_card, config)
+    acca = next(b for b in slip.bets if b.kind == "underdog_acca")
+
+    assert acca.potential_return == pytest.approx(acca.combined_odds, abs=0.01)
+    assert acca.expected_value > -1.01  # can never lose more than the £1 staked
 
 
 def test_slip_reports_honest_expected_value(mismatch_card, config):
