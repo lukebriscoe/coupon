@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}History — Coupon{% endblock %}
+
+{% block content %}
+  <h2 class="rule">History<span>{{ slips|length }} Saturday{{ 's' if slips|length != 1 }} logged</span></h2>
+
+  {% if not slips %}
+    <div class="empty">
+      <p>No slips logged yet.</p>
+      <p>Slips are recorded automatically when the coupon is generated from live
+         odds. Demo runs aren't logged — there'd be nothing real to measure.</p>
+    </div>
+  {% else %}
+    <div class="stats">
+      <div class="stat"><span class="k">Bets</span><span class="v">{{ summary.total }}</span></div>
+      <div class="stat"><span class="k">Settled</span><span class="v">{{ summary.settled }}</span></div>
+      <div class="stat"><span class="k">Won</span><span class="v">{{ summary.won }}</span></div>
+      <div class="stat"><span class="k">Strike rate</span><span class="v">{{ summary.strike_rate }}%</span></div>
+      <div class="stat">
+        <span class="k">Net P&amp;L</span>
+        <span class="v {{ 'good' if summary.net >= 0 else 'bad' }}">{{ summary.net|signed_money }}</span>
+      </div>
+    </div>
+
+    <ul class="plain">
+      {% for slip in slips %}
+        {% set settled = slip.bets | selectattr('status', 'in', ['won', 'lost']) | list %}
+        {% set won = slip.bets | selectattr('status', 'equalto', 'won') | list %}
+        <li>
+          <a href="{{ url_for('slip_detail', slip_date=slip.date) }}">{{ slip.date|longdate }}</a>
+          — {{ slip.bets|length }} bet{{ 's' if slip.bets|length != 1 }},
+          {{ slip.fixture_count }} fixtures
+          {% if settled %}
+            · {{ won|length }}/{{ settled|length }} won
+          {% else %}
+            · <em>pending</em>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}

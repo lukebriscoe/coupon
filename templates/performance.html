@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Performance — Coupon{% endblock %}
+
+{% block content %}
+  <h2 class="rule">Performance<span>only settled bets count</span></h2>
+
+  {% if not summary.settled %}
+    <div class="empty">
+      <p>Nothing settled yet.</p>
+      <p>Generate a coupon from live odds, then settle it once the results are in.
+         Until there's a real record, there's nothing honest to report here.</p>
+    </div>
+  {% else %}
+    <div class="stats">
+      <div class="stat"><span class="k">Settled</span><span class="v">{{ summary.settled }}</span></div>
+      <div class="stat"><span class="k">Won</span><span class="v">{{ summary.won }}</span></div>
+      <div class="stat"><span class="k">Strike rate</span><span class="v">{{ summary.strike_rate }}%</span></div>
+      <div class="stat"><span class="k">Staked</span><span class="v">{{ summary.staked|money }}</span></div>
+      <div class="stat"><span class="k">Returned</span><span class="v">{{ summary.returned|money }}</span></div>
+      <div class="stat">
+        <span class="k">Net P&amp;L</span>
+        <span class="v {{ 'good' if summary.net >= 0 else 'bad' }}">{{ summary.net|signed_money }}</span>
+      </div>
+      <div class="stat">
+        <span class="k">ROI</span>
+        <span class="v {{ 'good' if summary.roi >= 0 else 'bad' }}">{{ summary.roi }}%</span>
+      </div>
+    </div>
+
+    <h2 class="rule">By bet type<span>which of the six actually pays</span></h2>
+    <div class="scroll">
+      <table class="card">
+        <thead>
+          <tr><th>Bet</th><th>Settled</th><th>Won</th><th>Strike</th><th>Staked</th><th>Returned</th><th>Net</th><th>ROI</th></tr>
+        </thead>
+        <tbody>
+        {% for row in by_kind %}
+          <tr>
+            <td>{{ row.title }}</td>
+            <td>{{ row.settled }}</td>
+            <td>{{ row.won }}</td>
+            <td>{{ row.strike_rate }}%</td>
+            <td>{{ row.staked|money }}</td>
+            <td>{{ row.returned|money }}</td>
+            <td class="{{ 'strong' if row.net >= 0 else 'thin' }}">{{ row.net|signed_money }}</td>
+            <td class="{{ 'strong' if row.roi >= 0 else 'thin' }}">{{ row.roi }}%</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+{% endblock %}

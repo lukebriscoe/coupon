@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} — Coupon{% endblock %}
+
+{% block content %}
+  <h2 class="rule">{{ title }}</h2>
+  <div class="empty">
+    <p>{{ message }}</p>
+    <p><a class="btn" href="{{ url_for('index') }}">Back to the coupon</a></p>
+  </div>
+{% endblock %}

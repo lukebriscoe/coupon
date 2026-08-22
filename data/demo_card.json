@@ -1,0 +1,117 @@
+{
+  "_readme": [
+    "Demo card for Saturday 22 August 2026, used only when ODDS_API_KEY is unset.",
+    "Fixtures and kick-off times are real, verified against the official Premier League",
+    "fixture list and Sky Sports.",
+    "",
+    "PRICES ARE NOT SKY BET QUOTES.",
+    "  price_source 'market median' — composite of published market data for that match.",
+    "  price_source 'illustrative'  — INVENTED. Plausible shape only, so the accumulator",
+    "                                 code paths can be exercised. Never stake on these.",
+    "",
+    "Set ODDS_API_KEY in .env to replace all of this with live Sky Bet prices."
+  ],
+  "date": "2026-08-22",
+  "fixtures": [
+    {
+      "id": "demo-pl-eve-cry",
+      "league_key": "soccer_epl",
+      "home_team": "Everton",
+      "away_team": "Crystal Palace",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "market median",
+      "h2h": { "Everton": 2.23, "Draw": 3.35, "Crystal Palace": 3.30 }
+    },
+    {
+      "id": "demo-pl-ips-sun",
+      "league_key": "soccer_epl",
+      "home_team": "Ipswich Town",
+      "away_team": "Sunderland",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "market median",
+      "h2h": { "Ipswich Town": 2.78, "Draw": 3.31, "Sunderland": 2.68 }
+    },
+    {
+      "id": "demo-pl-nfo-lee",
+      "league_key": "soccer_epl",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds United",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "market median",
+      "h2h": { "Nottingham Forest": 2.32, "Draw": 3.30, "Leeds United": 3.15 }
+    },
+
+    {
+      "id": "demo-ch-bla-mid",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Blackburn Rovers",
+      "away_team": "Middlesbrough",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Blackburn Rovers": 3.10, "Draw": 3.40, "Middlesbrough": 2.30 }
+    },
+    {
+      "id": "demo-ch-der-car",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Derby County",
+      "away_team": "Cardiff City",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Derby County": 1.53, "Draw": 3.90, "Cardiff City": 5.75 }
+    },
+    {
+      "id": "demo-ch-pre-wol",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Preston North End",
+      "away_team": "Wolverhampton Wanderers",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Preston North End": 5.20, "Draw": 3.80, "Wolverhampton Wanderers": 1.68 }
+    },
+    {
+      "id": "demo-ch-qpr-bol",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Queens Park Rangers",
+      "away_team": "Bolton Wanderers",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Queens Park Rangers": 2.15, "Draw": 3.35, "Bolton Wanderers": 3.55 }
+    },
+    {
+      "id": "demo-ch-sou-sto",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Southampton",
+      "away_team": "Stoke City",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Southampton": 1.72, "Draw": 3.70, "Stoke City": 5.20 }
+    },
+    {
+      "id": "demo-ch-swa-shu",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Swansea City",
+      "away_team": "Sheffield United",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Swansea City": 2.80, "Draw": 3.30, "Sheffield United": 2.65 }
+    },
+    {
+      "id": "demo-ch-whu-cha",
+      "league_key": "soccer_efl_champ",
+      "home_team": "West Ham United",
+      "away_team": "Charlton Athletic",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "West Ham United": 1.44, "Draw": 4.50, "Charlton Athletic": 7.00 }
+    },
+    {
+      "id": "demo-ch-wre-wat",
+      "league_key": "soccer_efl_champ",
+      "home_team": "Wrexham",
+      "away_team": "Watford",
+      "kickoff": "2026-08-22T15:00:00",
+      "price_source": "illustrative",
+      "h2h": { "Wrexham": 3.20, "Draw": 3.45, "Watford": 2.25 }
+    }
+  ]
+}

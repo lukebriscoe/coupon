@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+venv/
+.venv/
+
+# Runtime state — local to each install, and slips.json is a personal record.
+data/cache/
+data/slips.json
+data/api_usage.json

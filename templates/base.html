@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Coupon{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='coupon.css') }}">
+</head>
+<body>
+<div class="sheet">
+
+  <header class="masthead">
+    <p class="kicker">Saturday &middot; 15:00 kick-off</p>
+    <h1>Coupon</h1>
+    <div class="strap">
+      <span>Sky Bet prices</span>
+      <span>£10 stake</span>
+      <span>Six bets</span>
+      <span>{{ credits_used }}/{{ credits_limit }} credits used this month</span>
+    </div>
+    <nav>
+      <a href="{{ url_for('index') }}" class="{{ 'on' if request.endpoint == 'index' }}">Coupon</a>
+      <a href="{{ url_for('history') }}" class="{{ 'on' if request.endpoint in ('history', 'slip_detail') }}">History</a>
+      <a href="{{ url_for('performance') }}" class="{{ 'on' if request.endpoint == 'performance' }}">Performance</a>
+      {% block nav_extra %}{% endblock %}
+    </nav>
+  </header>
+
+  {% if demo_mode %}
+    <div class="notice loud">
+      <strong>Demo mode — these are not real prices</strong>
+      No <code>ODDS_API_KEY</code> is set, so the app is running on a sample card.
+      Fixtures and kick-off times are real; prices are either market composites or
+      invented. Add a key from
+      <a href="https://the-odds-api.com" target="_blank" rel="noopener">the-odds-api.com</a>
+      to <code>.env</code> for live Sky Bet odds.
+    </div>
+  {% endif %}
+
+  {% block content %}{% endblock %}
+
+  <footer class="smallprint">
+    Recommendations only — nothing here places a bet. Every price carries the
+    bookmaker's margin, which makes accumulators negative expected value on
+    average; the expected-value figure on each bet shows exactly how much.
+    Stake only what you can afford to lose.
+    <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a>
+  </footer>
+
+</div>
+</body>
+</html>

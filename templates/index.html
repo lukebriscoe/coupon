@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% import "_bet.html" as bet_card %}
+
+{% block title %}Coupon — {{ target|longdate }}{% endblock %}
+
+{% block nav_extra %}
+  <a href="{{ url_for('refresh', date=target.isoformat()) }}"
+     title="Re-fetch prices — costs one credit per league">Refresh odds</a>
+{% endblock %}
+
+{% block content %}
+
+  {% for warning in warnings %}
+    {% if not (demo_mode and loop.first) %}
+      <div class="notice"><strong>Heads up</strong>{{ warning }}</div>
+    {% endif %}
+  {% endfor %}
+
+  <h2 class="rule">
+    The Bets
+    <span>{{ target|longdate }} · {{ slip.fixture_count }} fixtures at 15:00 · £{{ '%.0f'|format(slip.stake) }} a bet</span>
+  </h2>
+
+  {% if slip.fixtures %}
+    <div class="bets">
+      {% for bet in slip.bets %}{{ bet_card.render(bet) }}{% endfor %}
+    </div>
+  {% else %}
+    <div class="empty">
+      <p>No 15:00 fixtures found for {{ target|longdate }}.</p>
+      <p>Either there is no 3pm card that day, or the odds feed has nothing priced yet.
+         Bookmakers usually price the weekend by Thursday.</p>
+    </div>
+  {% endif %}
+
+  {% if slip.fixtures %}
+    <h2 class="rule">
+      The 15:00 Card
+      <span>fair probability after removing the bookmaker's margin</span>
+    </h2>
+
+    {% for league_name, fixtures in by_league.items() %}
+      <p class="league-name">{{ league_name }} — {{ fixtures|length }} at 15:00</p>
+      <div class="scroll">
+        <table class="card">
+          <colgroup>
+            <col class="fixture">
+            <col class="price"><col class="price"><col class="price">
+            <col class="chance"><col class="chance"><col class="chance">
+            <col class="margin">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Fixture</th>
+              <th>Home</th>
+              <th>Draw</th>
+              <th>Away</th>
+              <th>Home %</th>
+              <th>Draw %</th>
+              <th>Away %</th>
+              <th>Margin</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for f in fixtures %}
+            {% set ph = f.fair_probabilities.get(f.home_team, 0) %}
+            {% set pd = f.fair_probabilities.get('Draw', 0) %}
+            {% set pa = f.fair_probabilities.get(f.away_team, 0) %}
+            <tr>
+              <td>
+                {{ f.label }}
+                {% if f.price_source|source_warning %}
+                  <span class="badge {{ 'warn' if f.price_source == 'illustrative' else 'est' }}">
+                    {{ 'demo price' if f.price_source == 'illustrative' else 'median' }}
+                  </span>
+                {% endif %}
+              </td>
+              <td class="{{ 'fav' if ph > pa }}">{{ '%.2f'|format(f.h2h_prices.get(f.home_team, 0)) }}</td>
+              <td>{{ '%.2f'|format(f.h2h_prices.get('Draw', 0)) }}</td>
+              <td class="{{ 'fav' if pa > ph }}">{{ '%.2f'|format(f.h2h_prices.get(f.away_team, 0)) }}</td>
+              <td class="{{ ph|confidence }}">{{ ph|pct }}</td>
+              <td class="{{ pd|confidence }}">{{ pd|pct }}</td>
+              <td class="{{ pa|confidence }}">{{ pa|pct }}</td>
+              <td class="thin">{{ '%.1f'|format((f.overround - 1) * 100) }}%</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endfor %}
+
+    <h2 class="rule">Settle<span>after the results are in</span></h2>
+    <form method="post" action="{{ url_for('settle') }}">
+      <button type="submit">Settle logged bets</button>
+    </form>
+  {% endif %}
+
+{% endblock %}

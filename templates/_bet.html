@@ -1,0 +1,81 @@
+{# One recommended bet, or an explanation of why it couldn't be built. #}
+{% macro render(bet) %}
+{# The single-leg banker and the many-legged 4/1+ acca each take a full row. #}
+{% set wide = bet.kind in ('banker', 'underdog_acca') %}
+<article class="bet {{ 'wide' if wide }} {{ 'void' if not bet.is_available }}">
+
+  <header>
+    <h3>{{ bet.title }}</h3>
+    {% if bet.is_available %}
+      <div class="price">
+        {{ '%.2f'|format(bet.combined_odds) }}
+        <small>{{ bet.combined_fractional }}</small>
+      </div>
+    {% else %}
+      <div class="price" style="font-size:0.8rem">NO BET</div>
+    {% endif %}
+  </header>
+
+  {% if not bet.is_available %}
+    <p class="why">{{ bet.unavailable_reason }}</p>
+  {% else %}
+
+    {% for leg in bet.legs %}
+      {% set s = leg.selection %}
+      <div class="leg">
+        <div class="tick">{{ '%02d'|format(loop.index) }}</div>
+        <div class="pick">
+          {{ s.label }}
+          {% if s.price_source|source_warning %}
+            <span class="badge {{ 'warn' if s.price_source == 'illustrative' else 'est' }}"
+                  title="{{ s.price_source|source_warning }}">
+              {{ 'demo price' if s.price_source == 'illustrative' else 'estimate' }}
+            </span>
+          {% endif %}
+        </div>
+        <div class="odds">
+          {{ '%.2f'|format(s.odds) }}
+          <small>{{ s.fair_probability|pct }}</small>
+        </div>
+        <div class="meta">
+          <span class="badge league">{{ s.league_short }}</span>
+          {{ s.fixture_label }} · {{ s.market_label }}
+        </div>
+      </div>
+    {% endfor %}
+
+    <div class="figures">
+      <div class="figure">
+        <span class="k">Stake</span>
+        <span class="v">{{ bet.stake|money }}</span>
+      </div>
+      <div class="figure">
+        <span class="k">Returns</span>
+        <span class="v good">{{ bet.potential_return|money }}</span>
+      </div>
+      <div class="figure">
+        <span class="k">Profit</span>
+        <span class="v good">{{ bet.potential_profit|money }}</span>
+      </div>
+      <div class="figure">
+        <span class="k">Chance</span>
+        <span class="v {{ 'good' if bet.joint_probability >= 0.5 else '' }}">
+          {{ bet.joint_probability|pct }}
+        </span>
+      </div>
+      <div class="figure">
+        <span class="k">Exp. value</span>
+        <span class="v {{ 'good' if bet.expected_value >= 0 else 'bad' }}">
+          {{ bet.expected_value|signed_money }}
+        </span>
+      </div>
+    </div>
+
+    {% if bet.note %}
+      <p class="note">{{ bet.note }}</p>
+    {% endif %}
+
+  {% endif %}
+
+</article>
+{% endmacro %}

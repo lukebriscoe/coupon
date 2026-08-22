@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% import "_bet.html" as bet_card %}
+
+{% block title %}{{ record.date }} — Coupon{% endblock %}
+
+{% block content %}
+  <h2 class="rule">
+    {{ record.date|longdate }}
+    <span>{{ record.fixture_count }} fixtures · generated {{ record.generated_at }}</span>
+  </h2>
+
+  <div class="bets">
+    {% for bet in bets %}
+      {{ bet_card.render(bet) }}
+    {% endfor %}
+  </div>
+
+  <h2 class="rule">How they settled</h2>
+  <div class="scroll">
+    <table class="card">
+      <thead>
+        <tr><th>Bet</th><th>Price</th><th>Status</th><th>Stake</th><th>Returns</th><th>P&amp;L</th></tr>
+      </thead>
+      <tbody>
+      {% for b in record.bets %}
+        <tr>
+          <td>{{ b.title }}</td>
+          <td>{{ '%.2f'|format(b.combined_odds) }}</td>
+          <td class="{{ 'strong' if b.status == 'won' else ('longshot' if b.status == 'pending' else 'thin') }}">
+            {{ b.status }}
+          </td>
+          <td>{{ b.stake|money }}</td>
+          <td>{{ b.returns|money }}</td>
+          <td>
+            {% if b.status in ('won', 'lost') %}
+              {{ (b.returns - b.stake)|signed_money }}
+            {% else %}—{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

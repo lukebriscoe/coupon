@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Settled — Coupon{% endblock %}
+
+{% block content %}
+  <h2 class="rule">Settlement</h2>
+
+  <div class="stats">
+    <div class="stat"><span class="k">Newly settled</span><span class="v">{{ summary.settled }}</span></div>
+    <div class="stat"><span class="k">Still pending</span><span class="v">{{ summary.still_pending }}</span></div>
+    <div class="stat"><span class="k">Leagues checked</span><span class="v">{{ summary.leagues_checked }}</span></div>
+  </div>
+
+  {% for error in summary.errors %}
+    <div class="notice"><strong>Could not check</strong>{{ error }}</div>
+  {% endfor %}
+
+  <p>
+    <a class="btn" href="{{ url_for('performance') }}">See performance</a>
+    <a class="btn" href="{{ url_for('index') }}">Back to the coupon</a>
+  </p>
+{% endblock %}
