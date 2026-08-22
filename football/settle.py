@@ -125,3 +125,24 @@ def settle_slips(client: OddsClient, days_from: int = 3) -> dict:
         "leagues_checked": len(league_keys),
         "errors": errors,
     }
+
+
+def main() -> int:
+    """Settle from the command line, for the scheduled workflow."""
+    client = OddsClient()
+    if client.demo_mode:
+        print("No ODDS_API_KEY set — nothing to settle in demo mode.")
+        return 0
+
+    summary = settle_slips(client)
+    print(f"Settled {summary['settled']} bet(s); "
+          f"{summary['still_pending']} still pending across "
+          f"{summary['leagues_checked']} league(s).")
+    for error in summary["errors"]:
+        print(f"  could not check {error}")
+    # A league we couldn't reach isn't a build failure — the rest still settled.
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

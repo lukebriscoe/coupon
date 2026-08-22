@@ -89,10 +89,12 @@
       </div>
     {% endfor %}
 
-    <h2 class="rule">Settle<span>after the results are in</span></h2>
-    <form method="post" action="{{ url_for('settle') }}">
-      <button type="submit">Settle logged bets</button>
-    </form>
+    {% if not static_build %}
+      <h2 class="rule">Settle<span>after the results are in</span></h2>
+      <form method="post" action="{{ url_for('settle') }}">
+        <button type="submit">Settle logged bets</button>
+      </form>
+    {% endif %}
   {% endif %}
 
 {% endblock %}

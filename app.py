@@ -46,6 +46,10 @@ def inject_globals():
         "credits_limit": limit,
         "demo_mode": client.demo_mode,
         "today": date.today(),
+        # Set by freeze.py. Hides anything that needs a live server — the
+        # refresh link and the settle form can't work on a static host.
+        "static_build": app.config.get("STATIC_BUILD", False),
+        "built_at": app.config.get("BUILT_AT", ""),
     }
 
 

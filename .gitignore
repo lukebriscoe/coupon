@@ -6,7 +6,11 @@ __pycache__/
 venv/
 .venv/
 
-# Runtime state — local to each install, and slips.json is a personal record.
+# Runtime state, local to each install.
 data/cache/
-data/slips.json
 data/api_usage.json
+
+# data/slips.json IS tracked: the scheduled workflow commits it back so the
+# history and performance pages survive between runs. It is published on the
+# site anyway, so there is nothing kept private by ignoring it.
+_site/

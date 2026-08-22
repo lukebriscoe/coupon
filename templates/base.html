@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}Coupon{% endblock %}</title>
+  <meta name="description" content="Sky Bet prices for every UK football fixture kicking off at 15:00 on a Saturday, turned into four recommended bets.">
+  <meta name="theme-color" content="#e8e2d4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14160f" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -25,7 +31,7 @@
       <a href="{{ url_for('index') }}" class="{{ 'on' if request.endpoint == 'index' }}">Coupon</a>
       <a href="{{ url_for('history') }}" class="{{ 'on' if request.endpoint in ('history', 'slip_detail') }}">History</a>
       <a href="{{ url_for('performance') }}" class="{{ 'on' if request.endpoint == 'performance' }}">Performance</a>
-      {% block nav_extra %}{% endblock %}
+      {% if not static_build %}{% block nav_extra %}{% endblock %}{% endif %}
     </nav>
   </header>
 
@@ -48,6 +54,12 @@
     average; the expected-value figure on each bet shows exactly how much.
     Stake only what you can afford to lose.
     <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a>
+    {% if static_build %}
+      <br>
+      This page is a snapshot built at {{ built_at }}. Prices move — check every
+      selection in the Sky Bet app before staking.
+      <a href="https://github.com/lukebriscoe/Coupon">Source</a>
+    {% endif %}
   </footer>
 
 </div>

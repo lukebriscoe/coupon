@@ -83,10 +83,41 @@ placeholders, labelled as such throughout the UI.
 Everything tunable lives in `config.yaml` — thresholds, odds floors, leagues, stake,
 de-vig method.
 
+## Published site
+
+Live at **[lukebriscoe.com/Coupon/](https://lukebriscoe.com/Coupon/)**.
+
+GitHub Pages serves files, not Flask, and this repo is public — so a key shipped to
+the browser would be readable by anyone. Instead the odds are fetched *on the
+runner*, with `ODDS_API_KEY` in repository secrets, and only rendered HTML is
+published. Nothing secret reaches the client.
+
+`.github/workflows/publish.yml` runs on a Saturday morning cron, settles any
+outstanding bets, builds the site and deploys it. A second run on Sunday morning
+settles the day's results and republishes, so the performance page stays current.
+It can also be triggered by hand from the Actions tab.
+
+Build it locally with:
+
+```bash
+./venv/bin/python freeze.py --output _site --prefix /Coupon
+```
+
+The site lives under a path prefix, so pages are rendered against a `base_url`
+carrying it — Werkzeug puts that in `SCRIPT_NAME` and every `url_for` comes out
+correctly prefixed. Setting `SCRIPT_NAME` via `environ_base` *looks* equivalent
+but is silently ignored, because the test client binds its URL adapter from
+`base_url`. Anything needing a live server (the refresh link, the settle button)
+is hidden in static builds.
+
+`data/slips.json` is committed by the workflow so history and performance survive
+between runs. That ledger is public, as is everything else on the site.
+
 ## Layout
 
 ```
 app.py               Flask routes
+freeze.py            renders the site to static HTML for Pages
 config.yaml          every threshold
 football/
   odds_client.py     The Odds API — caching, credit tracking, 15:00 filter
@@ -95,6 +126,9 @@ football/
   models.py          Fixture, Selection, Bet, Slip
   store.py           slip logging and P&L
   settle.py          results and settlement
+.github/workflows/
+  publish.yml        Saturday build + Sunday settle, deployed to Pages
+  tests.yml          pytest and a static-build smoke test
 ```
 
 ## Tracking

@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m pytest tests/ -q
+
+      # No key here, so this exercises the demo path — which also proves the
+      # static build works without ever touching the live API.
+      - name: Static build smoke test
+        run: |
+          python freeze.py --output _site --prefix /Coupon
+          test -f _site/index.html
+          test -f _site/static/coupon.css
+          grep -q '/Coupon/static/coupon.css' _site/index.html
