@@ -18,10 +18,16 @@
 
   <h2 class="rule">
     The Bets
-    <span>{{ target|longdate }} · {{ slip.fixture_count }} fixtures at 15:00 · stakes as shown</span>
+    <span>
+      {{ target|longdate }}
+      {%- if slip.fixtures %} · {{ slip.fixture_count }} fixtures at 15:00{% endif %} ·
+      stakes as shown
+    </span>
   </h2>
 
-  {% if slip.fixtures %}
+  {# Bets are shown whenever there are any. After kick-off the live card is
+     empty but the slip logged beforehand still stands. #}
+  {% if slip.bets %}
     <div class="bets">
       {% for bet in slip.bets %}{{ bet_card.render(bet) }}{% endfor %}
     </div>
