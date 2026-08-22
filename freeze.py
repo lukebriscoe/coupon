@@ -4,14 +4,14 @@ GitHub Pages serves files, not Flask, and the repo is public so the API key
 can never ship to the browser. So the odds are fetched here — on a runner,
 with the key in a secret — and the result is written out as flat HTML.
 
-The site lives under a path prefix (lukebriscoe.com/Coupon/), so every page is
+The site lives under a path prefix (lukebriscoe.com/coupon/), so every page is
 rendered against a base_url carrying that prefix. Werkzeug puts it in
 SCRIPT_NAME, and everything `url_for` builds — CSS, favicons, internal links —
 comes out correctly prefixed without a single hardcoded path. (Setting
 SCRIPT_NAME through environ_base looks equivalent but does not work: the test
 client binds its URL adapter from base_url, so the prefix is ignored.)
 
-    python freeze.py --output _site --prefix /Coupon
+    python freeze.py --output _site --prefix /coupon
 """
 from __future__ import annotations
 
@@ -88,7 +88,7 @@ def build(output: Path, prefix: str, target_date: date | None = None) -> list[Pa
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default="_site", help="output directory")
-    parser.add_argument("--prefix", default="/Coupon",
+    parser.add_argument("--prefix", default="/coupon",
                         help="path the site is served under")
     parser.add_argument("--date", help="build for a specific Saturday (YYYY-MM-DD)")
     args = parser.parse_args()

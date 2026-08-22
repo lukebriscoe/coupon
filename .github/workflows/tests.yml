@@ -21,7 +21,7 @@ jobs:
       # static build works without ever touching the live API.
       - name: Static build smoke test
         run: |
-          python freeze.py --output _site --prefix /Coupon
+          python freeze.py --output _site --prefix /coupon
           test -f _site/index.html
           test -f _site/static/coupon.css
-          grep -q '/Coupon/static/coupon.css' _site/index.html
+          grep -q '/coupon/static/coupon.css' _site/index.html

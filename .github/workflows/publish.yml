@@ -55,7 +55,7 @@ jobs:
         run: python -m football.settle
 
       - name: Build the static site
-        run: python freeze.py --output _site --prefix /Coupon
+        run: python freeze.py --output _site --prefix /coupon
 
       - name: Commit the settled ledger
         run: |

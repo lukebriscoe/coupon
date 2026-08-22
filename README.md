@@ -91,7 +91,7 @@ de-vig method.
 
 ## Published site
 
-Live at **[lukebriscoe.com/Coupon/](https://lukebriscoe.com/Coupon/)**.
+Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
 
 GitHub Pages serves files, not Flask, and this repo is public — so a key shipped to
 the browser would be readable by anyone. Instead the odds are fetched *on the
@@ -106,7 +106,7 @@ It can also be triggered by hand from the Actions tab.
 Build it locally with:
 
 ```bash
-./venv/bin/python freeze.py --output _site --prefix /Coupon
+./venv/bin/python freeze.py --output _site --prefix /coupon
 ```
 
 The site lives under a path prefix, so pages are rendered against a `base_url`
