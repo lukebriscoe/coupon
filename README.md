@@ -11,10 +11,10 @@ off at 15:00 and recommends four bets.
 | **Treble** | £4 | The three safest legs that still clear an odds floor |
 
 **£20 a week in total.** Stake follows confidence: most of it on the banker, a pound
-on the 4/1+ acca because that one is a twelve-leg lottery ticket. All four are set
+on the 4/1+ acca as a lottery ticket. All four are set
 per-bet in `config.yaml`, and a test asserts they still add up to £20.
 
-Nothing here places a bet. Everything is a recommendation, and every bet shows its
+Nothing here places a bet. It's all just for fun, and every bet shows its
 true probability and expected value next to the potential return.
 
 ## Setup
@@ -36,15 +36,12 @@ Sky Bet has no public API and every odds aggregator blocks scraping, so prices c
 from [The Odds API](https://the-odds-api.com), which carries Sky Bet under the
 `skybet` bookmaker key. The free tier is 500 credits a month.
 
-A credit is charged per market per region per request, so a full publish run costs
-about 16: eight fetching two markets across four leagues, and eight more settling
-(the scores endpoint is 2 a league). At two scheduled runs a week that is roughly
-130 a month — comfortably inside the free tier, but not the ~17 a naive count of
-"one request per league" suggests.
-
 Without a key the app runs in **demo mode** against `data/demo_card.json` — real
 fixtures for 22 August 2026, but the prices are market composites and invented
 placeholders, labelled as such throughout the UI.
+
+Everything tunable lives in `config.yaml` — thresholds, odds floors, leagues, stake,
+de-vig method.
 
 ## How it works
 
@@ -57,52 +54,9 @@ placeholders, labelled as such throughout the UI.
    juiced by different amounts. Proportional by default, Shin available in config.
 3. **Select** — the four bets are built from the de-vigged pool, one leg per fixture.
 
-### Design decisions worth knowing
-
-- **A bet can be declined.** If nothing on the card reaches the confidence floor,
-  the banker comes back as "no bet" with the reason, rather than the threshold
-  being quietly lowered. A card of coin flips has no banker on it.
-- **Double Chance legs are eligible — but only "Team or Draw".** On a typical 3pm
-  card, no straight win is a 60%+ shot at a payable price; "Team or Draw" usually
-  is. Double Chance has a third form, "Home or Away", which loses only on a draw.
-  It's a real market, but it's a bet against one outcome rather than a pick, it
-  reads as nonsense on a coupon ("Forest or Leeds"), and it's the form the derived
-  pricing is least reliable on. Off by default; `double_chance.allow_home_or_away`
-  turns it back on. Where the API doesn't return the market at all, prices are
-  estimated from the match-result probabilities and flagged as estimates.
-- **The 4/1+ acca skips draw-dominated matches.** The rule backs the team whose
-  *opponent* is 4/1 or longer — Man Utd at 1/5 against West Brom at 5/1 means
-  backing Man Utd. Very occasionally both sides clear the bar, in a market where
-  the draw is short and neither team is favoured. There is no strong side to back
-  there, and taking both would put two mutually exclusive results in one
-  accumulator, so the fixture is skipped and named in the bet's note.
-- **The 4/1+ acca is otherwise literal, with a warning.** Implemented as specified,
-  but on a full card it can qualify a dozen teams — and a twelve-leg accumulator of
-  60% shots lands about twice in a thousand. Above six legs the app attaches an
-  "any N from M" system-bet alternative with its real hit rate. It doesn't trim your
-  selections for you.
-- **Accumulators trade safety for price.** Top-N by probability alone is a pile of
-  1.10 shots that pays nothing, so legs are swapped up in price — always taking the
-  best exchange rate, the most price gained per unit of probability given up —
-  until the combination clears its floor.
-- **Every accumulator leg has to stand on its own.** Maximising joint probability
-  against a combined-odds target is very nearly a self-cancelling objective, so
-  without a floor the engine pads the bet with 1.01 near-certainties and dumps all
-  the real risk on a single longshot. `accumulator_legs` in `config.yaml` requires
-  every leg to be odds-on and priced 1.20 or better — which is also roughly where
-  bookmakers stop counting legs towards an accumulator.
-
-Everything tunable lives in `config.yaml` — thresholds, odds floors, leagues, stake,
-de-vig method.
-
 ## Published site
 
 Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
-
-GitHub Pages serves files, not Flask, and this repo is public — so a key shipped to
-the browser would be readable by anyone. Instead the odds are fetched *on the
-runner*, with `ODDS_API_KEY` in repository secrets, and only rendered HTML is
-published. Nothing secret reaches the client.
 
 `.github/workflows/publish.yml` runs on a Saturday morning cron, settles any
 outstanding bets, builds the site and deploys it. A second run on Sunday morning
