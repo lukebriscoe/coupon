@@ -7,11 +7,12 @@ off at 15:00 and recommends four bets.
 |---|---|---|
 | **Banker of the Day** | £10 | The single selection with the best profit at genuinely high confidence |
 | **Opponents 4/1+ Acca** | £1 | Every team whose opponent is priced at 4/1 or longer, in one accumulator |
-| **Banker Double** | £10 | The two-leg combination most likely to land, at a price worth placing |
-| **Treble** | £10 | The three safest legs that still clear an odds floor |
+| **Banker Double** | £5 | The two-leg combination most likely to land, at a price worth placing |
+| **Treble** | £4 | The three safest legs that still clear an odds floor |
 
-The 4/1+ acca is staked at a pound because it's a twelve-leg lottery ticket on a busy
-card, not because it's a lesser bet. Stakes are per-bet in `config.yaml`.
+**£20 a week in total.** Stake follows confidence: most of it on the banker, a pound
+on the 4/1+ acca because that one is a twelve-leg lottery ticket. All four are set
+per-bet in `config.yaml`, and a test asserts they still add up to £20.
 
 Nothing here places a bet. Everything is a recommendation, and every bet shows its
 true probability and expected value next to the potential return.

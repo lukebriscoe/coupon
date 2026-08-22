@@ -39,7 +39,9 @@ devig:
   method: proportional       # proportional | shin
 
 # ── Bet construction ──────────────────────────────────────────
-stake: 10.0                  # default; each bet below may override it
+# Stakes are per bet and total £20 a week:
+#   banker £10 + 4/1+ acca £1 + double £5 + treble £4
+stake: 10.0                  # fallback for any bet that doesn't set its own
 
 banker:
   stake: 10.0
@@ -56,6 +58,7 @@ underdog_acca:
   system_bet_ratio: 0.7
 
 double:
+  stake: 5.0
   min_odds: 1.50             # below this the bet is not worth placing
 
 # Constraints on individual legs inside a treble/fourfold/fivefold.
@@ -71,6 +74,7 @@ accumulator_legs:
 accumulators:
   - legs: 3
     name: Treble
+    stake: 4.0
     min_odds: 3.0
 
 # Markets eligible as banker, double and accumulator legs.

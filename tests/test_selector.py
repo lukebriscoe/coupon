@@ -343,14 +343,19 @@ def test_slip_contains_the_four_recommended_bets(mismatch_card, config):
 
 
 def test_each_bet_carries_its_own_stake(mismatch_card, config):
-    """The banker is a tenner; the 4/1+ acca is a pound."""
     slip = selector.build_slip(mismatch_card, config)
     stakes = {b.kind: b.stake for b in slip.bets}
 
     assert stakes["banker"] == 10.0
     assert stakes["underdog_acca"] == 1.0
-    assert stakes["double"] == 10.0
-    assert stakes["treble"] == 10.0
+    assert stakes["double"] == 5.0
+    assert stakes["treble"] == 4.0
+
+
+def test_the_week_costs_twenty_pounds(mismatch_card, config):
+    """The four stakes are chosen to total £20 — guard against drift."""
+    slip = selector.build_slip(mismatch_card, config)
+    assert sum(b.stake for b in slip.bets) == pytest.approx(20.0)
 
 
 def test_underdog_acca_returns_are_based_on_its_own_stake(mismatch_card, config):
