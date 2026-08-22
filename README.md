@@ -70,7 +70,13 @@ placeholders, labelled as such throughout the UI.
   pricing is least reliable on. Off by default; `double_chance.allow_home_or_away`
   turns it back on. Where the API doesn't return the market at all, prices are
   estimated from the match-result probabilities and flagged as estimates.
-- **The 4/1+ acca is literal, with a warning.** Implemented exactly as specified,
+- **The 4/1+ acca skips draw-dominated matches.** The rule backs the team whose
+  *opponent* is 4/1 or longer — Man Utd at 1/5 against West Brom at 5/1 means
+  backing Man Utd. Very occasionally both sides clear the bar, in a market where
+  the draw is short and neither team is favoured. There is no strong side to back
+  there, and taking both would put two mutually exclusive results in one
+  accumulator, so the fixture is skipped and named in the bet's note.
+- **The 4/1+ acca is otherwise literal, with a warning.** Implemented as specified,
   but on a full card it can qualify a dozen teams — and a twelve-leg accumulator of
   60% shots lands about twice in a thousand. Above six legs the app attaches an
   "any N from M" system-bet alternative with its real hit rate. It doesn't trim your

@@ -221,18 +221,30 @@ def build_underdog_acca(fixtures: list[Fixture], config: dict, stake: float) -> 
     threshold = cfg["opponent_min_odds"]
 
     picks: list[Selection] = []
+    skipped: list[str] = []
+
     for fixture in fixtures:
-        for team in (fixture.home_team, fixture.away_team):
-            opponent_price = fixture.price_for(fixture.opponent_of(team))
-            if opponent_price is None or opponent_price < threshold:
-                continue
-            match = next(
-                (s for s in fixture.selections
-                 if s.market != MARKET_DOUBLE_CHANCE and s.label == team),
-                None,
-            )
-            if match is not None:
-                picks.append(match)
+        qualifying = [
+            team for team in (fixture.home_team, fixture.away_team)
+            if (fixture.price_for(fixture.opponent_of(team)) or 0.0) >= threshold
+        ]
+
+        # Both sides can clear the bar only in a draw-dominated market, where
+        # each team is an outsider to the draw. There is no strong side to back
+        # there, and taking both would put two mutually exclusive results in one
+        # accumulator — a bet that cannot win.
+        if len(qualifying) != 1:
+            if qualifying:
+                skipped.append(fixture.label)
+            continue
+
+        match = next(
+            (s for s in fixture.selections
+             if s.market != MARKET_DOUBLE_CHANCE and s.label == qualifying[0]),
+            None,
+        )
+        if match is not None:
+            picks.append(match)
 
     title = f"Opponents {_fractional_threshold(threshold)}+ Acca"
 
@@ -248,13 +260,22 @@ def build_underdog_acca(fixtures: list[Fixture], config: dict, stake: float) -> 
 
     bet = Bet(kind="underdog_acca", title=title, legs=_legs(picks), stake=stake)
 
+    notes: list[str] = []
+
+    if skipped:
+        notes.append(
+            f"Skipped {', '.join(skipped)}: both sides are priced over "
+            f"{_fractional_threshold(threshold)}, so there is no strong team to "
+            "back and taking both would be a bet that cannot win."
+        )
+
     if len(picks) >= cfg["system_bet_threshold"]:
         total = len(picks)
         needed = max(2, int(total * cfg["system_bet_ratio"]))
         probabilities = [s.fair_probability for s in picks]
         all_win = bet.joint_probability
         partial = probability_at_least(probabilities, needed)
-        bet.note = (
+        notes.append(
             f"All {total} legs landing is a {all_win:.2%} shot — this is a "
             f"lottery ticket, not a strategy. The same {total} selections as an "
             f"“any {needed} from {total}” system bet ({comb(total, needed):,} lines) "
@@ -262,6 +283,7 @@ def build_underdog_acca(fixtures: list[Fixture], config: dict, stake: float) -> 
             "a realistic hit rate."
         )
 
+    bet.note = " ".join(notes) if notes else None
     return bet
 
 

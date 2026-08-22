@@ -180,6 +180,66 @@ def test_underdog_acca_threshold_is_exclusive_below_four_to_one(config):
     assert selector.build_underdog_acca(just_over, config, STAKE).is_available
 
 
+def test_worked_example_man_utd_versus_west_brom(config):
+    """Man Utd 1/5 v West Brom 5/1 — West Brom clears 4/1, so back Man Utd."""
+    from tests.conftest import make_fixture
+
+    card = [make_fixture("e", "Manchester United", "West Brom", 1.20, 7.00, 6.00)]
+    bet = selector.build_underdog_acca(card, config, STAKE)
+
+    assert [leg.selection.label for leg in bet.legs] == ["Manchester United"]
+
+
+def test_the_big_underdog_itself_is_never_backed(config):
+    """The rule backs the team facing the outsider, not the outsider."""
+    from tests.conftest import make_fixture
+
+    card = [make_fixture("e", "Manchester United", "West Brom", 1.20, 7.00, 6.00)]
+    bet = selector.build_underdog_acca(card, config, STAKE)
+
+    assert "West Brom" not in [leg.selection.label for leg in bet.legs]
+
+
+def test_a_match_where_both_sides_clear_the_bar_is_skipped(config):
+    """Regression: a draw-dominated market qualified both teams, putting two
+    mutually exclusive results in one accumulator — a bet that cannot win."""
+    from tests.conftest import make_fixture
+
+    card = [make_fixture("d", "Home", "Away", 5.20, 1.45, 5.60)]
+    bet = selector.build_underdog_acca(card, config, STAKE)
+
+    assert not bet.is_available
+    assert bet.legs == []
+
+
+def test_a_skipped_match_is_explained_not_dropped_silently(config):
+    from tests.conftest import make_fixture
+
+    card = [
+        make_fixture("d", "Drawy Home", "Drawy Away", 5.20, 1.45, 5.60),
+        make_fixture("n", "Strong", "Weak", 1.30, 5.50, 6.00),
+    ]
+    bet = selector.build_underdog_acca(card, config, STAKE)
+
+    assert [leg.selection.label for leg in bet.legs] == ["Strong"]
+    assert "Drawy Home v Drawy Away" in bet.note
+    assert "cannot win" in bet.note
+
+
+def test_no_accumulator_ever_holds_both_sides_of_a_match(config):
+    from tests.conftest import make_fixture
+
+    card = [
+        make_fixture("a", "A Home", "A Away", 5.20, 1.45, 5.60),
+        make_fixture("b", "B Home", "B Away", 6.00, 1.40, 5.10),
+        make_fixture("c", "C Home", "C Away", 1.30, 5.50, 6.00),
+    ]
+    bet = selector.build_underdog_acca(card, config, STAKE)
+
+    fixture_ids = [leg.selection.fixture_id for leg in bet.legs]
+    assert len(fixture_ids) == len(set(fixture_ids))
+
+
 def test_large_underdog_acca_gets_a_system_bet_alternative(config):
     from tests.conftest import make_fixture
 
