@@ -33,8 +33,13 @@ cp .env.example .env      # then add your key
 
 Sky Bet has no public API and every odds aggregator blocks scraping, so prices come
 from [The Odds API](https://the-odds-api.com), which carries Sky Bet under the
-`skybet` bookmaker key. The free tier is 500 credits a month; a full Saturday run
-across the four English leagues costs about 4, so roughly 17 a month.
+`skybet` bookmaker key. The free tier is 500 credits a month.
+
+A credit is charged per market per region per request, so a full publish run costs
+about 16: eight fetching two markets across four leagues, and eight more settling
+(the scores endpoint is 2 a league). At two scheduled runs a week that is roughly
+130 a month — comfortably inside the free tier, but not the ~17 a naive count of
+"one request per league" suggests.
 
 Without a key the app runs in **demo mode** against `data/demo_card.json` — real
 fixtures for 22 August 2026, but the prices are market composites and invented
