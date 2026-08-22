@@ -21,12 +21,7 @@
   <header class="masthead">
     <p class="kicker">Saturday &middot; 15:00 kick-off</p>
     <h1>Coupon</h1>
-    <div class="strap">
-      <span>Sky Bet prices</span>
-      <span>Four bets</span>
-      <span>£20 a week</span>
-      <span>{{ credits_used }}/{{ credits_limit }} credits used this month</span>
-    </div>
+    <p class="strapline">Twenty pounds. Four bets. Three o&rsquo;clock.</p>
     <nav>
       <a href="{{ url_for('index') }}" class="{{ 'on' if request.endpoint == 'index' }}">Coupon</a>
       <a href="{{ url_for('history') }}" class="{{ 'on' if request.endpoint in ('history', 'slip_detail') }}">History</a>
@@ -49,16 +44,19 @@
   {% block content %}{% endblock %}
 
   <footer class="smallprint">
-    Recommendations only — nothing here places a bet. Every price carries the
-    bookmaker's margin, which makes accumulators negative expected value on
-    average; the expected-value figure on each bet shows exactly how much.
-    Stake only what you can afford to lose.
-    <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a>
-    {% if static_build %}
-      <br>
-      This page is a snapshot built at {{ built_at }}. Prices move — check every
-      selection in the Sky Bet app before staking.
-    {% endif %}
+    <p>
+      Recommendations only — nothing here places a bet. Prices are Sky Bet's, via
+      The Odds API. Every price carries the bookmaker's margin, which makes
+      accumulators negative expected value on average; the expected-value figure
+      on each bet shows exactly how much. Stake only what you can afford to lose.
+      <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware.org</a>
+    </p>
+    <p class="meta">
+      {% if static_build %}Built {{ built_at }} &middot; {% endif %}
+      {{ credits_used }}/{{ credits_limit }} API credits used this month
+      {%- if static_build %} &middot; prices move, so check every selection in the
+      Sky Bet app before staking{% endif %}
+    </p>
   </footer>
 
 </div>

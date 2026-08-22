@@ -84,16 +84,12 @@ body {
   margin: 0;
 }
 
-.masthead .strap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
-  align-items: baseline;
-  margin-top: 0.6rem;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.masthead .strapline {
+  margin: 0.5rem 0 0;
+  font-family: var(--body);
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+  font-style: italic;
+  letter-spacing: 0.01em;
   color: var(--ink-soft);
 }
 
@@ -469,6 +465,17 @@ footer.smallprint {
   font-size: 0.8rem;
   color: var(--ink-faint);
   line-height: 1.6;
+}
+
+footer.smallprint p { margin: 0 0 0.6rem; }
+
+/* Build stamp and API credit count — followable, but out of the way. */
+footer.smallprint .meta {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+  margin-bottom: 0;
 }
 
 ul.plain { list-style: none; padding: 0; margin: 0; }
