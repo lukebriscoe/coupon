@@ -21,7 +21,6 @@
   <header class="masthead">
     <p class="kicker">Saturday &middot; 15:00 kick-off</p>
     <h1>Coupon</h1>
-    <p class="strapline">Twenty pounds. Four bets. Three o&rsquo;clock.</p>
     <nav>
       <a href="{{ url_for('index') }}" class="{{ 'on' if request.endpoint == 'index' }}">Coupon</a>
       <a href="{{ url_for('history') }}" class="{{ 'on' if request.endpoint in ('history', 'slip_detail') }}">History</a>
