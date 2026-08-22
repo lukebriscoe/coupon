@@ -258,7 +258,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -275,7 +275,7 @@
             "odds": 1.82,
             "fair_probability": 0.5046074456321417,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "ee99154f8db029efcf567c5f7f7a0c0b",
