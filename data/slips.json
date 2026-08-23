@@ -310,5 +310,136 @@
         "joint_probability": 0.2548217756823033
       }
     ]
+  },
+  {
+    "date": "2026-08-29",
+    "generated_at": "2026-08-23T09:27:54+00:00",
+    "stake": 10.0,
+    "fixture_count": 26,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "057f16c17beffe8b70b4624868e833dc",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Cardiff City",
+            "away_team": "Sheffield United",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Cardiff City or Draw",
+            "odds": 1.51,
+            "fair_probability": 0.6234915526950925,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.6234915526950925
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "fe8bc4e8d1005768e7d50d8cafe097ed",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Millwall",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Southampton or Draw",
+            "odds": 1.22,
+            "fair_probability": 0.7614185921547555,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "374dd92785cc06d6514d275515219c44",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Coventry City",
+            "away_team": "Hull City",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Coventry City or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7425876010781671,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.52,
+        "joint_probability": 0.5654200057645152
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "ff4818bd73fa63c0a1e4c98e50c7a2e5",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Everton",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Everton or Draw",
+            "odds": 1.77,
+            "fair_probability": 0.523539421440726,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "061bb5eae6ddf78f5896b715413a8e14",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Blackburn Rovers",
+            "away_team": "Queens Park Rangers",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Blackburn Rovers or Draw",
+            "odds": 1.34,
+            "fair_probability": 0.6985383678440925,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "c0dfbb316fff4b999664a1a60b6f79f3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Watford",
+            "away_team": "West Ham United",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "West Ham United or Draw",
+            "odds": 1.28,
+            "fair_probability": 0.7317744154057773,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.04,
+        "joint_probability": 0.26761895792598417
+      }
+    ]
   }
 ]
