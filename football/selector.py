@@ -374,8 +374,15 @@ def _fractional_threshold(decimal_odds: float) -> str:
 
 
 def build_slip(fixtures: list[Fixture], config: dict,
-               slip_date: str | None = None) -> Slip:
-    """Every recommendation for one Saturday's 15:00 card."""
+               slip_date: str | None = None,
+               all_fixtures: list[Fixture] | None = None) -> Slip:
+    """Every recommendation for one Saturday.
+
+    `fixtures` is the 15:00 card, which the banker, double and treble are built
+    from. `all_fixtures` is the whole day; the 4/1+ acca uses it when
+    `underdog_acca.all_kickoffs` is set, because the big mismatches are nearly
+    always scheduled into the televised slots rather than the 3pm window.
+    """
     default_stake = config["stake"]
     pool = candidate_selections(fixtures, config)
 
@@ -383,9 +390,13 @@ def build_slip(fixtures: list[Fixture], config: dict,
         """Each bet may set its own stake; the 4/1+ acca is staked far lower."""
         return config.get(section, {}).get("stake", default_stake)
 
+    underdog_pool = fixtures
+    if config.get("underdog_acca", {}).get("all_kickoffs") and all_fixtures:
+        underdog_pool = all_fixtures
+
     bets = [
         build_banker(pool, config, stake_for("banker")),
-        build_underdog_acca(fixtures, config, stake_for("underdog_acca")),
+        build_underdog_acca(underdog_pool, config, stake_for("underdog_acca")),
         build_double(pool, config, stake_for("double")),
     ]
     leg_limits = config.get("accumulator_legs", {})

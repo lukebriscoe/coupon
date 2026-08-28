@@ -20,7 +20,8 @@
     The Bets
     <span>
       {{ target|longdate }}
-      {%- if slip.fixtures %} · {{ slip.fixture_count }} fixtures at 15:00{% endif %} ·
+      {%- if slip.fixtures %} · {{ slip.day_fixture_count }} fixtures,
+      {{ slip.fixture_count }} at 15:00{% endif %} ·
       stakes as shown
     </span>
   </h2>
@@ -41,15 +42,25 @@
 
   {% if slip.fixtures %}
     <h2 class="rule">
-      The 15:00 Card
+      Saturday's Card
       <span>fair probability after removing the bookmaker's margin</span>
     </h2>
 
+    <p class="card-note">
+      Every kick-off on the day. The banker, double and treble are built from the
+      <strong>15:00</strong> games only; the 4/1+ acca can use any of them.
+    </p>
+
     {% for league_name, fixtures in by_league.items() %}
-      <p class="league-name">{{ league_name }} — {{ fixtures|length }} at 15:00</p>
+      {% set at_three = fixtures | selectattr('kickoff.hour', 'equalto', 15) | list %}
+      <p class="league-name">
+        {{ league_name }} — {{ fixtures|length }} fixture{{ 's' if fixtures|length != 1 }},
+        {{ at_three|length }} at 15:00
+      </p>
       <div class="scroll">
         <table class="card">
           <colgroup>
+            <col class="ko">
             <col class="fixture">
             <col class="price"><col class="price"><col class="price">
             <col class="chance"><col class="chance"><col class="chance">
@@ -57,6 +68,7 @@
           </colgroup>
           <thead>
             <tr>
+              <th>KO</th>
               <th>Fixture</th>
               <th>Home</th>
               <th>Draw</th>
@@ -72,7 +84,8 @@
             {% set ph = f.fair_probabilities.get(f.home_team, 0) %}
             {% set pd = f.fair_probabilities.get('Draw', 0) %}
             {% set pa = f.fair_probabilities.get(f.away_team, 0) %}
-            <tr>
+            <tr class="{{ 'three-oclock' if f.kickoff.hour == 15 and f.kickoff.minute == 0 }}">
+              <td class="ko">{{ f.kickoff|kickoff }}</td>
               <td>
                 {{ f.label }}
                 {% if f.price_source|source_warning %}

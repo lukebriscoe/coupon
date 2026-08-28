@@ -1,12 +1,12 @@
 # Coupon
 
-Every Saturday, Coupon reads the Sky Bet prices for every UK football fixture kicking
-off at 15:00 and recommends four bets.
+Every Saturday, Coupon reads the Sky Bet prices for the UK football card and
+recommends four bets — three built from the 15:00 kick-offs, one from the whole day.
 
 | Bet | Stake | What it is |
 |---|---|---|
 | **Banker of the Day** | £10 | The single selection with the best profit at genuinely high confidence |
-| **Opponents 4/1+ Acca** | £1 | Every team whose opponent is priced at 4/1 or longer, in one accumulator |
+| **Opponents 4/1+ Acca** | £1 | Every team whose opponent is priced at 4/1 or longer, in one accumulator. The only bet that looks beyond 15:00 |
 | **Banker Double** | £5 | The two-leg combination most likely to land, at a price worth placing |
 | **Treble** | £4 | The three safest legs that still clear an odds floor |
 
@@ -54,6 +54,12 @@ de-vig method.
    juiced by different amounts. Proportional by default, Shin available in config.
 3. **Select** — the four bets are built from the de-vigged pool, one leg per fixture.
 
+The card shows every Saturday kick-off, but the banker, double and treble are built
+from the 15:00 games only. The 4/1+ acca is the exception: it can use any kick-off,
+because broadcasters lift the mismatches out into the 12:30 and 17:30 slots, leaving
+3pm as systematically the flattest games on the card. One request per league already
+returns the whole day, so the wider view costs nothing extra.
+
 ## Published site
 
 Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
@@ -91,14 +97,14 @@ app.py               Flask routes
 freeze.py            renders the site to static HTML for Pages
 config.yaml          every threshold
 football/
-  odds_client.py     The Odds API — caching, credit tracking, 15:00 filter
+  odds_client.py     The Odds API — caching, credit tracking, kick-off filters
   devig.py           margin removal, Double Chance derivation
   selector.py        the four bet builders
   models.py          Fixture, Selection, Bet, Slip
   store.py           slip logging and P&L
   settle.py          results and settlement
 .github/workflows/
-  publish.yml        Saturday build + Sunday settle, deployed to Pages
+  publish.yml        daily build, Sunday settle, deployed to Pages
   tests.yml          pytest and a static-build smoke test
 ```
 
@@ -117,6 +123,6 @@ Demo runs are not logged; there'd be nothing real to measure.
 ./venv/bin/python -m pytest tests/ -q
 ```
 
-116 tests. The ones that matter most: de-vigged probabilities always sum to 1;
+137 tests. The ones that matter most: de-vigged probabilities always sum to 1;
 the double is verified optimal by brute force; the 15:00 filter is pinned on both
 sides of the BST/GMT boundary; and one losing leg always sinks an accumulator.

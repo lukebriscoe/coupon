@@ -178,21 +178,36 @@ class OddsClient:
 
     # ── Fixtures ──────────────────────────────────────────────────
 
+    def _local_kickoff(self, commence_time: str) -> datetime | None:
+        """A UTC commence time as UK local time, or None if unparseable."""
+        try:
+            utc = datetime.fromisoformat(commence_time.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        if utc.tzinfo is None:
+            utc = utc.replace(tzinfo=timezone.utc)
+        return utc.astimezone(self.timezone)
+
+    def is_kickoff_time(self, kickoff: datetime) -> bool:
+        """True when a local kick-off is in the 15:00 window."""
+        return (kickoff.hour == self.kickoff_hour
+                and kickoff.minute == self.kickoff_minute)
+
     def is_target_kickoff(self, commence_time: str, target: date | None = None) -> bool:
         """True when a UTC kick-off lands at 15:00 UK time on the target date.
 
         Uses a real timezone rather than a fixed offset — hardcoding +1 would
         break every match from late October, when the UK falls back to GMT.
         """
-        try:
-            utc = datetime.fromisoformat(commence_time.replace("Z", "+00:00"))
-        except ValueError:
+        local = self._local_kickoff(commence_time)
+        if local is None or not self.is_kickoff_time(local):
             return False
-        if utc.tzinfo is None:
-            utc = utc.replace(tzinfo=timezone.utc)
+        return target is None or local.date() == target
 
-        local = utc.astimezone(self.timezone)
-        if local.hour != self.kickoff_hour or local.minute != self.kickoff_minute:
+    def is_on_date(self, commence_time: str, target: date | None = None) -> bool:
+        """True when a kick-off falls on the target date, at any time."""
+        local = self._local_kickoff(commence_time)
+        if local is None:
             return False
         return target is None or local.date() == target
 
@@ -249,13 +264,16 @@ class OddsClient:
 
     def fetch_league(self, league: dict, target: date, use_cache: bool = True,
                      now: datetime | None = None) -> tuple[list[Fixture], int]:
-        """One league's 15:00 fixtures for the target date, pre-match only.
+        """One league's fixtures for the target date, any kick-off, pre-match only.
 
-        Returns the fixtures and a count of those dropped for having kicked
-        off. The /odds endpoint keeps serving a fixture once it is under way,
-        but the prices become in-play: a team two goals up shortens to about
-        1.01, which is not a 99% pre-match shot and must never reach the
-        selection engine.
+        The whole day is returned because a single request already contains it —
+        filtering by kick-off time is done by the caller, so covering 12:30 and
+        17:30 as well as 15:00 costs nothing extra.
+
+        Also returns a count of fixtures dropped for having kicked off. The
+        /odds endpoint keeps serving a fixture once it is under way, but the
+        prices become in-play: a team two goals up shortens to about 1.01,
+        which is not a 99% pre-match shot and must never reach the engine.
         """
         params = {
             "regions": self.region,
@@ -282,7 +300,7 @@ class OddsClient:
         fixtures: list[Fixture] = []
         in_play = 0
         for event in events:
-            if not self.is_target_kickoff(event.get("commence_time", ""), target):
+            if not self.is_on_date(event.get("commence_time", ""), target):
                 continue
             fixture = self._parse_event(event, league)
             if fixture is None:
@@ -293,9 +311,9 @@ class OddsClient:
             fixtures.append(fixture)
         return fixtures, in_play
 
-    def fetch_card(self, target: date, use_cache: bool = True,
-                   now: datetime | None = None) -> tuple[list[Fixture], list[str]]:
-        """The full 15:00 card across every configured league, pre-match only.
+    def fetch_day(self, target: date, use_cache: bool = True,
+                  now: datetime | None = None) -> tuple[list[Fixture], list[str]]:
+        """Every fixture on the target date across all leagues, any kick-off.
 
         Returns the fixtures plus any warnings, so one dead league doesn't take
         down the whole page.
@@ -326,11 +344,15 @@ class OddsClient:
                 "is only meaningful before 15:00."
             )
 
-        fixtures.sort(key=lambda f: (
-            [lg["key"] for lg in self.config["leagues"]].index(f.league_key),
-            f.label,
-        ))
+        order = [lg["key"] for lg in self.config["leagues"]]
+        fixtures.sort(key=lambda f: (order.index(f.league_key), f.kickoff, f.label))
         return fixtures, warnings
+
+    def fetch_card(self, target: date, use_cache: bool = True,
+                   now: datetime | None = None) -> tuple[list[Fixture], list[str]]:
+        """Just the 15:00 kick-offs — the card the main bets are built from."""
+        fixtures, warnings = self.fetch_day(target, use_cache, now)
+        return [f for f in fixtures if self.is_kickoff_time(f.kickoff)], warnings
 
     # ── Demo mode ─────────────────────────────────────────────────
 

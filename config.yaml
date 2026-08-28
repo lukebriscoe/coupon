@@ -56,6 +56,11 @@ underdog_acca:
   stake: 1.0                 # long odds, tiny hit rate — stake it accordingly
   # Back a team when its OPPONENT is priced at 4/1 (5.00 decimal) or longer.
   opponent_min_odds: 5.00
+  # This bet alone looks at the whole Saturday, not just 15:00. Broadcasters
+  # lift the mismatches out into the 12:30 and 17:30 slots, so the 3pm window
+  # is systematically the flattest games on the card and big underdogs rarely
+  # appear in it. The other three bets stay at 15:00.
+  all_kickoffs: true
   # Above this many legs the literal acca is a lottery, so also show a system bet.
   system_bet_threshold: 6
   # "any N from M" — N is this fraction of the legs, rounded down.

@@ -354,10 +354,40 @@ table.card {
   table-layout: fixed;
 }
 
+table.card col.ko      { width: 3.6rem; }
 table.card col.fixture { width: auto; }
 table.card col.price   { width: 4.4rem; }
 table.card col.chance  { width: 4.8rem; }
 table.card col.margin  { width: 4.6rem; }
+
+table.card th:first-child,
+table.card td.ko { text-align: left; }
+
+table.card td.ko {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+table.card td:nth-child(2) {
+  text-align: left;
+  font-family: var(--body);
+  font-size: 0.98rem;
+}
+
+/* The 3pm window — where all but one of the bets come from. */
+table.card tr.three-oclock td.ko {
+  color: var(--red);
+  font-weight: 700;
+}
+
+table.card tr:not(.three-oclock) td { opacity: 0.72; }
+
+p.card-note {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.4rem;
+}
 
 table.card th {
   font-family: var(--mono);
@@ -371,7 +401,9 @@ table.card th {
   border-bottom: 1.5px solid var(--ink);
 }
 
-table.card th:first-child { text-align: left; }
+/* KO and Fixture are the two left-aligned columns; prices run right. */
+table.card th:first-child,
+table.card th:nth-child(2) { text-align: left; }
 
 table.card td {
   padding: 0.42rem 0.5rem;
@@ -379,12 +411,6 @@ table.card td {
   text-align: right;
   font-family: var(--mono);
   font-size: 0.88rem;
-}
-
-table.card td:first-child {
-  text-align: left;
-  font-family: var(--body);
-  font-size: 0.98rem;
 }
 
 table.card tbody tr:hover { background: var(--card); }
@@ -480,3 +506,5 @@ footer.smallprint .meta {
 
 ul.plain { list-style: none; padding: 0; margin: 0; }
 ul.plain li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+
+.badge.ko { color: var(--red); }

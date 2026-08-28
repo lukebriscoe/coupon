@@ -39,6 +39,11 @@
         </div>
         <div class="meta">
           <span class="badge league">{{ s.league_short }}</span>
+          {# Flag anything outside the 3pm window — only the 4/1+ acca can
+             reach those, and it should be obvious which legs they are. #}
+          {% if not (s.kickoff.hour == 15 and s.kickoff.minute == 0) %}
+            <span class="badge ko">{{ s.kickoff|kickoff }}</span>
+          {% endif %}
           {{ s.fixture_label }} · {{ s.market_label }}
         </div>
       </div>

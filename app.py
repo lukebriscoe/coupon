@@ -71,11 +71,17 @@ def build_card(target: date, use_cache: bool = True):
     client = get_client()
     config = client.config
 
-    fixtures, warnings = client.fetch_card(target, use_cache=use_cache)
-    for fixture in fixtures:
+    # One request per league already returns the whole day, so the wider card
+    # costs nothing extra. The 15:00 window is filtered out of it locally.
+    all_fixtures, warnings = client.fetch_day(target, use_cache=use_cache)
+    for fixture in all_fixtures:
         devig.apply(fixture, config["devig"]["method"])
 
-    slip = selector.build_slip(fixtures, config, slip_date=target.isoformat())
+    fixtures = [f for f in all_fixtures if client.is_kickoff_time(f.kickoff)]
+
+    slip = selector.build_slip(fixtures, config, slip_date=target.isoformat(),
+                               all_fixtures=all_fixtures)
+    slip.all_fixtures = all_fixtures
 
     if not fixtures:
         record = store.get_slip(target.isoformat())
@@ -109,7 +115,7 @@ def index():
         store.record_slip(slip)
 
     by_league: dict[str, list] = {}
-    for fixture in slip.fixtures:
+    for fixture in (slip.all_fixtures or slip.fixtures):
         by_league.setdefault(fixture.league_name, []).append(fixture)
 
     return render_template(

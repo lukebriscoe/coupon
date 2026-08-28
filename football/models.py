@@ -206,13 +206,19 @@ class Slip:
 
     date: str  # ISO date
     generated_at: str
-    fixtures: list[Fixture]
+    fixtures: list[Fixture]  # the 15:00 window, which most bets are built from
     bets: list[Bet]
     stake: float
+    # The whole Saturday. Shown on the card, and the 4/1+ acca selects from it.
+    all_fixtures: list[Fixture] = field(default_factory=list)
 
     @property
     def fixture_count(self) -> int:
         return len(self.fixtures)
+
+    @property
+    def day_fixture_count(self) -> int:
+        return len(self.all_fixtures) or len(self.fixtures)
 
     @property
     def available_bets(self) -> list[Bet]:

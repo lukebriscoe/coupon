@@ -313,7 +313,7 @@
   },
   {
     "date": "2026-08-29",
-    "generated_at": "2026-08-28T16:16:17+00:00",
+    "generated_at": "2026-08-28T16:47:19+00:00",
     "stake": 10.0,
     "fixture_count": 26,
     "bets": [
@@ -343,6 +343,61 @@
         ],
         "combined_odds": 1.54,
         "joint_probability": 0.6195121951219511
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "feafb731d0307bc91a58e18187aa2eab",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Liverpool",
+            "away_team": "Nottingham Forest",
+            "kickoff": "2026-08-29T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Liverpool",
+            "odds": 1.44,
+            "fair_probability": 0.6410256410256411,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "125260c79efe28af0602f8ee4f051c29",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Stoke City",
+            "kickoff": "2026-08-29T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Wolverhampton Wanderers",
+            "odds": 1.5,
+            "fair_probability": 0.6264014466546112,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "efa602e8ef48dcbaaa5af702fc3d2005",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Barnet",
+            "away_team": "Cheltenham Town",
+            "kickoff": "2026-08-29T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Barnet",
+            "odds": 1.53,
+            "fair_probability": 0.6021623101135898,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.3,
+        "joint_probability": 0.241791886010279
       },
       {
         "kind": "double",

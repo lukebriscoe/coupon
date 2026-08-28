@@ -18,10 +18,11 @@ TARGET = date(2026, 8, 22)
 
 
 def event(event_id: str, home: str, away: str, home_price: float,
-          draw_price: float, away_price: float) -> dict:
+          draw_price: float, away_price: float,
+          commence: str = KICKOFF_UTC) -> dict:
     return {
         "id": event_id,
-        "commence_time": KICKOFF_UTC,
+        "commence_time": commence,
         "home_team": home,
         "away_team": away,
         "bookmakers": [{
@@ -115,3 +116,48 @@ def test_in_play_prices_cannot_produce_an_absurd_accumulator(client, monkeypatch
 
     fixtures, _ = client.fetch_card(TARGET, now=during)
     assert fixtures == [], "in-play prices reached the engine"
+
+
+# ── Which kick-offs each fetch returns ────────────────────────────
+
+LUNCHTIME_UTC = "2026-08-29T11:30:00Z"  # 12:30 BST
+THREE_UTC = "2026-08-29T14:00:00Z"      # 15:00 BST
+TEATIME_UTC = "2026-08-29T16:30:00Z"    # 17:30 BST
+SATURDAY = date(2026, 8, 29)
+
+
+@pytest.fixture
+def full_day(config, monkeypatch) -> OddsClient:
+    """A Saturday with a lunchtime, a 3pm and a tea-time kick-off."""
+    c = OddsClient(api_key="test-key", config=config)
+    monkeypatch.setitem(c.config, "leagues", [LEAGUE])
+    monkeypatch.setattr(c, "_get", lambda *a, **k: [
+        event("lunch", "Liverpool", "Forest", 1.44, 4.75, 6.00, LUNCHTIME_UTC),
+        event("three", "Cardiff", "Sheffield United", 2.60, 3.75, 2.50, THREE_UTC),
+        event("tea", "Spurs", "Newcastle", 2.20, 3.60, 3.20, TEATIME_UTC),
+    ])
+    return c
+
+
+MORNING = datetime(2026, 8, 29, 6, 0, tzinfo=timezone.utc)
+
+
+def test_fetch_day_returns_every_kick_off(full_day):
+    fixtures, _ = full_day.fetch_day(SATURDAY, now=MORNING)
+    assert {f.id for f in fixtures} == {"lunch", "three", "tea"}
+
+
+def test_fetch_card_returns_only_the_three_oclock_games(full_day):
+    fixtures, _ = full_day.fetch_card(SATURDAY, now=MORNING)
+    assert [f.id for f in fixtures] == ["three"]
+
+
+def test_fetch_day_is_ordered_by_kick_off(full_day):
+    fixtures, _ = full_day.fetch_day(SATURDAY, now=MORNING)
+    assert [f.id for f in fixtures] == ["lunch", "three", "tea"]
+
+
+def test_is_kickoff_time_identifies_the_three_oclock_window(full_day):
+    fixtures, _ = full_day.fetch_day(SATURDAY, now=MORNING)
+    at_three = [f for f in fixtures if full_day.is_kickoff_time(f.kickoff)]
+    assert [f.id for f in at_three] == ["three"]

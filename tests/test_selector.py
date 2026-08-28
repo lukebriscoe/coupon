@@ -444,3 +444,66 @@ def test_potential_return_is_stake_times_price(mismatch_card, config):
     for bet in slip.available_bets:
         assert bet.potential_return == pytest.approx(
             bet.stake * bet.combined_odds, abs=0.01)
+
+
+# ── Only the 4/1+ acca reaches outside the 3pm window ──────────────
+
+def _lunchtime_card():
+    """A 12:30 mismatch alongside an even 15:00 card.
+
+    Broadcasters lift the mismatches into the televised slots, so the big
+    underdogs are usually not at 3pm.
+    """
+    from datetime import datetime
+    from tests.conftest import make_fixture, UK
+
+    lunch = make_fixture("lunch", "Liverpool", "Forest", 1.44, 4.75, 6.00)
+    lunch.kickoff = datetime(2026, 8, 29, 12, 30, tzinfo=UK)
+    for s in lunch.selections:
+        s.kickoff = lunch.kickoff
+
+    three = [
+        make_fixture("t1", "Cardiff", "Sheffield United", 2.60, 3.75, 2.50),
+        make_fixture("t2", "Southampton", "Millwall", 1.72, 3.75, 4.60),
+        make_fixture("t3", "Bournemouth", "Everton", 2.10, 3.60, 3.40),
+    ]
+    return three, three + [lunch]
+
+
+def test_acca_reaches_the_lunchtime_kick_off(config):
+    at_three, whole_day = _lunchtime_card()
+    slip = selector.build_slip(at_three, config, all_fixtures=whole_day)
+    acca = next(b for b in slip.bets if b.kind == "underdog_acca")
+
+    assert acca.is_available
+    assert [leg.selection.label for leg in acca.legs] == ["Liverpool"]
+
+
+def test_the_other_three_bets_stay_at_three_oclock(config):
+    at_three, whole_day = _lunchtime_card()
+    slip = selector.build_slip(at_three, config, all_fixtures=whole_day)
+
+    for bet in slip.available_bets:
+        if bet.kind == "underdog_acca":
+            continue
+        for leg in bet.legs:
+            assert leg.selection.kickoff.hour == 15, \
+                f"{bet.title} reached outside 15:00 via {leg.selection.label}"
+
+
+def test_acca_stays_at_three_oclock_when_the_flag_is_off(config):
+    at_three, whole_day = _lunchtime_card()
+    narrow = {**config, "underdog_acca": {**config["underdog_acca"],
+                                          "all_kickoffs": False}}
+    slip = selector.build_slip(at_three, narrow, all_fixtures=whole_day)
+    acca = next(b for b in slip.bets if b.kind == "underdog_acca")
+
+    assert not acca.is_available, "should not reach the 12:30 game"
+
+
+def test_without_a_wider_list_nothing_changes(config):
+    at_three, _ = _lunchtime_card()
+    slip = selector.build_slip(at_three, config)
+    acca = next(b for b in slip.bets if b.kind == "underdog_acca")
+
+    assert not acca.is_available
