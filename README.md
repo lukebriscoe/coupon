@@ -58,10 +58,15 @@ de-vig method.
 
 Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
 
-`.github/workflows/publish.yml` runs on a Saturday morning cron, settles any
-outstanding bets, builds the site and deploys it. A second run on Sunday morning
-settles the day's results and republishes, so the performance page stays current.
-It can also be triggered by hand from the Actions tab.
+`.github/workflows/publish.yml` rebuilds daily: weekday mornings to keep next
+Saturday's prices fresh, Saturday at 08:30 UTC for the definitive card closest to
+kick-off, and Sunday to settle the results. It can also be triggered by hand from
+the Actions tab.
+
+Odds move all week, so a page built on Sunday is badly out of date by Friday while
+still looking current. The daily rebuild keeps it within a day, and the page also
+carries its own build time and warns in the browser if what you're reading is more
+than 24 hours old.
 
 Build it locally with:
 

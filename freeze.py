@@ -50,10 +50,14 @@ def write(output: Path, url_path: str, body: bytes) -> Path:
 
 
 def build(output: Path, prefix: str, target_date: date | None = None) -> list[Path]:
+    built = datetime.now(timezone.utc)
     coupon_app.app.config["STATIC_BUILD"] = True
     coupon_app.app.config["BUILT_AT"] = (
-        datetime.now(timezone.utc).astimezone(UK).strftime("%H:%M on %a %-d %B %Y")
+        built.astimezone(UK).strftime("%H:%M on %a %-d %B %Y")
     )
+    # A static page can't know how old it is, so the build time is stamped in
+    # and the age worked out in the browser.
+    coupon_app.app.config["BUILT_AT_ISO"] = built.isoformat(timespec="seconds")
 
     if output.exists():
         shutil.rmtree(output)

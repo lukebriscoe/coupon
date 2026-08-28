@@ -9,11 +9,18 @@ name: Publish coupon
 # Cron is UTC and the UK is not, so the Saturday build runs at 08:30 UTC. That
 # is 09:30 BST in summer and 08:30 GMT in winter — comfortably before a 15:00
 # kick-off either way.
+#
+# It also runs on weekdays. Odds move all week, and building only at the
+# weekend left the site showing Sunday's prices until the following Saturday
+# while looking perfectly current. Settlement is free on days with nothing
+# pending — it returns before making a request — so a weekday run costs only
+# the four odds credits.
 
 on:
   schedule:
-    - cron: '30 8 * * 6'   # Saturday morning — build the day's coupon
-    - cron: '0 9 * * 0'    # Sunday morning — settle yesterday, republish
+    - cron: '30 8 * * 6'   # Saturday morning — the definitive build, nearest kick-off
+    - cron: '0 9 * * 0'    # Sunday morning — settle yesterday's results
+    - cron: '0 7 * * 1-5'  # Weekdays — keep next Saturday's prices fresh
   workflow_dispatch:        # ...or run it by hand from the Actions tab
 
 permissions:

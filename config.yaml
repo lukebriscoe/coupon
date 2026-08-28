@@ -24,8 +24,12 @@ odds:
   odds_format: decimal
   cache_ttl_hours: 2         # prices move on Saturday morning
   monthly_credit_limit: 500  # free tier — used for the usage banner
-  # Try double_chance on the first call; degrade to h2h if the plan rejects it.
-  markets: [h2h, double_chance]
+  # Match result only. A credit is charged per market per league, and asking
+  # for double_chance as well cost a credit a league while coming back empty on
+  # every fixture — the feed simply doesn't carry it. Double Chance selections
+  # are derived from these prices instead (see devig.derived_double_chance),
+  # which is what was already happening. Halving this pays for a daily refresh.
+  markets: [h2h]
   fallback_markets: [h2h]
 
 # ── The 15:00 filter ──────────────────────────────────────────

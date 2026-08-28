@@ -29,6 +29,33 @@
     </nav>
   </header>
 
+  {% if static_build and built_at_iso %}
+    {# The page is static, so its age is only knowable in the browser. Hidden
+       by default: a fresh build says nothing, and with JS off the footer
+       build stamp still tells you when this was made. #}
+    <div class="notice stale" id="staleness" hidden>
+      <strong>These prices may have moved</strong>
+      <span id="staleness-detail"></span>
+    </div>
+    <script>
+      (function () {
+        var banner = document.getElementById('staleness');
+        var built = new Date('{{ built_at_iso }}');
+        if (!banner || isNaN(built.getTime())) return;
+
+        var hours = (Date.now() - built.getTime()) / 3600000;
+        if (hours < 24) return;
+
+        var days = Math.floor(hours / 24);
+        document.getElementById('staleness-detail').textContent =
+          'This page was built ' + (days === 1 ? 'yesterday' : days + ' days ago') +
+          ', and odds move through the week. Check every selection in the Sky Bet ' +
+          'app — the Saturday morning build, closest to kick-off, is the one to trust.';
+        banner.hidden = false;
+      })();
+    </script>
+  {% endif %}
+
   {% if demo_mode %}
     <div class="notice loud">
       <strong>Demo mode — these are not real prices</strong>

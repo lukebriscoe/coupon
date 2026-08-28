@@ -111,6 +111,15 @@ nav a.on { border-bottom-color: var(--ink); }
 
 .notice.loud { border-left-color: var(--red); }
 
+/* Age warning — the one notice that must not read as small print. */
+.notice.stale {
+  border-left-color: var(--red);
+  border: 1.5px solid var(--red);
+  border-left-width: 5px;
+}
+
+.notice[hidden] { display: none; }
+
 .notice strong {
   font-family: var(--mono);
   font-size: 0.7rem;

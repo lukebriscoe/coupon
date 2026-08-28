@@ -50,6 +50,7 @@ def inject_globals():
         # refresh link and the settle form can't work on a static host.
         "static_build": app.config.get("STATIC_BUILD", False),
         "built_at": app.config.get("BUILT_AT", ""),
+        "built_at_iso": app.config.get("BUILT_AT_ISO", ""),
     }
 
 
