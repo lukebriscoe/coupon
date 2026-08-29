@@ -321,8 +321,8 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.4,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -338,7 +338,7 @@
             "odds": 1.54,
             "fair_probability": 0.6195121951219511,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.54,
@@ -403,7 +403,7 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -420,7 +420,7 @@
             "odds": 1.2,
             "fair_probability": 0.7830018083182639,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "c0dfbb316fff4b999664a1a60b6f79f3",
