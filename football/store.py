@@ -6,13 +6,15 @@ it actually returned rather than on how good it felt at the time.
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from football.models import Bet, BetLeg, Selection, Slip
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SLIPS_FILE = PROJECT_ROOT / "data" / "slips.json"
+UK = ZoneInfo("Europe/London")
 
 
 # ── Serialisation ─────────────────────────────────────────────────
@@ -112,8 +114,40 @@ def save_slips(slips: list[dict]) -> None:
     SLIPS_FILE.write_text(json.dumps(slips, indent=2))
 
 
-def record_slip(slip: Slip) -> None:
-    """Log a slip, replacing any existing entry for the same date.
+def is_locked(record: dict, slip_date: str, lock_after_hour: int,
+              now: datetime | None = None) -> bool:
+    """Whether an existing record must be left alone.
+
+    A slip stops being provisional once you could plausibly have staked it.
+    Rewriting it after that means the ledger no longer holds the bets that
+    were actually placed — and settlement would resolve something else
+    entirely. Two things lock a record:
+
+      * any leg already has a result, so a rebuild would destroy settled data
+      * it is the slip's own match day and past the cut-off hour
+
+    Before the cut-off, rebuilds are welcome: prices move all week and a
+    fresher slip is a better one right up until someone acts on it.
+    """
+    if any(leg.get("result", "pending") != "pending"
+           for bet in record.get("bets", [])
+           for leg in bet.get("legs", [])):
+        return True
+
+    now = now or datetime.now(UK)
+    try:
+        match_day = date.fromisoformat(slip_date)
+    except ValueError:
+        return False
+
+    if now.date() > match_day:
+        return True
+    return now.date() == match_day and now.hour >= lock_after_hour
+
+
+def record_slip(slip: Slip, lock_after_hour: int = 10,
+                now: datetime | None = None) -> bool:
+    """Log a slip. Returns True if it was written.
 
     Only bets that could actually be built are stored — there's nothing to
     settle or measure about a bet the engine declined to make.
@@ -121,12 +155,18 @@ def record_slip(slip: Slip) -> None:
     payload = slip_to_dict(slip)
     payload["bets"] = [b for b in payload["bets"] if b["legs"]]
     if not payload["bets"]:
-        return
+        return False
 
-    slips = [s for s in load_slips() if s.get("date") != slip.date]
+    slips = load_slips()
+    existing = next((s for s in slips if s.get("date") == slip.date), None)
+    if existing and is_locked(existing, slip.date, lock_after_hour, now):
+        return False
+
+    slips = [s for s in slips if s.get("date") != slip.date]
     slips.append(payload)
     slips.sort(key=lambda s: s.get("date", ""))
     save_slips(slips)
+    return True
 
 
 def get_slip(slip_date: str) -> dict | None:

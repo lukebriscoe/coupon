@@ -313,7 +313,7 @@
   },
   {
     "date": "2026-08-29",
-    "generated_at": "2026-08-29T13:55:26+00:00",
+    "generated_at": "2026-08-28T16:49:58+00:00",
     "stake": 10.0,
     "fixture_count": 26,
     "bets": [
@@ -327,49 +327,77 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "061bb5eae6ddf78f5896b715413a8e14",
+            "fixture_id": "057f16c17beffe8b70b4624868e833dc",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Blackburn Rovers",
-            "away_team": "Queens Park Rangers",
+            "home_team": "Cardiff City",
+            "away_team": "Sheffield United",
             "kickoff": "2026-08-29T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Blackburn Rovers or Draw",
+            "label": "Cardiff City or Draw",
             "odds": 1.54,
-            "fair_probability": 0.6098360655737705,
+            "fair_probability": 0.6195121951219511,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.54,
-        "joint_probability": 0.6098360655737705
+        "joint_probability": 0.6195121951219511
       },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "80ce59baebcf0a701a46319d1ed7140f",
+            "fixture_id": "feafb731d0307bc91a58e18187aa2eab",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Liverpool",
+            "away_team": "Nottingham Forest",
+            "kickoff": "2026-08-29T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Liverpool",
+            "odds": 1.44,
+            "fair_probability": 0.6410256410256411,
+            "price_source": "skybet",
+            "result": "lost"
+          },
+          {
+            "fixture_id": "125260c79efe28af0602f8ee4f051c29",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Stoke City",
+            "kickoff": "2026-08-29T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Wolverhampton Wanderers",
+            "odds": 1.5,
+            "fair_probability": 0.6264014466546112,
+            "price_source": "skybet",
+            "result": "won"
+          },
+          {
+            "fixture_id": "efa602e8ef48dcbaaa5af702fc3d2005",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "York City",
-            "away_team": "Exeter City",
-            "kickoff": "2026-08-29T15:00:00+01:00",
+            "home_team": "Barnet",
+            "away_team": "Cheltenham Town",
+            "kickoff": "2026-08-29T12:30:00+01:00",
             "market": "h2h",
-            "label": "York City",
-            "odds": 1.57,
-            "fair_probability": 0.5924839182936462,
+            "label": "Barnet",
+            "odds": 1.53,
+            "fair_probability": 0.6021623101135898,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
-        "combined_odds": 1.57,
-        "joint_probability": 0.5924839182936462
+        "combined_odds": 3.3,
+        "joint_probability": 0.241791886010279
       },
       {
         "kind": "double",
@@ -389,28 +417,28 @@
             "kickoff": "2026-08-29T15:00:00+01:00",
             "market": "double_chance",
             "label": "Coventry City or Draw",
-            "odds": 1.17,
-            "fair_probability": 0.8017492711370262,
+            "odds": 1.2,
+            "fair_probability": 0.7830018083182639,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "fe8bc4e8d1005768e7d50d8cafe097ed",
+            "fixture_id": "c0dfbb316fff4b999664a1a60b6f79f3",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Southampton",
-            "away_team": "Millwall",
+            "home_team": "Watford",
+            "away_team": "West Ham United",
             "kickoff": "2026-08-29T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Southampton or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.736392742796158,
+            "label": "West Ham United or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7452229299363058,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5904023448074153
+        "joint_probability": 0.5835109017403624
       },
       {
         "kind": "treble",
@@ -422,6 +450,20 @@
         "unavailable_reason": null,
         "legs": [
           {
+            "fixture_id": "c0dfbb316fff4b999664a1a60b6f79f3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Watford",
+            "away_team": "West Ham United",
+            "kickoff": "2026-08-29T15:00:00+01:00",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.85,
+            "fair_probability": 0.5095541401273885,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
             "fixture_id": "fe8bc4e8d1005768e7d50d8cafe097ed",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
@@ -429,9 +471,9 @@
             "away_team": "Millwall",
             "kickoff": "2026-08-29T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Millwall or Draw",
-            "odds": 1.85,
-            "fair_probability": 0.5133404482390608,
+            "label": "Southampton or Draw",
+            "odds": 1.28,
+            "fair_probability": 0.7372675828617623,
             "price_source": "derived",
             "result": "pending"
           },
@@ -444,28 +486,14 @@
             "kickoff": "2026-08-29T15:00:00+01:00",
             "market": "double_chance",
             "label": "Bournemouth or Draw",
-            "odds": 1.33,
-            "fair_probability": 0.7093191694833414,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "9f5680c81f3cad8fe4d77c333cc33b78",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Crawley Town",
-            "away_team": "Bristol Rovers",
-            "kickoff": "2026-08-29T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Bristol Rovers or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7655070031627187,
+            "odds": 1.29,
+            "fair_probability": 0.7313432835820897,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.03,
-        "joint_probability": 0.2787381097288222
+        "combined_odds": 3.05,
+        "joint_probability": 0.27474939868980974
       }
     ]
   }

@@ -111,8 +111,10 @@ def index():
     # Log only a slip built from live pre-match fixtures. Once the card has
     # kicked off the bets come back out of the ledger, and writing them
     # straight back would overwrite the original with a copy of itself.
+    # record_slip refuses to overwrite a slip that's already been locked in.
     if slip.fixtures and slip.available_bets and not get_client().demo_mode:
-        store.record_slip(slip)
+        lock_hour = get_client().config.get("ledger", {}).get("lock_after_hour", 10)
+        store.record_slip(slip, lock_after_hour=lock_hour)
 
     by_league: dict[str, list] = {}
     for fixture in (slip.all_fixtures or slip.fixtures):

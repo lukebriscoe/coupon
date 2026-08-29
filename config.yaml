@@ -42,6 +42,15 @@ kickoff:
 devig:
   method: proportional       # proportional | shin
 
+# ── The ledger ────────────────────────────────────────────────
+ledger:
+  # On match day, stop rewriting the recorded slip past this hour (UK time).
+  # Before it, a rebuild is an improvement — prices move all week. After it,
+  # you may already have staked, and rewriting the record would mean settling
+  # bets you never placed. A late build still refreshes the page; it just
+  # doesn't touch the ledger.
+  lock_after_hour: 10
+
 # ── Bet construction ──────────────────────────────────────────
 # Stakes are per bet and total £20 a week:
 #   banker £10 + 4/1+ acca £1 + double £5 + treble £4

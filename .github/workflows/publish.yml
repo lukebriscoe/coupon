@@ -18,7 +18,16 @@ name: Publish coupon
 
 on:
   schedule:
-    - cron: '30 8 * * 6'   # Saturday morning — the definitive build, nearest kick-off
+    # Three attempts on Saturday morning. GitHub queues scheduled workflows on
+    # shared runners and can start them hours late — the 08:30 build on
+    # 29 August 2026 did not begin until 13:55, five minutes before kick-off,
+    # and rewrote the coupon under a bet that had already been placed. Starting
+    # at 05:00 leaves room for that delay, and the extra attempts cost four
+    # credits each. The ledger lock is the real protection; this just makes it
+    # far likelier a fresh slip is recorded before the lock closes at 10:00.
+    - cron: '0 5 * * 6'
+    - cron: '0 7 * * 6'
+    - cron: '30 8 * * 6'
     - cron: '0 9 * * 0'    # Sunday morning — settle yesterday's results
     - cron: '0 7 * * 1-5'  # Weekdays — keep next Saturday's prices fresh
   workflow_dispatch:        # ...or run it by hand from the Actions tab
