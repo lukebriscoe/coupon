@@ -434,7 +434,7 @@
             "odds": 1.26,
             "fair_probability": 0.7452229299363058,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.51,
@@ -444,7 +444,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -461,7 +461,7 @@
             "odds": 1.85,
             "fair_probability": 0.5095541401273885,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "fe8bc4e8d1005768e7d50d8cafe097ed",
