@@ -65,9 +65,18 @@ returns the whole day, so the wider view costs nothing extra.
 Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
 
 `.github/workflows/publish.yml` rebuilds daily: weekday mornings to keep next
-Saturday's prices fresh, Saturday at 08:30 UTC for the definitive card closest to
-kick-off, and Sunday to settle the results. It can also be triggered by hand from
-the Actions tab.
+Saturday's prices fresh, three attempts on Saturday morning for the definitive
+card, Saturday at 21:30 UTC to settle the day's results, and Sunday morning as a
+safety net for anything still open. It can also be triggered by hand.
+
+Three morning attempts because GitHub queues scheduled workflows and can start
+them hours late — on 29 August 2026 the 08:30 build did not begin until 13:55.
+The real protection is the ledger lock: past 10:00 UK on match day a recorded
+slip is frozen, so a late build refreshes the page but cannot rewrite the bets
+you placed. `ledger.lock_after_hour` sets the cut-off.
+
+Settlement waits until the evening because the scores feed lags: at 16:55 the
+15:00 games still reported `completed: false` with live scores showing.
 
 Odds move all week, so a page built on Sunday is badly out of date by Friday while
 still looking current. The daily rebuild keeps it within a day, and the page also

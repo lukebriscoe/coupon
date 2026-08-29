@@ -28,7 +28,12 @@ on:
     - cron: '0 5 * * 6'
     - cron: '0 7 * * 6'
     - cron: '30 8 * * 6'
-    - cron: '0 9 * * 0'    # Sunday morning — settle yesterday's results
+    # Saturday night — settle the day's results rather than waiting for
+    # Sunday. The scores feed lags: at 16:55 the 15:00 games still had
+    # completed=false with live scores showing. 21:30 UTC clears a 17:30
+    # kick-off by hours, in BST or GMT.
+    - cron: '30 21 * * 6'
+    - cron: '0 9 * * 0'    # Sunday — safety net for anything still open
     - cron: '0 7 * * 1-5'  # Weekdays — keep next Saturday's prices fresh
   workflow_dispatch:        # ...or run it by hand from the Actions tab
 
