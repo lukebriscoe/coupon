@@ -534,7 +534,7 @@
   },
   {
     "date": "2026-09-05",
-    "generated_at": "2026-08-30T11:54:08+00:00",
+    "generated_at": "2026-08-30T11:55:00+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -598,7 +598,7 @@
             "market": "h2h",
             "label": "Manchester City",
             "odds": 1.17,
-            "fair_probability": 0.7977662544874351,
+            "fair_probability": 0.7977662544874353,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -632,7 +632,7 @@
           }
         ],
         "combined_odds": 3.79,
-        "joint_probability": 0.19873897661243278
+        "joint_probability": 0.19873897661243287
       },
       {
         "kind": "double",
@@ -653,7 +653,7 @@
             "market": "double_chance",
             "label": "Manchester City or Draw",
             "odds": 1.01,
-            "fair_probability": 0.922217790187475,
+            "fair_probability": 0.9222177901874752,
             "price_source": "derived",
             "result": "pending"
           },
@@ -673,7 +673,7 @@
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.5785557027524937
+        "joint_probability": 0.5785557027524938
       },
       {
         "kind": "treble",
@@ -694,7 +694,7 @@
             "market": "h2h",
             "label": "Burnley",
             "odds": 1.85,
-            "fair_probability": 0.5029554003224072,
+            "fair_probability": 0.5029554003224073,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -728,7 +728,7 @@
           }
         ],
         "combined_odds": 3.05,
-        "joint_probability": 0.2668807189233173
+        "joint_probability": 0.26688071892331733
       }
     ]
   },
