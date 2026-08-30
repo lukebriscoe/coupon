@@ -33,8 +33,13 @@ on:
     # completed=false with live scores showing. 21:30 UTC clears a 17:30
     # kick-off by hours, in BST or GMT.
     - cron: '30 21 * * 6'
-    - cron: '0 9 * * 0'    # Sunday — safety net for anything still open
-    - cron: '0 7 * * 1-5'  # Weekdays — keep next Saturday's prices fresh
+    # Sunday mirrors Saturday: morning attempts to record the Sunday banker
+    # before the 10:00 ledger lock, then an evening settle. The morning runs
+    # also mop up any Saturday bet the night before could not resolve.
+    - cron: '0 6 * * 0'
+    - cron: '0 8 * * 0'
+    - cron: '30 21 * * 0'
+    - cron: '0 7 * * 1-5'  # Weekdays — keep the weekend's prices fresh
   workflow_dispatch:        # ...or run it by hand from the Actions tab
 
 permissions:

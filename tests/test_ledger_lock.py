@@ -108,3 +108,42 @@ def test_empty_slips_are_not_recorded():
     slip.bets = []
     assert not store.record_slip(slip, now=at(9))
     assert store.load_slips() == []
+
+
+# ── A locked slip is what the page shows, too ─────────────────────
+
+def test_locked_slip_is_served_not_just_protected(monkeypatch, tmp_path):
+    """The page must not show a fresher rebuild than the one that will settle.
+
+    Protecting the ledger while displaying a newer pick reproduces the original
+    confusion in reverse: you stake what the page says, and something else is
+    recorded against your name.
+    """
+    import app as coupon_app
+    from datetime import date
+
+    store.record_slip(make_slip("Cardiff City or Draw"), now=at(9))
+
+    fresh = make_slip("Blackburn Rovers or Draw")
+    warnings: list[str] = []
+
+    monkeypatch.setattr(coupon_app, "get_client", lambda: _StubClient())
+    monkeypatch.setattr(coupon_app.store, "SLIPS_FILE", store.SLIPS_FILE)
+    monkeypatch.setattr(store, "datetime", _FrozenDatetime)
+
+    coupon_app._reconcile_with_ledger(fresh, date(2026, 8, 29), warnings, True)
+
+    assert [l.selection.label for b in fresh.bets for l in b.legs] == \
+        ["Cardiff City or Draw"]
+    assert any("locked" in w for w in warnings)
+
+
+class _StubClient:
+    config = {"ledger": {"lock_after_hour": 10}}
+    demo_mode = False
+
+
+class _FrozenDatetime(datetime):
+    @classmethod
+    def now(cls, tz=None):
+        return datetime(2026, 8, 29, 14, 0, tzinfo=tz or UK)

@@ -61,6 +61,14 @@ banker:
   min_probability: 0.60      # a banker must genuinely be odds-on to land
   min_odds: 1.50             # ...but must still pay something on a tenner
 
+# Sunday's single bet. Sunday has no 3pm blackout — the games are spread from
+# lunchtime to the evening — so every kick-off on the day is in scope. Same
+# floors as Saturday, tunable independently. £30 across the weekend in total.
+sunday_banker:
+  stake: 10.0
+  min_probability: 0.60
+  min_odds: 1.50
+
 underdog_acca:
   stake: 1.0                 # long odds, tiny hit rate — stake it accordingly
   # Back a team when its OPPONENT is priced at 4/1 (5.00 decimal) or longer.

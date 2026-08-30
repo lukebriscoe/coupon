@@ -507,3 +507,70 @@ def test_without_a_wider_list_nothing_changes(config):
     acca = next(b for b in slip.bets if b.kind == "underdog_acca")
 
     assert not acca.is_available
+
+
+# ── Sunday banker ─────────────────────────────────────────────────
+
+def _sunday_card():
+    """Sunday fixtures spread across the afternoon — no 3pm convention."""
+    from datetime import datetime
+    from tests.conftest import make_fixture, UK
+
+    card = []
+    for i, (fid, home, away, h, d, a, hour) in enumerate([
+        ("s1", "Chelsea", "Brighton", 1.85, 3.60, 4.20, 14),
+        ("s2", "Leeds United", "Brentford", 2.50, 3.40, 2.80, 14),
+        ("s3", "Manchester United", "Ipswich", 1.33, 5.00, 9.00, 16),
+    ]):
+        f = make_fixture(fid, home, away, h, d, a)
+        f.kickoff = datetime(2026, 8, 30, hour, 0, tzinfo=UK)
+        for s in f.selections:
+            s.kickoff = f.kickoff
+        card.append(f)
+    return card
+
+
+def test_sunday_slip_has_exactly_one_bet(config):
+    slip = selector.build_sunday_slip(_sunday_card(), config, "2026-08-30")
+    assert len(slip.bets) == 1
+    assert slip.bets[0].kind == "sunday_banker"
+    assert slip.bets[0].title == "Sunday Banker"
+
+
+def test_sunday_banker_is_a_tenner(config):
+    slip = selector.build_sunday_slip(_sunday_card(), config, "2026-08-30")
+    assert slip.bets[0].stake == 10.0
+
+
+def test_sunday_banker_uses_its_own_config_section(config):
+    """Tightening Sunday must not disturb Saturday."""
+    strict = {**config, "sunday_banker": {"stake": 10.0,
+                                          "min_probability": 0.99,
+                                          "min_odds": 1.50}}
+    slip = selector.build_sunday_slip(_sunday_card(), strict, "2026-08-30")
+    assert not slip.bets[0].is_available
+
+    # Saturday's banker is unaffected by the Sunday block.
+    saturday = selector.build_banker(
+        selector.candidate_selections(_sunday_card(), strict), strict, 10.0)
+    assert saturday.is_available
+
+
+def test_sunday_banker_respects_the_odds_floor(config):
+    """A 1.33 favourite is too short to be worth a tenner, however likely."""
+    slip = selector.build_sunday_slip(_sunday_card(), config, "2026-08-30")
+    assert slip.bets[0].legs[0].selection.odds >= config["sunday_banker"]["min_odds"]
+
+
+def test_sunday_banker_takes_any_kick_off_time(config):
+    """No 3pm filter on Sunday — a 14:00 or 16:30 game is equally eligible."""
+    card = _sunday_card()
+    slip = selector.build_sunday_slip(card, config, "2026-08-30")
+    assert slip.bets[0].is_available
+    assert slip.bets[0].legs[0].selection.kickoff.hour in (14, 16)
+
+
+def test_sunday_slip_on_an_empty_card(config):
+    slip = selector.build_sunday_slip([], config, "2026-08-30")
+    assert not slip.bets[0].is_available
+    assert slip.available_bets == []

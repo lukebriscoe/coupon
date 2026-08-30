@@ -1,7 +1,7 @@
 # Coupon
 
-Every Saturday, Coupon reads the Sky Bet prices for the UK football card and
-recommends four bets — three built from the 15:00 kick-offs, one from the whole day.
+Coupon reads the Sky Bet prices for the UK weekend football card and recommends
+five bets — four on Saturday, one on Sunday.
 
 | Bet | Stake | What it is |
 |---|---|---|
@@ -9,10 +9,15 @@ recommends four bets — three built from the 15:00 kick-offs, one from the whol
 | **Opponents 4/1+ Acca** | £1 | Every team whose opponent is priced at 4/1 or longer, in one accumulator. The only bet that looks beyond 15:00 |
 | **Banker Double** | £5 | The two-leg combination most likely to land, at a price worth placing |
 | **Treble** | £4 | The three safest legs that still clear an odds floor |
+| **Sunday Banker** | £10 | The same rule again on Sunday, where every kick-off is in scope |
 
-**£20 a week in total.** Stake follows confidence: most of it on the banker, a pound
-on the 4/1+ acca as a lottery ticket. All four are set
-per-bet in `config.yaml`, and a test asserts they still add up to £20.
+**£30 across the weekend** — £20 on Saturday, £10 on Sunday. Stake follows
+confidence: most of it on the bankers, a pound on the 4/1+ acca as a lottery ticket.
+All five are set per-bet in `config.yaml`, and a test asserts Saturday's four still
+add up to £20.
+
+Saturday's bets come from the 15:00 kick-offs (bar the acca). Sunday has no 3pm
+blackout — the games run from lunchtime to the evening — so every kick-off counts.
 
 Nothing here places a bet. It's all just for fun, and every bet shows its
 true probability and expected value next to the potential return.
@@ -66,8 +71,9 @@ Live at **[lukebriscoe.com/coupon/](https://lukebriscoe.com/coupon/)**.
 
 `.github/workflows/publish.yml` rebuilds daily: weekday mornings to keep next
 Saturday's prices fresh, three attempts on Saturday morning for the definitive
-card, Saturday at 21:30 UTC to settle the day's results, and Sunday morning as a
-safety net for anything still open. It can also be triggered by hand.
+card, and an evening settle each of Saturday and Sunday. Sunday mirrors Saturday:
+morning builds to record the banker before the lock, then a night settle. It can
+also be triggered by hand.
 
 Three morning attempts because GitHub queues scheduled workflows and can start
 them hours late — on 29 August 2026 the 08:30 build did not begin until 13:55.
@@ -132,6 +138,6 @@ Demo runs are not logged; there'd be nothing real to measure.
 ./venv/bin/python -m pytest tests/ -q
 ```
 
-137 tests. The ones that matter most: de-vigged probabilities always sum to 1;
+153 tests. The ones that matter most: de-vigged probabilities always sum to 1;
 the double is verified optimal by brute force; the 15:00 filter is pinned on both
 sides of the BST/GMT boundary; and one losing leg always sinks an accumulator.

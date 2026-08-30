@@ -168,14 +168,19 @@ def _legs(selections: list[Selection]) -> list[BetLeg]:
 
 # ── The six bets ──────────────────────────────────────────────────
 
-def build_banker(pool: list[Selection], config: dict, stake: float) -> Bet:
+def build_banker(pool: list[Selection], config: dict, stake: float,
+                 section: str = "banker", kind: str = "banker",
+                 title: str = "Banker of the Day") -> Bet:
     """The single selection with the best profit at genuinely high confidence.
 
     Two floors have to be cleared: the selection must be likely enough to
     deserve the name, and it must pay enough to be worth a tenner. If nothing
     clears both, the bet is declined rather than the bar being lowered.
+
+    `section` picks which config block supplies the floors, so the Sunday
+    banker can be tuned independently of the Saturday one.
     """
-    cfg = config["banker"]
+    cfg = config[section]
     min_probability = cfg["min_probability"]
     min_odds = cfg["min_odds"]
 
@@ -200,13 +205,12 @@ def build_banker(pool: list[Selection], config: dict, stake: float) -> Bet:
                 f"The safe selections are all priced under {min_odds:.2f}, so a "
                 f"£{stake:.0f} stake wouldn't return a worthwhile profit."
             )
-        return Bet(kind="banker", title="Banker of the Day", legs=[],
+        return Bet(kind=kind, title=title, legs=[],
                    stake=stake, unavailable_reason=reason)
 
     # Expected profit, not raw probability — a 95% shot at 1.05 is a bad banker.
     best = max(qualifying, key=lambda s: s.fair_probability * (s.odds - 1.0) * stake)
-    return Bet(kind="banker", title="Banker of the Day",
-               legs=_legs([best]), stake=stake)
+    return Bet(kind=kind, title=title, legs=_legs([best]), stake=stake)
 
 
 def build_underdog_acca(fixtures: list[Fixture], config: dict, stake: float) -> Bet:
@@ -371,6 +375,30 @@ def build_accumulator(pool: list[Selection], spec: dict, stake: float,
 def _fractional_threshold(decimal_odds: float) -> str:
     from football.models import to_fractional
     return to_fractional(decimal_odds)
+
+
+def build_sunday_slip(fixtures: list[Fixture], config: dict,
+                      slip_date: str) -> Slip:
+    """Sunday's single banker.
+
+    Sunday has no 3pm convention — the fixtures are spread across the
+    afternoon and evening — so every kick-off on the day is in scope.
+    """
+    cfg = config.get("sunday_banker", {})
+    stake = cfg.get("stake", config["stake"])
+    pool = candidate_selections(fixtures, config)
+
+    bet = build_banker(pool, config, stake, section="sunday_banker",
+                       kind="sunday_banker", title="Sunday Banker")
+
+    return Slip(
+        date=slip_date,
+        generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        fixtures=fixtures,
+        bets=[bet],
+        stake=stake,
+        all_fixtures=fixtures,
+    )
 
 
 def build_slip(fixtures: list[Fixture], config: dict,

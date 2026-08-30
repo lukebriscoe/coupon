@@ -496,5 +496,275 @@
         "joint_probability": 0.27474939868980974
       }
     ]
+  },
+  {
+    "date": "2026-08-30",
+    "generated_at": "2026-08-30T09:37:33+00:00",
+    "stake": 10.0,
+    "fixture_count": 6,
+    "bets": [
+      {
+        "kind": "sunday_banker",
+        "title": "Sunday Banker",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "e479c08421b8549c6959c2b84f6f3f79",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Leeds United",
+            "away_team": "Brentford",
+            "kickoff": "2026-08-30T14:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.5,
+            "fair_probability": 0.6242325010233319,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.5,
+        "joint_probability": 0.6242325010233319
+      }
+    ]
+  },
+  {
+    "date": "2026-09-05",
+    "generated_at": "2026-08-30T11:54:08+00:00",
+    "stake": 10.0,
+    "fixture_count": 31,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Millwall",
+            "away_team": "Bolton Wanderers",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Millwall",
+            "odds": 1.55,
+            "fair_probability": 0.6039488966318235,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.55,
+        "joint_probability": 0.6039488966318235
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "29f81160baf6a97d6391d7172fad2425",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Sunderland",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Brentford",
+            "odds": 1.62,
+            "fair_probability": 0.574915973819211,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "3db5f919507eb8ab0c8c72bddaca8f08",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester City",
+            "away_team": "Coventry City",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Manchester City",
+            "odds": 1.17,
+            "fair_probability": 0.7977662544874351,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Millwall",
+            "away_team": "Bolton Wanderers",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Millwall",
+            "odds": 1.55,
+            "fair_probability": 0.6039488966318235,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "fe9cd23b818e80d8b2facdc9625c41f9",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "Derby County",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.29,
+            "fair_probability": 0.7174684691488559,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.79,
+        "joint_probability": 0.19873897661243278
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "3db5f919507eb8ab0c8c72bddaca8f08",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester City",
+            "away_team": "Coventry City",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Manchester City or Draw",
+            "odds": 1.01,
+            "fair_probability": 0.922217790187475,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "73828633b1d5c3e967660e0437f2560c",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Portsmouth",
+            "away_team": "Cardiff City",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Cardiff City or Draw",
+            "odds": 1.49,
+            "fair_probability": 0.6273525721455457,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.5,
+        "joint_probability": 0.5785557027524937
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "9a81bafdc516a067c9d4988e4f76669e",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Burnley",
+            "away_team": "Bristol City",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Burnley",
+            "odds": 1.85,
+            "fair_probability": 0.5029554003224072,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "ff2cca43d7b09783f81a91ec5f66a6e4",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Middlesbrough",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Middlesbrough or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.7245152620464579,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "073862d8ee702299babf873d84961e95",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Watford",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.28,
+            "fair_probability": 0.7323862545594163,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.05,
+        "joint_probability": 0.2668807189233173
+      }
+    ]
+  },
+  {
+    "date": "2026-09-06",
+    "generated_at": "2026-08-30T11:50:18+00:00",
+    "stake": 10.0,
+    "fixture_count": 3,
+    "bets": [
+      {
+        "kind": "sunday_banker",
+        "title": "Sunday Banker",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "018900d508d135128542b62003798d2f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Birmingham City",
+            "away_team": "Wolverhampton Wanderers",
+            "kickoff": "2026-09-06T12:00:00+01:00",
+            "market": "double_chance",
+            "label": "Birmingham City or Draw",
+            "odds": 1.51,
+            "fair_probability": 0.6130653266331658,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.6130653266331658
+      }
+    ]
   }
 ]

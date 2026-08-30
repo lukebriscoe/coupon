@@ -1,7 +1,7 @@
 {# One recommended bet, or an explanation of why it couldn't be built. #}
 {% macro render(bet) %}
-{# The single-leg banker and the many-legged 4/1+ acca each take a full row. #}
-{% set wide = bet.kind in ('banker', 'underdog_acca') %}
+{# The single-leg bankers and the many-legged 4/1+ acca each take a full row. #}
+{% set wide = bet.kind in ('banker', 'sunday_banker', 'underdog_acca') %}
 <article class="bet {{ 'wide' if wide }} {{ 'void' if not bet.is_available }}">
 
   <header>

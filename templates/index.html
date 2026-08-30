@@ -40,6 +40,27 @@
     </div>
   {% endif %}
 
+  {% if sunday_slip and sunday_slip.bets %}
+    <h2 class="rule">
+      Sunday
+      <span>
+        {{ sunday_target|longdate }}
+        {%- if sunday_slip.fixtures %} · {{ sunday_slip.fixtures|length }} fixtures{% endif %} ·
+        every kick-off in scope
+      </span>
+    </h2>
+
+    {% for warning in sunday_warnings %}
+      {% if 'kicked off' in warning %}
+        <div class="notice"><strong>Heads up</strong>{{ warning }}</div>
+      {% endif %}
+    {% endfor %}
+
+    <div class="bets">
+      {% for bet in sunday_slip.bets %}{{ bet_card.render(bet) }}{% endfor %}
+    </div>
+  {% endif %}
+
   {% if slip.fixtures %}
     <h2 class="rule">
       Saturday's Card

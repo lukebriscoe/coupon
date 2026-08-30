@@ -60,6 +60,12 @@ def next_saturday(from_date: date | None = None) -> date:
     return day + timedelta(days=(5 - day.weekday()) % 7)
 
 
+def next_sunday(from_date: date | None = None) -> date:
+    """Today if it's Sunday, otherwise the Sunday coming."""
+    day = from_date or date.today()
+    return day + timedelta(days=(6 - day.weekday()) % 7)
+
+
 def build_card(target: date, use_cache: bool = True):
     """Fetch the 15:00 card and turn it into a slip of recommendations.
 
@@ -83,16 +89,63 @@ def build_card(target: date, use_cache: bool = True):
                                all_fixtures=all_fixtures)
     slip.all_fixtures = all_fixtures
 
-    if not fixtures:
-        record = store.get_slip(target.isoformat())
+    _reconcile_with_ledger(slip, target, warnings, bool(fixtures))
+    return slip, warnings
+
+
+def _reconcile_with_ledger(slip, target: date, warnings: list[str],
+                           has_fixtures: bool) -> None:
+    """Decide whether this build or the recorded slip is what gets shown.
+
+    Once a slip is locked it becomes the source of truth for the page as well
+    as for settlement. Showing a fresher rebuild while settling the locked one
+    is how you end up staking a bet the site later disagrees with.
+    """
+    client = get_client()
+    lock_hour = client.config.get("ledger", {}).get("lock_after_hour", 10)
+    record = store.get_slip(target.isoformat())
+
+    def serve_recorded(note: str) -> None:
+        slip.bets = store.bets_from_slip(record)
+        slip.generated_at = record.get("generated_at", slip.generated_at)
+        warnings.append(note)
+
+    if record and store.is_locked(record, target.isoformat(), lock_hour):
+        serve_recorded(
+            "This coupon is locked. These are the bets as recorded on the "
+            "morning of the games — prices have moved since, but the record "
+            "stands so what settles is what you could have staked."
+        )
+        return
+
+    if not has_fixtures:
         if record:
-            slip.bets = store.bets_from_slip(record)
-            slip.generated_at = record.get("generated_at", slip.generated_at)
-            warnings.append(
+            serve_recorded(
                 "These are the bets as they stood before kick-off. Prices have "
                 "moved since and the card is no longer live."
             )
+        return
 
+    if slip.available_bets and not client.demo_mode:
+        store.record_slip(slip, lock_after_hour=lock_hour)
+
+
+def build_sunday(target: date, use_cache: bool = True):
+    """Sunday's banker. Same fetch as Saturday — one request covers both days.
+
+    Falls back to the logged slip once the games are under way, exactly as the
+    Saturday card does.
+    """
+    client = get_client()
+    config = client.config
+
+    fixtures, warnings = client.fetch_day(target, use_cache=use_cache)
+    for fixture in fixtures:
+        devig.apply(fixture, config["devig"]["method"])
+
+    slip = selector.build_sunday_slip(fixtures, config, target.isoformat())
+
+    _reconcile_with_ledger(slip, target, warnings, bool(fixtures))
     return slip, warnings
 
 
@@ -120,6 +173,11 @@ def index():
     for fixture in (slip.all_fixtures or slip.fixtures):
         by_league.setdefault(fixture.league_name, []).append(fixture)
 
+    # Derived from today, not from the Saturday on show. On a Sunday you want
+    # today's banker, not the one six days out that pairs with next Saturday.
+    sunday_target = next_sunday()
+    sunday_slip, sunday_warnings = build_sunday(sunday_target)
+
     return render_template(
         "index.html",
         slip=slip,
@@ -127,6 +185,9 @@ def index():
         target=target,
         by_league=by_league,
         is_today=target == date.today(),
+        sunday_slip=sunday_slip,
+        sunday_target=sunday_target,
+        sunday_warnings=sunday_warnings,
     )
 
 
