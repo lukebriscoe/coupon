@@ -534,7 +534,7 @@
   },
   {
     "date": "2026-09-05",
-    "generated_at": "2026-08-31T14:56:48+00:00",
+    "generated_at": "2026-09-01T12:27:40+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -598,7 +598,7 @@
             "market": "h2h",
             "label": "Manchester City",
             "odds": 1.17,
-            "fair_probability": 0.7907370799209262,
+            "fair_probability": 0.7977662544874353,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -632,53 +632,12 @@
           }
         ],
         "combined_odds": 3.67,
-        "joint_probability": 0.20320092374201715
+        "joint_probability": 0.20500725710025725
       },
       {
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "3db5f919507eb8ab0c8c72bddaca8f08",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Manchester City",
-            "away_team": "Coventry City",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Manchester City or Draw",
-            "odds": 1.0,
-            "fair_probability": 0.9229031347077096,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "a6f2622727548c33369cc15c88b2aabd",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Nottingham Forest",
-            "away_team": "Tottenham Hotspur",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Tottenham Hotspur or Draw",
-            "odds": 1.5,
-            "fair_probability": 0.6202531645569621,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.5724335898819971
-      },
-      {
-        "kind": "treble",
-        "title": "Treble",
-        "stake": 4.0,
         "status": "pending",
         "returns": 0.0,
         "note": null,
@@ -691,24 +650,10 @@
             "home_team": "Brighton and Hove Albion",
             "away_team": "Leeds United",
             "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Brighton and Hove Albion",
-            "odds": 1.8,
-            "fair_probability": 0.5185185185185186,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "8f68612bf47c3193e7fa2d8783e79373",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Fulham",
-            "away_team": "Crystal Palace",
-            "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.35,
-            "fair_probability": 0.6901554404145078,
+            "label": "Brighton and Hove Albion or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7758726270667484,
             "price_source": "derived",
             "result": "pending"
           },
@@ -721,20 +666,75 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
             "label": "West Bromwich Albion or Draw",
-            "odds": 1.28,
-            "fair_probability": 0.7323862545594163,
+            "odds": 1.26,
+            "fair_probability": 0.7408536585365855,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.11,
-        "joint_probability": 0.2620905560357704
+        "combined_odds": 1.52,
+        "joint_probability": 0.5748080743207924
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "40ad1c11c3aee059db53a9a2f242a288",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Sheffield United",
+            "away_team": "Norwich City",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Norwich City or Draw",
+            "odds": 1.56,
+            "fair_probability": 0.5959729328271992,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Millwall",
+            "away_team": "Bolton Wanderers",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Millwall",
+            "odds": 1.55,
+            "fair_probability": 0.6039488966318235,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "073862d8ee702299babf873d84961e95",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Watford",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7408536585365855,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.05,
+        "joint_probability": 0.26666078790985
       }
     ]
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-08-31T14:56:48+00:00",
+    "generated_at": "2026-09-01T12:27:40+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
