@@ -534,7 +534,7 @@
   },
   {
     "date": "2026-09-05",
-    "generated_at": "2026-09-01T12:27:40+00:00",
+    "generated_at": "2026-09-02T12:01:05+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -584,7 +584,7 @@
             "market": "h2h",
             "label": "Brentford",
             "odds": 1.57,
-            "fair_probability": 0.5930489774315687,
+            "fair_probability": 0.5887158108222303,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -597,8 +597,8 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.17,
-            "fair_probability": 0.7977662544874353,
+            "odds": 1.14,
+            "fair_probability": 0.8128810379865562,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -625,14 +625,14 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "h2h",
             "label": "West Ham United",
-            "odds": 1.29,
-            "fair_probability": 0.7174684691488559,
+            "odds": 1.33,
+            "fair_probability": 0.7030022330659168,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.67,
-        "joint_probability": 0.20500725710025725
+        "combined_odds": 3.69,
+        "joint_probability": 0.20318403900702298
       },
       {
         "kind": "double",
@@ -644,36 +644,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "3b81531990da7ea3e461c43e8827672b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brighton and Hove Albion",
-            "away_team": "Leeds United",
+            "fixture_id": "fe9cd23b818e80d8b2facdc9625c41f9",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "Derby County",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Brighton and Hove Albion or Draw",
-            "odds": 1.21,
-            "fair_probability": 0.7758726270667484,
+            "label": "West Ham United or Draw",
+            "odds": 1.05,
+            "fair_probability": 0.8900008270614507,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "073862d8ee702299babf873d84961e95",
+            "fixture_id": "40ad1c11c3aee059db53a9a2f242a288",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "West Bromwich Albion",
-            "away_team": "Watford",
+            "home_team": "Sheffield United",
+            "away_team": "Norwich City",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "West Bromwich Albion or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7408536585365855,
+            "label": "Sheffield United or Draw",
+            "odds": 1.44,
+            "fair_probability": 0.6433770014556042,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.5748080743207924
+        "combined_odds": 1.51,
+        "joint_probability": 0.5726060634078038
       },
       {
         "kind": "treble",
@@ -685,56 +685,56 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "40ad1c11c3aee059db53a9a2f242a288",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Sheffield United",
-            "away_team": "Norwich City",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Norwich City or Draw",
-            "odds": 1.56,
-            "fair_probability": 0.5959729328271992,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Millwall",
-            "away_team": "Bolton Wanderers",
+            "fixture_id": "18f6bb21043554c7e927bb2188f339be",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Northampton Town",
+            "away_team": "Newport County",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "h2h",
-            "label": "Millwall",
-            "odds": 1.55,
-            "fair_probability": 0.6039488966318235,
+            "label": "Northampton Town",
+            "odds": 1.7,
+            "fair_probability": 0.525,
             "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "073862d8ee702299babf873d84961e95",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "West Bromwich Albion",
-            "away_team": "Watford",
+            "fixture_id": "8f68612bf47c3193e7fa2d8783e79373",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Fulham",
+            "away_team": "Crystal Palace",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "West Bromwich Albion or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7408536585365855,
+            "label": "Fulham or Draw",
+            "odds": 1.35,
+            "fair_probability": 0.6901554404145078,
             "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "fe9cd23b818e80d8b2facdc9625c41f9",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "Derby County",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.33,
+            "fair_probability": 0.7030022330659168,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
         "combined_odds": 3.05,
-        "joint_probability": 0.26666078790985
+        "joint_probability": 0.25471992828134493
       }
     ]
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-09-01T12:27:40+00:00",
+    "generated_at": "2026-09-02T12:01:05+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
