@@ -534,7 +534,7 @@
   },
   {
     "date": "2026-09-05",
-    "generated_at": "2026-09-02T12:01:05+00:00",
+    "generated_at": "2026-09-03T12:00:22+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -548,22 +548,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
+            "fixture_id": "73828633b1d5c3e967660e0437f2560c",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Millwall",
-            "away_team": "Bolton Wanderers",
+            "home_team": "Portsmouth",
+            "away_team": "Cardiff City",
             "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Millwall",
-            "odds": 1.55,
-            "fair_probability": 0.6039488966318235,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Cardiff City or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.6071428571428571,
+            "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6039488966318235
+        "combined_odds": 1.54,
+        "joint_probability": 0.6071428571428571
       },
       {
         "kind": "underdog_acca",
@@ -583,8 +583,8 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "h2h",
             "label": "Brentford",
-            "odds": 1.57,
-            "fair_probability": 0.5887158108222303,
+            "odds": 1.6,
+            "fair_probability": 0.5878322828172102,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -598,21 +598,7 @@
             "market": "h2h",
             "label": "Manchester City",
             "odds": 1.14,
-            "fair_probability": 0.8128810379865562,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Millwall",
-            "away_team": "Bolton Wanderers",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Millwall",
-            "odds": 1.55,
-            "fair_probability": 0.6039488966318235,
+            "fair_probability": 0.8066517746339043,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -631,8 +617,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.69,
-        "joint_probability": 0.20318403900702298
+        "combined_odds": 2.43,
+        "joint_probability": 0.33334675461364777
       },
       {
         "kind": "double",
@@ -644,71 +630,16 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "fe9cd23b818e80d8b2facdc9625c41f9",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "West Ham United",
-            "away_team": "Derby County",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "West Ham United or Draw",
-            "odds": 1.05,
-            "fair_probability": 0.8900008270614507,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "40ad1c11c3aee059db53a9a2f242a288",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Sheffield United",
-            "away_team": "Norwich City",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Sheffield United or Draw",
-            "odds": 1.44,
-            "fair_probability": 0.6433770014556042,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5726060634078038
-      },
-      {
-        "kind": "treble",
-        "title": "Treble",
-        "stake": 4.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "18f6bb21043554c7e927bb2188f339be",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Northampton Town",
-            "away_team": "Newport County",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Northampton Town",
-            "odds": 1.7,
-            "fair_probability": 0.525,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "8f68612bf47c3193e7fa2d8783e79373",
+            "fixture_id": "29f81160baf6a97d6391d7172fad2425",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Fulham",
-            "away_team": "Crystal Palace",
+            "home_team": "Brentford",
+            "away_team": "Sunderland",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.35,
-            "fair_probability": 0.6901554404145078,
+            "label": "Brentford or Draw",
+            "odds": 1.13,
+            "fair_probability": 0.8289942449986298,
             "price_source": "derived",
             "result": "pending"
           },
@@ -727,14 +658,69 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.05,
-        "joint_probability": 0.25471992828134493
+        "combined_odds": 1.5,
+        "joint_probability": 0.5827848054328305
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Millwall",
+            "away_team": "Bolton Wanderers",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Bolton Wanderers or Draw",
+            "odds": 1.83,
+            "fair_probability": 0.5103929410498753,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "3b81531990da7ea3e461c43e8827672b",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brighton and Hove Albion",
+            "away_team": "Leeds United",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brighton and Hove Albion or Draw",
+            "odds": 1.24,
+            "fair_probability": 0.751615622365833,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "ff2cca43d7b09783f81a91ec5f66a6e4",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Middlesbrough",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Middlesbrough or Draw",
+            "odds": 1.34,
+            "fair_probability": 0.6988727858293076,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.04,
+        "joint_probability": 0.2681010945066589
       }
     ]
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-09-02T12:01:05+00:00",
+    "generated_at": "2026-09-03T12:00:22+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
