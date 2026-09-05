@@ -534,7 +534,7 @@
   },
   {
     "date": "2026-09-05",
-    "generated_at": "2026-09-04T12:02:33+00:00",
+    "generated_at": "2026-09-05T08:52:59+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -556,14 +556,14 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
             "label": "Tottenham Hotspur or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6074738563711155,
+            "odds": 1.56,
+            "fair_probability": 0.6047430830039526,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6074738563711155
+        "combined_odds": 1.56,
+        "joint_probability": 0.6047430830039526
       },
       {
         "kind": "underdog_acca",
@@ -575,20 +575,6 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "29f81160baf6a97d6391d7172fad2425",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brentford",
-            "away_team": "Sunderland",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Brentford",
-            "odds": 1.62,
-            "fair_probability": 0.5764063448036751,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
             "fixture_id": "3db5f919507eb8ab0c8c72bddaca8f08",
             "league_key": "soccer_epl",
             "league_short": "PL",
@@ -597,8 +583,8 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.14,
-            "fair_probability": 0.8066517746339043,
+            "odds": 1.13,
+            "fair_probability": 0.8327165062916358,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -612,13 +598,13 @@
             "market": "h2h",
             "label": "West Ham United",
             "odds": 1.36,
-            "fair_probability": 0.6770547138707905,
+            "fair_probability": 0.6880733944954128,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 2.51,
-        "joint_probability": 0.3148028187581712
+        "combined_odds": 1.54,
+        "joint_probability": 0.5729700731364467
       },
       {
         "kind": "double",
@@ -630,6 +616,20 @@
         "unavailable_reason": null,
         "legs": [
           {
+            "fixture_id": "073862d8ee702299babf873d84961e95",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Watford",
+            "kickoff": "2026-09-05T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7814602132895816,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
             "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
@@ -638,28 +638,14 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
             "label": "Millwall or Draw",
-            "odds": 1.2,
-            "fair_probability": 0.7773453612869672,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "3b81531990da7ea3e461c43e8827672b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brighton and Hove Albion",
-            "away_team": "Leeds United",
-            "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Brighton and Hove Albion or Draw",
-            "odds": 1.25,
-            "fair_probability": 0.7503131978865951,
+            "odds": 1.24,
+            "fair_probability": 0.7634677131644667,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.583252483889535
+        "joint_probability": 0.5966196419692132
       },
       {
         "kind": "treble",
@@ -679,48 +665,48 @@
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
             "label": "Sheffield United or Draw",
-            "odds": 1.44,
-            "fair_probability": 0.6520671305771593,
+            "odds": 1.51,
+            "fair_probability": 0.6326530612244898,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "3b81531990da7ea3e461c43e8827672b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brighton and Hove Albion",
-            "away_team": "Leeds United",
+            "fixture_id": "073862d8ee702299babf873d84961e95",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Watford",
             "kickoff": "2026-09-05T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Brighton and Hove Albion or Draw",
-            "odds": 1.25,
-            "fair_probability": 0.7503131978865951,
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7814602132895816,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "c3434a43b0c1794e67088c1c4c9bab9a",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Huddersfield Town",
-            "away_team": "Notts County",
+            "fixture_id": "ff2cca43d7b09783f81a91ec5f66a6e4",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Middlesbrough",
             "kickoff": "2026-09-05T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Huddersfield Town",
+            "market": "double_chance",
+            "label": "Queens Park Rangers or Draw",
             "odds": 1.67,
-            "fair_probability": 0.5529820962028563,
-            "price_source": "skybet",
+            "fair_probability": 0.5634656757285351,
+            "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.2705490198963425
+        "combined_odds": 3.05,
+        "joint_probability": 0.27857359635146034
       }
     ]
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-09-04T12:02:33+00:00",
+    "generated_at": "2026-09-05T08:52:59+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
