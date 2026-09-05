@@ -542,8 +542,8 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.6,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -559,7 +559,7 @@
             "odds": 1.56,
             "fair_probability": 0.6047430830039526,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.56,
@@ -569,8 +569,8 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 1.54,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -586,7 +586,7 @@
             "odds": 1.13,
             "fair_probability": 0.8327165062916358,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "fe9cd23b818e80d8b2facdc9625c41f9",
@@ -600,7 +600,7 @@
             "odds": 1.36,
             "fair_probability": 0.6880733944954128,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.54,
@@ -610,8 +610,8 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 7.5,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -627,7 +627,7 @@
             "odds": 1.21,
             "fair_probability": 0.7814602132895816,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "1a5169c2a73ae1d133cc61b70355fe97",
@@ -641,7 +641,7 @@
             "odds": 1.24,
             "fair_probability": 0.7634677131644667,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.5,
@@ -651,7 +651,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -668,7 +668,7 @@
             "odds": 1.51,
             "fair_probability": 0.6326530612244898,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "073862d8ee702299babf873d84961e95",
@@ -682,7 +682,7 @@
             "odds": 1.21,
             "fair_probability": 0.7814602132895816,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "ff2cca43d7b09783f81a91ec5f66a6e4",
@@ -696,7 +696,7 @@
             "odds": 1.67,
             "fair_probability": 0.5634656757285351,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 3.05,
@@ -706,7 +706,7 @@
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-09-05T11:54:39+00:00",
+    "generated_at": "2026-09-05T23:05:00+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
@@ -729,13 +729,13 @@
             "market": "double_chance",
             "label": "Birmingham City or Draw",
             "odds": 1.54,
-            "fair_probability": 0.6098360655737705,
+            "fair_probability": 0.6085889570552148,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.54,
-        "joint_probability": 0.6098360655737705
+        "joint_probability": 0.6085889570552148
       }
     ]
   }
