@@ -706,7 +706,7 @@
   },
   {
     "date": "2026-09-06",
-    "generated_at": "2026-09-05T08:52:59+00:00",
+    "generated_at": "2026-09-05T11:08:19+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
@@ -728,14 +728,14 @@
             "kickoff": "2026-09-06T12:00:00+01:00",
             "market": "double_chance",
             "label": "Birmingham City or Draw",
-            "odds": 1.51,
-            "fair_probability": 0.6130653266331658,
+            "odds": 1.54,
+            "fair_probability": 0.6098360655737705,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.6130653266331658
+        "combined_odds": 1.54,
+        "joint_probability": 0.6098360655737705
       }
     ]
   }
