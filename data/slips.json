@@ -741,7 +741,7 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-06T10:00:47+00:00",
+    "generated_at": "2026-09-06T12:00:54+00:00",
     "stake": 10.0,
     "fixture_count": 24,
     "bets": [
@@ -914,14 +914,14 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
             "label": "Aston Villa or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.7313432835820897,
+            "odds": 1.27,
+            "fair_probability": 0.7388059701492538,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.05,
-        "joint_probability": 0.25932200315415116
+        "combined_odds": 3.01,
+        "joint_probability": 0.2619681460434792
       }
     ]
   }
