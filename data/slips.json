@@ -738,5 +738,191 @@
         "joint_probability": 0.6085889570552148
       }
     ]
+  },
+  {
+    "date": "2026-09-12",
+    "generated_at": "2026-09-06T10:00:47+00:00",
+    "stake": 10.0,
+    "fixture_count": 24,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Brentford",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Bournemouth or Draw",
+            "odds": 1.51,
+            "fair_probability": 0.6234915526950925,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.6234915526950925
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "5163190733dcaaea80474e43cbe20a51",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Hull City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Chelsea",
+            "odds": 1.22,
+            "fair_probability": 0.7608946276227807,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "63da4075a4ae406575fd3086b839fe49",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Liverpool",
+            "away_team": "Fulham",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Liverpool",
+            "odds": 1.4,
+            "fair_probability": 0.668724279835391,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "082f74fe6a8bc5826555b76e9e114dab",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Sunderland",
+            "away_team": "Arsenal",
+            "kickoff": "2026-09-12T20:00:00+01:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.44,
+            "fair_probability": 0.6386861313868614,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 2.46,
+        "joint_probability": 0.3249818415340907
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "5163190733dcaaea80474e43cbe20a51",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Hull City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Chelsea or Draw",
+            "odds": 1.01,
+            "fair_probability": 0.9156098685727461,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Brentford",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Bournemouth or Draw",
+            "odds": 1.51,
+            "fair_probability": 0.6234915526950925,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.53,
+        "joint_probability": 0.5708750186193711
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "78ce28f88800a1f346210e2887fcc420",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Colchester United",
+            "away_team": "Crewe Alexandra",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Crewe Alexandra or Draw",
+            "odds": 1.6,
+            "fair_probability": 0.5557967867998264,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Brentford",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.48,
+            "fair_probability": 0.6379726468222044,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "d09677edcf1fb82ad75a8df58bb26eab",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Aston Villa",
+            "away_team": "Nottingham Forest",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Aston Villa or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.7313432835820897,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.05,
+        "joint_probability": 0.25932200315415116
+      }
+    ]
   }
 ]
