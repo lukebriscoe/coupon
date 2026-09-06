@@ -714,8 +714,8 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.4,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -731,7 +731,7 @@
             "odds": 1.54,
             "fair_probability": 0.6085889570552148,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.54,
@@ -741,9 +741,9 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-06T12:00:54+00:00",
+    "generated_at": "2026-09-06T22:56:17+00:00",
     "stake": 10.0,
-    "fixture_count": 24,
+    "fixture_count": 31,
     "bets": [
       {
         "kind": "banker",
@@ -755,22 +755,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Bournemouth",
-            "away_team": "Brentford",
+            "fixture_id": "7d0898a3bbbda4a17714f7f858864fd1",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Blackburn Rovers",
+            "away_team": "Millwall",
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Bournemouth or Draw",
-            "odds": 1.51,
-            "fair_probability": 0.6234915526950925,
+            "label": "Blackburn Rovers or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.607843137254902,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.6234915526950925
+        "combined_odds": 1.54,
+        "joint_probability": 0.607843137254902
       },
       {
         "kind": "underdog_acca",
@@ -805,7 +805,7 @@
             "market": "h2h",
             "label": "Liverpool",
             "odds": 1.4,
-            "fair_probability": 0.668724279835391,
+            "fair_probability": 0.6635474266269673,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -822,10 +822,24 @@
             "fair_probability": 0.6386861313868614,
             "price_source": "skybet",
             "result": "pending"
+          },
+          {
+            "fixture_id": "91abef6f4f3063cb6b88e0faf9ed084f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Bristol City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.55,
+            "fair_probability": 0.5995320050399457,
+            "price_source": "skybet",
+            "result": "pending"
           }
         ],
-        "combined_odds": 2.46,
-        "joint_probability": 0.3249818415340907
+        "combined_odds": 3.81,
+        "joint_probability": 0.1933287063903957
       },
       {
         "kind": "double",
@@ -843,30 +857,30 @@
             "home_team": "Chelsea",
             "away_team": "Hull City",
             "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Chelsea or Draw",
-            "odds": 1.01,
-            "fair_probability": 0.9156098685727461,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Chelsea",
+            "odds": 1.22,
+            "fair_probability": 0.7608946276227807,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Bournemouth",
-            "away_team": "Brentford",
+            "fixture_id": "42e05dd76773b7115a611f5889df4fec",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Norwich City",
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Bournemouth or Draw",
-            "odds": 1.51,
-            "fair_probability": 0.6234915526950925,
+            "label": "Middlesbrough or Draw",
+            "odds": 1.23,
+            "fair_probability": 0.7599999999999999,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.53,
-        "joint_probability": 0.5708750186193711
+        "combined_odds": 1.5,
+        "joint_probability": 0.5782799169933133
       },
       {
         "kind": "treble",
@@ -877,34 +891,6 @@
         "note": null,
         "unavailable_reason": null,
         "legs": [
-          {
-            "fixture_id": "78ce28f88800a1f346210e2887fcc420",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Colchester United",
-            "away_team": "Crewe Alexandra",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Crewe Alexandra or Draw",
-            "odds": 1.6,
-            "fair_probability": 0.5557967867998264,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Bournemouth",
-            "away_team": "Brentford",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Brentford or Draw",
-            "odds": 1.48,
-            "fair_probability": 0.6379726468222044,
-            "price_source": "derived",
-            "result": "pending"
-          },
           {
             "fixture_id": "d09677edcf1fb82ad75a8df58bb26eab",
             "league_key": "soccer_epl",
@@ -918,10 +904,38 @@
             "fair_probability": 0.7388059701492538,
             "price_source": "derived",
             "result": "pending"
+          },
+          {
+            "fixture_id": "7d0898a3bbbda4a17714f7f858864fd1",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Blackburn Rovers",
+            "away_team": "Millwall",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Blackburn Rovers or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.607843137254902,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "91abef6f4f3063cb6b88e0faf9ed084f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Bristol City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.55,
+            "fair_probability": 0.5995320050399457,
+            "price_source": "skybet",
+            "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.2619681460434792
+        "combined_odds": 3.03,
+        "joint_probability": 0.26923671692531365
       }
     ]
   }
