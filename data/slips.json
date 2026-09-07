@@ -741,7 +741,7 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-06T22:56:17+00:00",
+    "generated_at": "2026-09-07T13:23:16+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -804,8 +804,8 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "h2h",
             "label": "Liverpool",
-            "odds": 1.4,
-            "fair_probability": 0.6635474266269673,
+            "odds": 1.44,
+            "fair_probability": 0.6520784141452969,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -838,8 +838,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.81,
-        "joint_probability": 0.1933287063903957
+        "combined_odds": 3.92,
+        "joint_probability": 0.18998713763783817
       },
       {
         "kind": "double",
@@ -892,6 +892,34 @@
         "unavailable_reason": null,
         "legs": [
           {
+            "fixture_id": "63da4075a4ae406575fd3086b839fe49",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Liverpool",
+            "away_team": "Fulham",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Liverpool",
+            "odds": 1.44,
+            "fair_probability": 0.6520784141452969,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "c5e3d0f01b559176cae23df6eedb490c",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Preston North End",
+            "away_team": "Lincoln City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Lincoln City or Draw",
+            "odds": 1.62,
+            "fair_probability": 0.5766129032258064,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
             "fixture_id": "d09677edcf1fb82ad75a8df58bb26eab",
             "league_key": "soccer_epl",
             "league_short": "PL",
@@ -900,42 +928,14 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
             "label": "Aston Villa or Draw",
-            "odds": 1.27,
-            "fair_probability": 0.7388059701492538,
+            "odds": 1.29,
+            "fair_probability": 0.7245152620464579,
             "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "7d0898a3bbbda4a17714f7f858864fd1",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Blackburn Rovers",
-            "away_team": "Millwall",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Blackburn Rovers or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.607843137254902,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "91abef6f4f3063cb6b88e0faf9ed084f",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Southampton",
-            "away_team": "Bristol City",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Southampton",
-            "odds": 1.55,
-            "fair_probability": 0.5995320050399457,
-            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.03,
-        "joint_probability": 0.26923671692531365
+        "combined_odds": 3.01,
+        "joint_probability": 0.27241544001291346
       }
     ]
   }
