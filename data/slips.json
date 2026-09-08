@@ -741,7 +741,7 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-07T13:23:16+00:00",
+    "generated_at": "2026-09-08T12:02:56+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -791,7 +791,7 @@
             "market": "h2h",
             "label": "Chelsea",
             "odds": 1.22,
-            "fair_probability": 0.7608946276227807,
+            "fair_probability": 0.7656328303357648,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -804,8 +804,8 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "h2h",
             "label": "Liverpool",
-            "odds": 1.44,
-            "fair_probability": 0.6520784141452969,
+            "odds": 1.4,
+            "fair_probability": 0.6597756762700682,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -819,7 +819,7 @@
             "market": "h2h",
             "label": "Arsenal",
             "odds": 1.44,
-            "fair_probability": 0.6386861313868614,
+            "fair_probability": 0.6457564575645757,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -838,8 +838,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.92,
-        "joint_probability": 0.18998713763783817
+        "combined_odds": 3.81,
+        "joint_probability": 0.1955680827594002
       },
       {
         "kind": "double",
@@ -860,7 +860,7 @@
             "market": "h2h",
             "label": "Chelsea",
             "odds": 1.22,
-            "fair_probability": 0.7608946276227807,
+            "fair_probability": 0.7656328303357648,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -880,7 +880,7 @@
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.5782799169933133
+        "joint_probability": 0.5818809510551811
       },
       {
         "kind": "treble",
@@ -892,31 +892,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "63da4075a4ae406575fd3086b839fe49",
+            "fixture_id": "14f6639178a943ac614c7b872bf6e4d6",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Liverpool",
-            "away_team": "Fulham",
+            "home_team": "Crystal Palace",
+            "away_team": "Ipswich Town",
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "h2h",
-            "label": "Liverpool",
-            "odds": 1.44,
-            "fair_probability": 0.6520784141452969,
+            "label": "Crystal Palace",
+            "odds": 1.85,
+            "fair_probability": 0.5029554003224073,
             "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "c5e3d0f01b559176cae23df6eedb490c",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Preston North End",
-            "away_team": "Lincoln City",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Lincoln City or Draw",
-            "odds": 1.62,
-            "fair_probability": 0.5766129032258064,
-            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -928,14 +914,28 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
             "label": "Aston Villa or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.7245152620464579,
+            "odds": 1.32,
+            "fair_probability": 0.7079646017699115,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "42e05dd76773b7115a611f5889df4fec",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Norwich City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Middlesbrough or Draw",
+            "odds": 1.23,
+            "fair_probability": 0.7599999999999999,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.27241544001291346
+        "combined_odds": 3.0,
+        "joint_probability": 0.2706167109699324
       }
     ]
   }
