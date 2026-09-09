@@ -741,7 +741,7 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-08T12:02:56+00:00",
+    "generated_at": "2026-09-09T12:14:03+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -763,14 +763,14 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
             "label": "Blackburn Rovers or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.607843137254902,
+            "odds": 1.52,
+            "fair_probability": 0.6121941103276649,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.607843137254902
+        "combined_odds": 1.52,
+        "joint_probability": 0.6121941103276649
       },
       {
         "kind": "underdog_acca",
@@ -805,7 +805,7 @@
             "market": "h2h",
             "label": "Liverpool",
             "odds": 1.4,
-            "fair_probability": 0.6597756762700682,
+            "fair_probability": 0.6621983914209115,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -819,27 +819,13 @@
             "market": "h2h",
             "label": "Arsenal",
             "odds": 1.44,
-            "fair_probability": 0.6457564575645757,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "91abef6f4f3063cb6b88e0faf9ed084f",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Southampton",
-            "away_team": "Bristol City",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Southampton",
-            "odds": 1.55,
-            "fair_probability": 0.5995320050399457,
+            "fair_probability": 0.6443298969072165,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.81,
-        "joint_probability": 0.1955680827594002
+        "combined_odds": 2.46,
+        "joint_probability": 0.32667579166712835
       },
       {
         "kind": "double",
@@ -857,30 +843,30 @@
             "home_team": "Chelsea",
             "away_team": "Hull City",
             "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Chelsea",
-            "odds": 1.22,
-            "fair_probability": 0.7656328303357648,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Chelsea or Draw",
+            "odds": 1.02,
+            "fair_probability": 0.9150843588173061,
+            "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "42e05dd76773b7115a611f5889df4fec",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Middlesbrough",
-            "away_team": "Norwich City",
+            "fixture_id": "d856d4353db0b4cca2a49b96dfd19c92",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Brentford",
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Middlesbrough or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7599999999999999,
+            "label": "Brentford or Draw",
+            "odds": 1.5,
+            "fair_probability": 0.6199971102441844,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.5818809510551811
+        "combined_odds": 1.53,
+        "joint_probability": 0.567349658096382
       },
       {
         "kind": "treble",
@@ -892,17 +878,31 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "14f6639178a943ac614c7b872bf6e4d6",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Crystal Palace",
-            "away_team": "Ipswich Town",
+            "fixture_id": "09271ecb5e5aeb1245c1611254f741bf",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Swansea City",
+            "away_team": "Burnley",
             "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Crystal Palace",
-            "odds": 1.85,
-            "fair_probability": 0.5029554003224073,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Swansea City or Draw",
+            "odds": 1.33,
+            "fair_probability": 0.7003567181926279,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "42e05dd76773b7115a611f5889df4fec",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Norwich City",
+            "kickoff": "2026-09-12T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Norwich City or Draw",
+            "odds": 1.77,
+            "fair_probability": 0.523539421440726,
+            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -918,24 +918,10 @@
             "fair_probability": 0.7079646017699115,
             "price_source": "derived",
             "result": "pending"
-          },
-          {
-            "fixture_id": "42e05dd76773b7115a611f5889df4fec",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Middlesbrough",
-            "away_team": "Norwich City",
-            "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Middlesbrough or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7599999999999999,
-            "price_source": "derived",
-            "result": "pending"
           }
         ],
-        "combined_odds": 3.0,
-        "joint_probability": 0.2706167109699324
+        "combined_odds": 3.11,
+        "joint_probability": 0.2595853812705798
       }
     ]
   }
