@@ -741,7 +741,7 @@
   },
   {
     "date": "2026-09-12",
-    "generated_at": "2026-09-10T12:07:55+00:00",
+    "generated_at": "2026-09-11T12:06:21+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -832,14 +832,14 @@
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "h2h",
             "label": "Barnet",
-            "odds": 1.5,
-            "fair_probability": 0.6068965517241379,
+            "odds": 1.57,
+            "fair_probability": 0.5859947260474655,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.73,
-        "joint_probability": 0.19849503954645445
+        "combined_odds": 3.91,
+        "joint_probability": 0.19165876950587254
       },
       {
         "kind": "double",
@@ -892,30 +892,30 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "cecea0532597f5f32fe50dae1a64fc04",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Port Vale",
-            "away_team": "Exeter City",
+            "fixture_id": "5163190733dcaaea80474e43cbe20a51",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Hull City",
             "kickoff": "2026-09-12T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Exeter City or Draw",
-            "odds": 1.72,
-            "fair_probability": 0.5310834813499112,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Chelsea",
+            "odds": 1.2,
+            "fair_probability": 0.7784431137724551,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "14f6639178a943ac614c7b872bf6e4d6",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Crystal Palace",
-            "away_team": "Ipswich Town",
+            "fixture_id": "1ba30be1292e4fc106594991fba89a11",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Milton Keynes Dons",
+            "away_team": "Peterborough United",
             "kickoff": "2026-09-12T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Crystal Palace or Draw",
-            "odds": 1.22,
-            "fair_probability": 0.7614185921547555,
+            "label": "Peterborough United or Draw",
+            "odds": 1.74,
+            "fair_probability": 0.5283018867924528,
             "price_source": "derived",
             "result": "pending"
           },
@@ -934,8 +934,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.263685406383361
+        "combined_odds": 3.01,
+        "joint_probability": 0.26816918172962156
       }
     ]
   }
