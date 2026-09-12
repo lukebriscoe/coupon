@@ -749,8 +749,8 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.2,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -766,7 +766,7 @@
             "odds": 1.52,
             "fair_probability": 0.6164772727272727,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.52,
@@ -776,7 +776,7 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -793,7 +793,7 @@
             "odds": 1.2,
             "fair_probability": 0.7784431137724551,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "63da4075a4ae406575fd3086b839fe49",
@@ -807,7 +807,7 @@
             "odds": 1.44,
             "fair_probability": 0.6520784141452969,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "082f74fe6a8bc5826555b76e9e114dab",
@@ -821,7 +821,7 @@
             "odds": 1.44,
             "fair_probability": 0.6443298969072165,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "a6a46f2d482c89b5700ac249cd94a4d2",
@@ -835,7 +835,7 @@
             "odds": 1.57,
             "fair_probability": 0.5859947260474655,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 3.91,
@@ -845,7 +845,7 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -862,7 +862,7 @@
             "odds": 1.2,
             "fair_probability": 0.7784431137724551,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "42e05dd76773b7115a611f5889df4fec",
@@ -876,7 +876,7 @@
             "odds": 1.25,
             "fair_probability": 0.7415368081676518,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.5,
@@ -886,7 +886,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -903,7 +903,7 @@
             "odds": 1.2,
             "fair_probability": 0.7784431137724551,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "1ba30be1292e4fc106594991fba89a11",
@@ -917,7 +917,7 @@
             "odds": 1.74,
             "fair_probability": 0.5283018867924528,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "63da4075a4ae406575fd3086b839fe49",
@@ -931,7 +931,7 @@
             "odds": 1.44,
             "fair_probability": 0.6520784141452969,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 3.01,
