@@ -938,5 +938,177 @@
         "joint_probability": 0.26816918172962156
       }
     ]
+  },
+  {
+    "date": "2026-09-19",
+    "generated_at": "2026-09-13T10:52:51+00:00",
+    "stake": 10.0,
+    "fixture_count": 28,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "f65c4eaf0f94a569f06d768f737dad2e",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Newcastle United",
+            "away_team": "Hull City",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Newcastle United",
+            "odds": 1.5,
+            "fair_probability": 0.6180422264875239,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.5,
+        "joint_probability": 0.6180422264875239
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "f65c4eaf0f94a569f06d768f737dad2e",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Newcastle United",
+            "away_team": "Hull City",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Newcastle United",
+            "odds": 1.5,
+            "fair_probability": 0.6180422264875239,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "80305f9f9f622bc5bfb77947d2972a68",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Grimsby Town",
+            "away_team": "Crawley Town",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Grimsby Town",
+            "odds": 1.4,
+            "fair_probability": 0.6297709923664122,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 2.1,
+        "joint_probability": 0.38922506629939485
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "f65c4eaf0f94a569f06d768f737dad2e",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Newcastle United",
+            "away_team": "Hull City",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Newcastle United or Draw",
+            "odds": 1.11,
+            "fair_probability": 0.8387715930902111,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "32723ef48cd60f2c36c1b0e4892df015",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wrexham AFC",
+            "away_team": "Southampton",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Southampton or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6777163904235728,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.52,
+        "joint_probability": 0.5684492564589276
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "88519a51012811476c9b4724eafc96c5",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Everton",
+            "away_team": "Ipswich Town",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Everton",
+            "odds": 1.75,
+            "fair_probability": 0.5309734513274337,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "32723ef48cd60f2c36c1b0e4892df015",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wrexham AFC",
+            "away_team": "Southampton",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Southampton or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6777163904235728,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "5a85e792cbedf0fcc4ec13d49ac03892",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Portsmouth",
+            "away_team": "Blackburn Rovers",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Portsmouth or Draw",
+            "odds": 1.28,
+            "fair_probability": 0.72,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.07,
+        "joint_probability": 0.25909157580794995
+      }
+    ]
   }
 ]
