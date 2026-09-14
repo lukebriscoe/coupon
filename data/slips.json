@@ -941,7 +941,7 @@
   },
   {
     "date": "2026-09-19",
-    "generated_at": "2026-09-13T23:15:51+00:00",
+    "generated_at": "2026-09-14T13:46:49+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -996,6 +996,20 @@
             "result": "pending"
           },
           {
+            "fixture_id": "75133fdcd4fc3067b303a8f166f974e4",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Nottingham Forest",
+            "away_team": "Coventry City",
+            "kickoff": "2026-09-19T17:30:00+01:00",
+            "market": "h2h",
+            "label": "Nottingham Forest",
+            "odds": 1.67,
+            "fair_probability": 0.562008242787561,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
             "fixture_id": "80305f9f9f622bc5bfb77947d2972a68",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
@@ -1010,8 +1024,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 2.1,
-        "joint_probability": 0.3918216600847816
+        "combined_odds": 3.51,
+        "joint_probability": 0.22020700267035315
       },
       {
         "kind": "double",
@@ -1023,58 +1037,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f65c4eaf0f94a569f06d768f737dad2e",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Newcastle United",
-            "away_team": "Hull City",
-            "kickoff": "2026-09-19T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Newcastle United or Draw",
-            "odds": 1.11,
-            "fair_probability": 0.8376960079965015,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "32723ef48cd60f2c36c1b0e4892df015",
+            "fixture_id": "550e1217201e4b0bc35373c62b43f899",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Wrexham AFC",
-            "away_team": "Southampton",
+            "home_team": "Burnley",
+            "away_team": "Derby County",
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Southampton or Draw",
-            "odds": 1.37,
-            "fair_probability": 0.6777163904235728,
+            "label": "Burnley or Draw",
+            "odds": 1.2,
+            "fair_probability": 0.7692307692307692,
             "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.5677203148116253
-      },
-      {
-        "kind": "treble",
-        "title": "Treble",
-        "stake": 4.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "88519a51012811476c9b4724eafc96c5",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Everton",
-            "away_team": "Ipswich Town",
-            "kickoff": "2026-09-19T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Everton",
-            "odds": 1.75,
-            "fair_probability": 0.5309734513274337,
-            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -1090,6 +1063,33 @@
             "fair_probability": 0.7346018046292664,
             "price_source": "derived",
             "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.5650783112532818
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "550e1217201e4b0bc35373c62b43f899",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Burnley",
+            "away_team": "Derby County",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Burnley",
+            "odds": 1.8,
+            "fair_probability": 0.5128205128205128,
+            "price_source": "skybet",
+            "result": "pending"
           },
           {
             "fixture_id": "32723ef48cd60f2c36c1b0e4892df015",
@@ -1100,14 +1100,28 @@
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
             "label": "Southampton or Draw",
-            "odds": 1.37,
-            "fair_probability": 0.6777163904235728,
+            "odds": 1.35,
+            "fair_probability": 0.6902761104441777,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "5a85e792cbedf0fcc4ec13d49ac03892",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Portsmouth",
+            "away_team": "Blackburn Rovers",
+            "kickoff": "2026-09-19T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Portsmouth or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7346018046292664,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.26434602660105616
+        "combined_odds": 3.06,
+        "joint_probability": 0.2600400391921865
       }
     ]
   }
