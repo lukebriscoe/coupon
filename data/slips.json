@@ -941,7 +941,7 @@
   },
   {
     "date": "2026-09-19",
-    "generated_at": "2026-09-15T12:32:35+00:00",
+    "generated_at": "2026-09-16T12:30:32+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -991,14 +991,14 @@
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "h2h",
             "label": "Grimsby Town",
-            "odds": 1.4,
-            "fair_probability": 0.6337653351784336,
+            "odds": 1.36,
+            "fair_probability": 0.6449076964122435,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.56,
-        "joint_probability": 0.21453029866005782
+        "combined_odds": 3.46,
+        "joint_probability": 0.21830200081949275
       },
       {
         "kind": "double",
@@ -1018,8 +1018,8 @@
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
             "label": "Everton or Draw",
-            "odds": 1.18,
-            "fair_probability": 0.7861906297195025,
+            "odds": 1.19,
+            "fair_probability": 0.7839683976627437,
             "price_source": "derived",
             "result": "pending"
           },
@@ -1038,8 +1038,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5712985242628384
+        "combined_odds": 1.52,
+        "joint_probability": 0.5696837023015937
       },
       {
         "kind": "treble",
@@ -1060,7 +1060,7 @@
             "market": "h2h",
             "label": "Everton",
             "odds": 1.75,
-            "fair_probability": 0.5290254704654596,
+            "fair_probability": 0.5345239074973253,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1074,7 +1074,7 @@
             "market": "double_chance",
             "label": "Southampton or Draw",
             "odds": 1.37,
-            "fair_probability": 0.6792260692464358,
+            "fair_probability": 0.6865671641791045,
             "price_source": "derived",
             "result": "pending"
           },
@@ -1094,13 +1094,13 @@
           }
         ],
         "combined_odds": 3.07,
-        "joint_probability": 0.26111160067379696
+        "joint_probability": 0.26667690270563066
       }
     ]
   },
   {
     "date": "2026-09-20",
-    "generated_at": "2026-09-15T12:32:35+00:00",
+    "generated_at": "2026-09-16T12:30:32+00:00",
     "stake": 10.0,
     "fixture_count": 6,
     "bets": [
