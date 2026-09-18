@@ -941,7 +941,7 @@
   },
   {
     "date": "2026-09-19",
-    "generated_at": "2026-09-17T12:30:06+00:00",
+    "generated_at": "2026-09-18T12:08:25+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -1004,8 +1004,8 @@
             "kickoff": "2026-09-19T17:30:00+01:00",
             "market": "h2h",
             "label": "Nottingham Forest",
-            "odds": 1.6,
-            "fair_probability": 0.5878322828172102,
+            "odds": 1.57,
+            "fair_probability": 0.5924105170128148,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1047,13 +1047,13 @@
             "market": "h2h",
             "label": "Salford City",
             "odds": 1.5,
-            "fair_probability": 0.6086956521739131,
+            "fair_probability": 0.6180422264875239,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 8.44,
-        "joint_probability": 0.07968075483493536
+        "combined_odds": 8.28,
+        "joint_probability": 0.08153436910991518
       },
       {
         "kind": "double",
@@ -1065,36 +1065,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "550e1217201e4b0bc35373c62b43f899",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Burnley",
-            "away_team": "Derby County",
+            "fixture_id": "5e7c36a89143e3d08c422725e2c41a00",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Salford City",
+            "away_team": "Swindon Town",
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Burnley or Draw",
-            "odds": 1.2,
-            "fair_probability": 0.7692307692307692,
+            "label": "Salford City or Draw",
+            "odds": 1.11,
+            "fair_probability": 0.8387715930902111,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "0cfe8dadb6086f07f3d311319143ecf5",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Colchester United",
-            "away_team": "Cheltenham Town",
+            "fixture_id": "32723ef48cd60f2c36c1b0e4892df015",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wrexham AFC",
+            "away_team": "Southampton",
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Colchester United or Draw",
-            "odds": 1.25,
-            "fair_probability": 0.7425876010781671,
+            "label": "Southampton or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6792260692464358,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.5712212315985901
+        "combined_odds": 1.52,
+        "joint_probability": 0.569715532170235
       },
       {
         "kind": "treble",
@@ -1128,8 +1128,8 @@
             "kickoff": "2026-09-19T15:00:00+01:00",
             "market": "double_chance",
             "label": "Portsmouth or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7357461576598909,
+            "odds": 1.28,
+            "fair_probability": 0.7266666666666666,
             "price_source": "derived",
             "result": "pending"
           },
@@ -1143,19 +1143,19 @@
             "market": "h2h",
             "label": "Everton",
             "odds": 1.75,
-            "fair_probability": 0.5345239074973253,
+            "fair_probability": 0.5309734513274337,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.26712189278619636
+        "combined_odds": 3.07,
+        "joint_probability": 0.2620730674260584
       }
     ]
   },
   {
     "date": "2026-09-20",
-    "generated_at": "2026-09-17T12:30:06+00:00",
+    "generated_at": "2026-09-18T12:08:25+00:00",
     "stake": 10.0,
     "fixture_count": 6,
     "bets": [
@@ -1178,13 +1178,13 @@
             "market": "h2h",
             "label": "Norwich City",
             "odds": 1.5,
-            "fair_probability": 0.6176470588235294,
+            "fair_probability": 0.6176089211618258,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.6176470588235294
+        "joint_probability": 0.6176089211618258
       }
     ]
   }
