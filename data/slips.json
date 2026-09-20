@@ -1187,5 +1187,150 @@
         "joint_probability": 0.6176089211618258
       }
     ]
+  },
+  {
+    "date": "2026-09-26",
+    "generated_at": "2026-09-20T10:22:29+00:00",
+    "stake": 10.0,
+    "fixture_count": 15,
+    "bets": [
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "a927002eaa54c5f618c9fb7ecbfa6f40",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Peterborough United",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.3,
+            "fair_probability": 0.6798866855524078,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "3a3c7ee9f79e76d3310cd0ddd624a7a3",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "York City",
+            "away_team": "Gillingham",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "h2h",
+            "label": "York City",
+            "odds": 1.44,
+            "fair_probability": 0.6118881118881119,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.87,
+        "joint_probability": 0.41601458032052924
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "3c99aa0d1610d83591b8f420e9a6d334",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Cambridge United",
+            "away_team": "Wimbledon",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Cambridge United or Draw",
+            "odds": 1.16,
+            "fair_probability": 0.7710948132466355,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "28ceb59582c10846b4987837e6836c85",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Rotherham United",
+            "away_team": "Crewe Alexandra",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Rotherham United or Draw",
+            "odds": 1.3,
+            "fair_probability": 0.6892950391644909,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.5315118294963754
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "dfa8870c8c641417aca7d39130916a0a",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Wycombe Wanderers",
+            "away_team": "Reading",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Wycombe Wanderers or Draw",
+            "odds": 1.42,
+            "fair_probability": 0.6336206896551724,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "6e782642059c671fc2f5ba689f25301f",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Swindon Town",
+            "away_team": "Accrington Stanley",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Accrington Stanley or Draw",
+            "odds": 1.64,
+            "fair_probability": 0.5425801011804384,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "28ceb59582c10846b4987837e6836c85",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Rotherham United",
+            "away_team": "Crewe Alexandra",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Rotherham United or Draw",
+            "odds": 1.3,
+            "fair_probability": 0.6892950391644909,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.03,
+        "joint_probability": 0.23697272628309235
+      }
+    ]
   }
 ]
