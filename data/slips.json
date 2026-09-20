@@ -1163,7 +1163,7 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1180,7 +1180,7 @@
             "odds": 1.5,
             "fair_probability": 0.6176089211618258,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.5,
@@ -1190,7 +1190,7 @@
   },
   {
     "date": "2026-09-26",
-    "generated_at": "2026-09-20T12:55:44+00:00",
+    "generated_at": "2026-09-20T23:19:40+00:00",
     "stake": 10.0,
     "fixture_count": 15,
     "bets": [
@@ -1245,36 +1245,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "3a3c7ee9f79e76d3310cd0ddd624a7a3",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "York City",
-            "away_team": "Gillingham",
+            "fixture_id": "07d308b079b6f781eea30f0c0fb9d284",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Plymouth Argyle",
+            "away_team": "Burton Albion",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "York City or Draw",
-            "odds": 1.06,
-            "fair_probability": 0.8321678321678322,
+            "label": "Plymouth Argyle or Draw",
+            "odds": 1.11,
+            "fair_probability": 0.8060738813221563,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "dfa8870c8c641417aca7d39130916a0a",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Wycombe Wanderers",
-            "away_team": "Reading",
+            "fixture_id": "b3b532b148ea7272eb71512b07099d96",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Tranmere Rovers",
+            "away_team": "Walsall",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Wycombe Wanderers or Draw",
-            "odds": 1.42,
-            "fair_probability": 0.6336206896551724,
+            "label": "Tranmere Rovers or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6551645856980703,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5272787557270315
+        "combined_odds": 1.52,
+        "joint_probability": 0.528111060498466
       },
       {
         "kind": "treble",
@@ -1286,50 +1286,50 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "dfa8870c8c641417aca7d39130916a0a",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Wycombe Wanderers",
-            "away_team": "Reading",
-            "kickoff": "2026-09-26T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Wycombe Wanderers or Draw",
-            "odds": 1.42,
-            "fair_probability": 0.6336206896551724,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "1d6d0283e3f4343a768e94337da62879",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Doncaster Rovers",
-            "away_team": "Oxford United",
-            "kickoff": "2026-09-26T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Oxford United or Draw",
-            "odds": 1.62,
-            "fair_probability": 0.5459832005169072,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "28ceb59582c10846b4987837e6836c85",
+            "fixture_id": "283b0949f41f7a1ef9c2c5fa72c1c732",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Rotherham United",
-            "away_team": "Crewe Alexandra",
+            "home_team": "Fleetwood Town",
+            "away_team": "Rochdale",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Fleetwood Town",
+            "odds": 1.75,
+            "fair_probability": 0.5100671140939597,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "6e782642059c671fc2f5ba689f25301f",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Swindon Town",
+            "away_team": "Accrington Stanley",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Rotherham United or Draw",
-            "odds": 1.32,
-            "fair_probability": 0.676154612913944,
+            "label": "Swindon Town or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7111299915038234,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b3b532b148ea7272eb71512b07099d96",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Tranmere Rovers",
+            "away_team": "Walsall",
+            "kickoff": "2026-09-26T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Tranmere Rovers or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6551645856980703,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.04,
-        "joint_probability": 0.23391315414502054
+        "combined_odds": 3.02,
+        "joint_probability": 0.23764393393182331
       }
     ]
   }
