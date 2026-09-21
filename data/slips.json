@@ -1190,7 +1190,7 @@
   },
   {
     "date": "2026-09-26",
-    "generated_at": "2026-09-20T23:19:40+00:00",
+    "generated_at": "2026-09-21T13:46:48+00:00",
     "stake": 10.0,
     "fixture_count": 15,
     "bets": [
@@ -1227,13 +1227,13 @@
             "market": "h2h",
             "label": "York City",
             "odds": 1.44,
-            "fair_probability": 0.6118881118881119,
+            "fair_probability": 0.6183745583038869,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
         "combined_odds": 1.87,
-        "joint_probability": 0.41601458032052924
+        "joint_probability": 0.4204246288751638
       },
       {
         "kind": "double",
@@ -1245,36 +1245,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "07d308b079b6f781eea30f0c0fb9d284",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Plymouth Argyle",
-            "away_team": "Burton Albion",
+            "fixture_id": "98d79d997fc534eb51e384e1236d9d04",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Bristol Rovers",
+            "away_team": "Exeter City",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Plymouth Argyle or Draw",
-            "odds": 1.11,
-            "fair_probability": 0.8060738813221563,
+            "label": "Bristol Rovers or Draw",
+            "odds": 1.16,
+            "fair_probability": 0.7842488760270787,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "b3b532b148ea7272eb71512b07099d96",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Tranmere Rovers",
-            "away_team": "Walsall",
+            "fixture_id": "a927002eaa54c5f618c9fb7ecbfa6f40",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Peterborough United",
             "kickoff": "2026-09-26T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Tranmere Rovers or Draw",
-            "odds": 1.37,
-            "fair_probability": 0.6551645856980703,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.3,
+            "fair_probability": 0.6798866855524078,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.528111060498466
+        "combined_odds": 1.51,
+        "joint_probability": 0.5332003689702517
       },
       {
         "kind": "treble",
@@ -1286,17 +1286,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "283b0949f41f7a1ef9c2c5fa72c1c732",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Fleetwood Town",
-            "away_team": "Rochdale",
+            "fixture_id": "dfa8870c8c641417aca7d39130916a0a",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Wycombe Wanderers",
+            "away_team": "Reading",
             "kickoff": "2026-09-26T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Fleetwood Town",
-            "odds": 1.75,
-            "fair_probability": 0.5100671140939597,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Wycombe Wanderers or Draw",
+            "odds": 1.42,
+            "fair_probability": 0.6336206896551724,
+            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -1307,29 +1307,29 @@
             "away_team": "Accrington Stanley",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Swindon Town or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7111299915038234,
+            "label": "Accrington Stanley or Draw",
+            "odds": 1.62,
+            "fair_probability": 0.5522514868309261,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "b3b532b148ea7272eb71512b07099d96",
+            "fixture_id": "28ceb59582c10846b4987837e6836c85",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Tranmere Rovers",
-            "away_team": "Walsall",
+            "home_team": "Rotherham United",
+            "away_team": "Crewe Alexandra",
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Tranmere Rovers or Draw",
-            "odds": 1.37,
-            "fair_probability": 0.6551645856980703,
+            "label": "Rotherham United or Draw",
+            "odds": 1.32,
+            "fair_probability": 0.676154612913944,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.23764393393182331
+        "combined_odds": 3.04,
+        "joint_probability": 0.2365986481701262
       }
     ]
   }
