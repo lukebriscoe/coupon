@@ -1190,7 +1190,7 @@
   },
   {
     "date": "2026-09-26",
-    "generated_at": "2026-09-24T12:37:41+00:00",
+    "generated_at": "2026-09-25T12:39:06+00:00",
     "stake": 10.0,
     "fixture_count": 9,
     "bets": [
@@ -1212,14 +1212,14 @@
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "h2h",
             "label": "York City",
-            "odds": 1.5,
-            "fair_probability": 0.6221653026800774,
+            "odds": 1.53,
+            "fair_probability": 0.6039689387402934,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.6221653026800774
+        "combined_odds": 1.53,
+        "joint_probability": 0.6039689387402934
       },
       {
         "kind": "underdog_acca",
@@ -1239,14 +1239,14 @@
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "h2h",
             "label": "York City",
-            "odds": 1.5,
-            "fair_probability": 0.6221653026800774,
+            "odds": 1.53,
+            "fair_probability": 0.6039689387402934,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.6221653026800774
+        "combined_odds": 1.53,
+        "joint_probability": 0.6039689387402934
       },
       {
         "kind": "double",
@@ -1280,14 +1280,14 @@
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "double_chance",
             "label": "Rotherham United or Draw",
-            "odds": 1.3,
-            "fair_probability": 0.704836709384043,
+            "odds": 1.29,
+            "fair_probability": 0.705701394585726,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.5514249869389525
+        "combined_odds": 1.51,
+        "joint_probability": 0.5521014684838212
       },
       {
         "kind": "treble",
@@ -1313,17 +1313,17 @@
             "result": "pending"
           },
           {
-            "fixture_id": "98d79d997fc534eb51e384e1236d9d04",
+            "fixture_id": "28ceb59582c10846b4987837e6836c85",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Bristol Rovers",
-            "away_team": "Exeter City",
+            "home_team": "Rotherham United",
+            "away_team": "Crewe Alexandra",
             "kickoff": "2026-09-26T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Bristol Rovers",
-            "odds": 1.73,
-            "fair_probability": 0.5284126651289578,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Crewe Alexandra or Draw",
+            "odds": 1.64,
+            "fair_probability": 0.554963084495488,
+            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -1335,14 +1335,14 @@
             "kickoff": "2026-09-26T15:00:00+01:00",
             "market": "h2h",
             "label": "York City",
-            "odds": 1.5,
-            "fair_probability": 0.6221653026800774,
+            "odds": 1.53,
+            "fair_probability": 0.6039689387402934,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.11,
-        "joint_probability": 0.2528923274922649
+        "combined_odds": 3.01,
+        "joint_probability": 0.25783112706367667
       }
     ]
   }
