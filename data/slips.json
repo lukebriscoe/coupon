@@ -1348,7 +1348,7 @@
   },
   {
     "date": "2026-10-03",
-    "generated_at": "2026-09-27T11:08:44+00:00",
+    "generated_at": "2026-09-27T13:38:53+00:00",
     "stake": 10.0,
     "fixture_count": 17,
     "bets": [
@@ -1403,20 +1403,6 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "b2d9692f329a99ad8744ae111b4ebbfc",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Crewe Alexandra",
-            "away_team": "Bristol Rovers",
-            "kickoff": "2026-10-03T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Bristol Rovers or Draw",
-            "odds": 1.34,
-            "fair_probability": 0.6690265486725664,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
             "fixture_id": "9061d3dcffac63f6214dfafa0194e015",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
@@ -1427,6 +1413,20 @@
             "label": "Burton Albion or Draw",
             "odds": 1.72,
             "fair_probability": 0.5152405435181785,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b2d9692f329a99ad8744ae111b4ebbfc",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Crewe Alexandra",
+            "away_team": "Bristol Rovers",
+            "kickoff": "2026-10-03T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Bristol Rovers or Draw",
+            "odds": 1.34,
+            "fair_probability": 0.6690265486725664,
             "price_source": "derived",
             "result": "pending"
           },
