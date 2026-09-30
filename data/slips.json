@@ -1348,7 +1348,7 @@
   },
   {
     "date": "2026-10-03",
-    "generated_at": "2026-09-29T13:53:07+00:00",
+    "generated_at": "2026-09-30T13:28:12+00:00",
     "stake": 10.0,
     "fixture_count": 17,
     "bets": [
@@ -1410,23 +1410,23 @@
             "away_team": "Wycombe Wanderers",
             "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Bromley FC or Draw",
-            "odds": 1.58,
-            "fair_probability": 0.5647480461159808,
+            "label": "Wycombe Wanderers or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.6901852411589448,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "8ebfd1b24fe78a65203845279b47595f",
+            "fixture_id": "9061d3dcffac63f6214dfafa0194e015",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
-            "home_team": "Barnsley",
-            "away_team": "Milton Keynes Dons",
+            "home_team": "Burton Albion",
+            "away_team": "Huddersfield Town",
             "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Barnsley or Draw",
-            "odds": 1.42,
-            "fair_probability": 0.6336206896551724,
+            "label": "Burton Albion or Draw",
+            "odds": 1.77,
+            "fair_probability": 0.5035460992907801,
             "price_source": "derived",
             "result": "pending"
           },
@@ -1445,8 +1445,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.23940181515471917
+        "combined_odds": 3.06,
+        "joint_probability": 0.23251354424432005
       }
     ]
   }
