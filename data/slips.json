@@ -1348,10 +1348,37 @@
   },
   {
     "date": "2026-10-03",
-    "generated_at": "2026-09-30T13:28:12+00:00",
+    "generated_at": "2026-10-01T14:20:44+00:00",
     "stake": 10.0,
-    "fixture_count": 17,
+    "fixture_count": 10,
     "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "e6d65696c6e8bd5238cb3a006bb7f796",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Accrington Stanley",
+            "away_team": "Cheltenham Town",
+            "kickoff": "2026-10-03T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Cheltenham Town or Draw",
+            "odds": 1.5,
+            "fair_probability": 0.61340206185567,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.5,
+        "joint_probability": 0.61340206185567
+      },
       {
         "kind": "double",
         "title": "Banker Double",
@@ -1362,36 +1389,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "bd7b12a5521ec9bf8f74685260ca24dc",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Salford City",
-            "away_team": "Fleetwood Town",
+            "fixture_id": "9061d3dcffac63f6214dfafa0194e015",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Burton Albion",
+            "away_team": "Huddersfield Town",
             "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Salford City or Draw",
-            "odds": 1.12,
-            "fair_probability": 0.7948977653984934,
+            "label": "Huddersfield Town or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7579898611417235,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "8aca943e9201ced10ad488d028c05ef3",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Wigan Athletic",
-            "away_team": "Mansfield Town",
+            "fixture_id": "e2f02448a62a6f7148eadd6bbc0841fb",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Gillingham",
+            "away_team": "Newport County",
             "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Wigan Athletic or Draw",
-            "odds": 1.34,
-            "fair_probability": 0.6690265486725664,
+            "label": "Gillingham or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7319252640129976,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.5318077085320895
+        "combined_odds": 1.51,
+        "joint_probability": 0.5547919292353314
       },
       {
         "kind": "treble",
@@ -1403,50 +1430,50 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "6a63e1f6d87ea3609a8706e70f11c909",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Bromley FC",
-            "away_team": "Wycombe Wanderers",
-            "kickoff": "2026-10-03T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Wycombe Wanderers or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.6901852411589448,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
             "fixture_id": "9061d3dcffac63f6214dfafa0194e015",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
             "home_team": "Burton Albion",
             "away_team": "Huddersfield Town",
             "kickoff": "2026-10-03T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Huddersfield Town",
+            "odds": 1.83,
+            "fair_probability": 0.5025347145690985,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "e2f02448a62a6f7148eadd6bbc0841fb",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Gillingham",
+            "away_team": "Newport County",
+            "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Burton Albion or Draw",
-            "odds": 1.77,
-            "fair_probability": 0.5035460992907801,
+            "label": "Gillingham or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7319252640129976,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "8aca943e9201ced10ad488d028c05ef3",
+            "fixture_id": "94d2a4a534187dc1aee316221b1a8714",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
-            "home_team": "Wigan Athletic",
-            "away_team": "Mansfield Town",
+            "home_team": "Reading",
+            "away_team": "Bradford City",
             "kickoff": "2026-10-03T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Wigan Athletic or Draw",
-            "odds": 1.34,
-            "fair_probability": 0.6690265486725664,
+            "label": "Reading or Draw",
+            "odds": 1.32,
+            "fair_probability": 0.6944444444444444,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.06,
-        "joint_probability": 0.23251354424432005
+        "combined_odds": 3.02,
+        "joint_probability": 0.25542906502547486
       }
     ]
   }
