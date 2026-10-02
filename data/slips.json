@@ -1348,37 +1348,10 @@
   },
   {
     "date": "2026-10-03",
-    "generated_at": "2026-10-01T14:20:44+00:00",
+    "generated_at": "2026-10-02T13:41:44+00:00",
     "stake": 10.0,
     "fixture_count": 10,
     "bets": [
-      {
-        "kind": "banker",
-        "title": "Banker of the Day",
-        "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "e6d65696c6e8bd5238cb3a006bb7f796",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Accrington Stanley",
-            "away_team": "Cheltenham Town",
-            "kickoff": "2026-10-03T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Cheltenham Town or Draw",
-            "odds": 1.5,
-            "fair_probability": 0.61340206185567,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.61340206185567
-      },
       {
         "kind": "double",
         "title": "Banker Double",
