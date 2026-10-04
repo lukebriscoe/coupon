@@ -1449,5 +1449,191 @@
         "joint_probability": 0.25542906502547486
       }
     ]
+  },
+  {
+    "date": "2026-10-10",
+    "generated_at": "2026-10-04T11:36:15+00:00",
+    "stake": 10.0,
+    "fixture_count": 31,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "713bc529f655efc0aff6109cb2396c11",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Blackburn Rovers",
+            "away_team": "Cardiff City",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Blackburn Rovers or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6122850122850123,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.52,
+        "joint_probability": 0.6122850122850123
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "b870dcfba5e5920d3f1551a3aa1ea435",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Arsenal",
+            "away_team": "Leeds United",
+            "kickoff": "2026-10-10T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.36,
+            "fair_probability": 0.6827492034592626,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "5bbf732565427bf7b459216e04114db0",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Plymouth Argyle",
+            "away_team": "Wimbledon",
+            "kickoff": "2026-10-10T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Plymouth Argyle",
+            "odds": 1.44,
+            "fair_probability": 0.6165919282511211,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "46565a1cbc6f2e15ba0b2223a5a1fde8",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Barnsley",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.33,
+            "fair_probability": 0.6672226855713094,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 2.6,
+        "joint_probability": 0.28088583677922513
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "45d4a466e32cd2b4ea535207923ceaf5",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Bournemouth",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Chelsea or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7766733363454463,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "6e370faecd2f841fc843ec49c641a9e3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Sheffield United",
+            "away_team": "Lincoln City",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Sheffield United or Draw",
+            "odds": 1.27,
+            "fair_probability": 0.7388059701492538,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.54,
+        "joint_probability": 0.5738108977477552
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "45d4a466e32cd2b4ea535207923ceaf5",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Bournemouth",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Chelsea",
+            "odds": 1.73,
+            "fair_probability": 0.542180339508165,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "6e370faecd2f841fc843ec49c641a9e3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Sheffield United",
+            "away_team": "Lincoln City",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Sheffield United or Draw",
+            "odds": 1.27,
+            "fair_probability": 0.7388059701492538,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "96673c1fdea1d48aa7440246f5e00bd6",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Wolverhampton Wanderers",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Middlesbrough or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6797100009931472,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.01,
+        "joint_probability": 0.272268765010824
+      }
+    ]
   }
 ]
