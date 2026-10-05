@@ -1452,7 +1452,7 @@
   },
   {
     "date": "2026-10-10",
-    "generated_at": "2026-10-04T13:48:27+00:00",
+    "generated_at": "2026-10-05T00:01:19+00:00",
     "stake": 10.0,
     "fixture_count": 31,
     "bets": [
@@ -1548,19 +1548,46 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "45d4a466e32cd2b4ea535207923ceaf5",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Chelsea",
-            "away_team": "Bournemouth",
+            "fixture_id": "bda45e4adb060dba4f588c53b32f6492",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Leicester City",
+            "away_team": "Peterborough United",
             "kickoff": "2026-10-10T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Chelsea or Draw",
-            "odds": 1.21,
-            "fair_probability": 0.7766733363454463,
+            "label": "Leicester City or Draw",
+            "odds": 1.11,
+            "fair_probability": 0.8062730627306273,
             "price_source": "derived",
             "result": "pending"
           },
+          {
+            "fixture_id": "380b8f24ec5430fb545a7490c1017285",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Sunderland",
+            "away_team": "Brighton and Hove Albion",
+            "kickoff": "2026-10-10T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brighton and Hove Albion or Draw",
+            "odds": 1.36,
+            "fair_probability": 0.6799898811029599,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.5482575240627185
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
           {
             "fixture_id": "6e370faecd2f841fc843ec49c641a9e3",
             "league_key": "soccer_efl_champ",
@@ -1574,20 +1601,7 @@
             "fair_probability": 0.7408536585365855,
             "price_source": "derived",
             "result": "pending"
-          }
-        ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.5754012827193399
-      },
-      {
-        "kind": "treble",
-        "title": "Treble",
-        "stake": 4.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
+          },
           {
             "fixture_id": "0d8f917ffae03de3f9c0f381b1bc6be6",
             "league_key": "soccer_england_league2",
@@ -1603,36 +1617,22 @@
             "result": "pending"
           },
           {
-            "fixture_id": "6e370faecd2f841fc843ec49c641a9e3",
+            "fixture_id": "92f161645aed415d240b06de729f5015",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Sheffield United",
-            "away_team": "Lincoln City",
+            "home_team": "Watford",
+            "away_team": "Burnley",
             "kickoff": "2026-10-10T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Sheffield United or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7408536585365855,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "96673c1fdea1d48aa7440246f5e00bd6",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Middlesbrough",
-            "away_team": "Wolverhampton Wanderers",
-            "kickoff": "2026-10-10T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Middlesbrough or Draw",
+            "label": "Burnley or Draw",
             "odds": 1.37,
-            "fair_probability": 0.6797100009931472,
+            "fair_probability": 0.6777163904235728,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 3.02,
-        "joint_probability": 0.25605032592187077
+        "joint_probability": 0.2552993223536506
       }
     ]
   }
