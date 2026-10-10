@@ -1638,7 +1638,7 @@
   },
   {
     "date": "2026-10-11",
-    "generated_at": "2026-10-08T14:28:05+00:00",
+    "generated_at": "2026-10-10T13:17:52+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
@@ -1652,22 +1652,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "6dbab232dd8d2aed0cb1d6f7978fb7b1",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Liverpool",
-            "away_team": "Manchester City",
-            "kickoff": "2026-10-11T16:30:00+01:00",
-            "market": "double_chance",
-            "label": "Liverpool or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6122850122850123,
-            "price_source": "derived",
+            "fixture_id": "e0fe5ad17865ef24994316c5e46dc8b1",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Portsmouth",
+            "kickoff": "2026-10-11T12:00:00+01:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.57,
+            "fair_probability": 0.6026768243366641,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.6122850122850123
+        "combined_odds": 1.57,
+        "joint_probability": 0.6026768243366641
       }
     ]
   }
