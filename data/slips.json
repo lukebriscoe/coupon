@@ -1504,7 +1504,7 @@
             "odds": 1.33,
             "fair_probability": 0.6982021295164951,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "5bbf732565427bf7b459216e04114db0",
@@ -1518,7 +1518,7 @@
             "odds": 1.44,
             "fair_probability": 0.632183908045977,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "46565a1cbc6f2e15ba0b2223a5a1fde8",
@@ -1638,7 +1638,7 @@
   },
   {
     "date": "2026-10-11",
-    "generated_at": "2026-10-10T13:17:52+00:00",
+    "generated_at": "2026-10-10T14:35:01+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
