@@ -1460,7 +1460,7 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1477,7 +1477,7 @@
             "odds": 1.54,
             "fair_probability": 0.6085578446909667,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.54,
@@ -1487,8 +1487,8 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 2.6,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -1532,7 +1532,7 @@
             "odds": 1.36,
             "fair_probability": 0.678453947368421,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 2.6,
@@ -1542,8 +1542,8 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 7.55,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -1559,7 +1559,7 @@
             "odds": 1.17,
             "fair_probability": 0.7939110070257611,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "f45913f87996bc8630020ff133f45e6b",
@@ -1573,7 +1573,7 @@
             "odds": 1.29,
             "fair_probability": 0.7245152620464579,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.51,
@@ -1583,7 +1583,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1600,7 +1600,7 @@
             "odds": 1.8,
             "fair_probability": 0.5041322314049587,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "39c218d909fdac4a2a1d91d301a55f9b",
@@ -1614,7 +1614,7 @@
             "odds": 1.22,
             "fair_probability": 0.7666666666666666,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "96673c1fdea1d48aa7440246f5e00bd6",
@@ -1628,7 +1628,7 @@
             "odds": 1.37,
             "fair_probability": 0.6872037914691942,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 3.01,
@@ -1638,7 +1638,7 @@
   },
   {
     "date": "2026-10-11",
-    "generated_at": "2026-10-10T14:35:01+00:00",
+    "generated_at": "2026-10-11T00:18:40+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
@@ -1660,14 +1660,200 @@
             "kickoff": "2026-10-11T12:00:00+01:00",
             "market": "h2h",
             "label": "Southampton",
-            "odds": 1.57,
-            "fair_probability": 0.6026768243366641,
+            "odds": 1.53,
+            "fair_probability": 0.6088400411164703,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
+        "combined_odds": 1.53,
+        "joint_probability": 0.6088400411164703
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "generated_at": "2026-10-11T00:18:40+00:00",
+    "stake": 10.0,
+    "fixture_count": 22,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "8f1945e7272bc7e89016439f5ab321c7",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Liverpool",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.60984393757503,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.54,
+        "joint_probability": 0.60984393757503
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "bf2142d1ca76ba2fc9e61afce80f86c0",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester City",
+            "away_team": "Ipswich Town",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Manchester City",
+            "odds": 1.22,
+            "fair_probability": 0.7625493841505926,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "4bbcd3c17ad0671952aeaf7fa5918483",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Bromley FC",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.2,
+            "fair_probability": 0.7437722419928825,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "f19a3f3cf0c89e06ca5bc5b285290034",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Salford City",
+            "away_team": "Crawley Town",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Salford City",
+            "odds": 1.36,
+            "fair_probability": 0.6568926123381569,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.99,
+        "joint_probability": 0.37256522744210285
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "bf2142d1ca76ba2fc9e61afce80f86c0",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester City",
+            "away_team": "Ipswich Town",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Manchester City or Draw",
+            "odds": 1.02,
+            "fair_probability": 0.9113990239367883,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "8f1945e7272bc7e89016439f5ab321c7",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Liverpool",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.60984393757503,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
         "combined_odds": 1.57,
-        "joint_probability": 0.6026768243366641
+        "joint_probability": 0.5558111694596499
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "bf2142d1ca76ba2fc9e61afce80f86c0",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester City",
+            "away_team": "Ipswich Town",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Manchester City",
+            "odds": 1.22,
+            "fair_probability": 0.7625493841505926,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "45f6101375ac1b19d3bcedfe04394ee5",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Tranmere Rovers",
+            "away_team": "Barnet",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Tranmere Rovers or Draw",
+            "odds": 1.69,
+            "fair_probability": 0.5233106338397067,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "8f1945e7272bc7e89016439f5ab321c7",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Liverpool",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Liverpool or Draw",
+            "odds": 1.46,
+            "fair_probability": 0.6398559423769508,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.01,
+        "joint_probability": 0.25533464277099854
       }
     ]
   }
