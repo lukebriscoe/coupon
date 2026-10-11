@@ -1646,8 +1646,8 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.3,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -1663,7 +1663,7 @@
             "odds": 1.53,
             "fair_probability": 0.6088400411164703,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.53,
@@ -1673,7 +1673,7 @@
   },
   {
     "date": "2026-10-17",
-    "generated_at": "2026-10-11T11:53:59+00:00",
+    "generated_at": "2026-10-11T14:44:57+00:00",
     "stake": 10.0,
     "fixture_count": 22,
     "bets": [
