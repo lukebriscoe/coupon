@@ -1673,9 +1673,9 @@
   },
   {
     "date": "2026-10-17",
-    "generated_at": "2026-10-11T14:44:57+00:00",
+    "generated_at": "2026-10-12T00:39:05+00:00",
     "stake": 10.0,
-    "fixture_count": 22,
+    "fixture_count": 12,
     "bets": [
       {
         "kind": "banker",
@@ -1694,15 +1694,15 @@
             "away_team": "Liverpool",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Brentford or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.60984393757503,
+            "label": "Liverpool or Draw",
+            "odds": 1.5,
+            "fair_probability": 0.6202531645569621,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.60984393757503
+        "combined_odds": 1.5,
+        "joint_probability": 0.6202531645569621
       },
       {
         "kind": "underdog_acca",
@@ -1722,8 +1722,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.22,
-            "fair_probability": 0.7625493841505926,
+            "odds": 1.2,
+            "fair_probability": 0.7729729729729731,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1740,24 +1740,10 @@
             "fair_probability": 0.7437722419928825,
             "price_source": "skybet",
             "result": "pending"
-          },
-          {
-            "fixture_id": "f19a3f3cf0c89e06ca5bc5b285290034",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Salford City",
-            "away_team": "Crawley Town",
-            "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Salford City",
-            "odds": 1.36,
-            "fair_probability": 0.6568926123381569,
-            "price_source": "skybet",
-            "result": "pending"
           }
         ],
-        "combined_odds": 1.99,
-        "joint_probability": 0.37256522744210285
+        "combined_odds": 1.44,
+        "joint_probability": 0.574915841108012
       },
       {
         "kind": "double",
@@ -1777,8 +1763,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
             "label": "Manchester City or Draw",
-            "odds": 1.02,
-            "fair_probability": 0.9113990239367883,
+            "odds": 1.01,
+            "fair_probability": 0.9156756756756758,
             "price_source": "derived",
             "result": "pending"
           },
@@ -1790,15 +1776,15 @@
             "away_team": "Liverpool",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Brentford or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.60984393757503,
+            "label": "Liverpool or Draw",
+            "odds": 1.5,
+            "fair_probability": 0.6202531645569621,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.57,
-        "joint_probability": 0.5558111694596499
+        "combined_odds": 1.52,
+        "joint_probability": 0.5679507355456724
       },
       {
         "kind": "treble",
@@ -1818,23 +1804,23 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.22,
-            "fair_probability": 0.7625493841505926,
+            "odds": 1.2,
+            "fair_probability": 0.7729729729729731,
             "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "45f6101375ac1b19d3bcedfe04394ee5",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Tranmere Rovers",
-            "away_team": "Barnet",
+            "fixture_id": "07d6950f415c69b97bce3cc2790f24f1",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Leicester City",
+            "away_team": "Doncaster Rovers",
             "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Tranmere Rovers or Draw",
-            "odds": 1.69,
-            "fair_probability": 0.5233106338397067,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Leicester City",
+            "odds": 1.73,
+            "fair_probability": 0.5201109570041609,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -1845,15 +1831,50 @@
             "away_team": "Liverpool",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Liverpool or Draw",
-            "odds": 1.46,
-            "fair_probability": 0.6398559423769508,
+            "label": "Brentford or Draw",
+            "odds": 1.48,
+            "fair_probability": 0.6278481012658228,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.25533464277099854
+        "combined_odds": 3.07,
+        "joint_probability": 0.2524148474744518
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "generated_at": "2026-10-12T00:39:05+00:00",
+    "stake": 10.0,
+    "fixture_count": 4,
+    "bets": [
+      {
+        "kind": "sunday_banker",
+        "title": "Sunday Banker",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "f696a248965373d9071dc0662e5c58a8",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Nottingham Forest",
+            "away_team": "Arsenal",
+            "kickoff": "2026-10-18T16:30:00+01:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.53,
+            "fair_probability": 0.6070511323838431,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.53,
+        "joint_probability": 0.6070511323838431
       }
     ]
   }
