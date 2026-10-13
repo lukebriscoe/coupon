@@ -1673,37 +1673,10 @@
   },
   {
     "date": "2026-10-17",
-    "generated_at": "2026-10-12T16:36:24+00:00",
+    "generated_at": "2026-10-13T14:53:28+00:00",
     "stake": 10.0,
-    "fixture_count": 22,
+    "fixture_count": 30,
     "bets": [
-      {
-        "kind": "banker",
-        "title": "Banker of the Day",
-        "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "8f1945e7272bc7e89016439f5ab321c7",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brentford",
-            "away_team": "Liverpool",
-            "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Liverpool or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6067006554989074,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6067006554989074
-      },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
@@ -1728,6 +1701,34 @@
             "result": "pending"
           },
           {
+            "fixture_id": "fbbd46f088071f0f022dce6850bcfa80",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Cardiff City",
+            "kickoff": "2026-10-17T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.5,
+            "fair_probability": 0.6244131455399061,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "899f15da06998732d951a91ed8f5e32f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Bolton Wanderers",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.4,
+            "fair_probability": 0.668724279835391,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
             "fixture_id": "4bbcd3c17ad0671952aeaf7fa5918483",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
@@ -1736,8 +1737,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Stockport County FC",
-            "odds": 1.2,
-            "fair_probability": 0.7399103139013453,
+            "odds": 1.22,
+            "fair_probability": 0.7367167733293646,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1756,8 +1757,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 1.92,
-        "joint_probability": 0.38707156195854775
+        "combined_odds": 4.09,
+        "joint_probability": 0.16092809522287882
       },
       {
         "kind": "double",
@@ -1783,22 +1784,22 @@
             "result": "pending"
           },
           {
-            "fixture_id": "4e35d84f768445fef623ea75a0b600eb",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Colchester United",
-            "away_team": "Exeter City",
+            "fixture_id": "35d7df16a960d08a7d38e7f4f706677d",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Birmingham City",
+            "away_team": "Queens Park Rangers",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Colchester United or Draw",
+            "label": "Birmingham City or Draw",
             "odds": 1.26,
-            "fair_probability": 0.7111299915038234,
+            "fair_probability": 0.74,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.55534492237114
+        "joint_probability": 0.5778904665314402
       },
       {
         "kind": "treble",
@@ -1824,42 +1825,42 @@
             "result": "pending"
           },
           {
-            "fixture_id": "ea0beb59f6374bc521413e4a60838909",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Crewe Alexandra",
-            "away_team": "Rochdale",
+            "fixture_id": "899f15da06998732d951a91ed8f5e32f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Bolton Wanderers",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
-            "label": "Crewe Alexandra",
-            "odds": 1.75,
-            "fair_probability": 0.5084745762711864,
+            "label": "Southampton",
+            "odds": 1.4,
+            "fair_probability": 0.668724279835391,
             "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "8f1945e7272bc7e89016439f5ab321c7",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Brentford",
-            "away_team": "Liverpool",
+            "fixture_id": "35d7df16a960d08a7d38e7f4f706677d",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Birmingham City",
+            "away_team": "Queens Park Rangers",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Brentford or Draw",
-            "odds": 1.43,
-            "fair_probability": 0.6533139111434814,
+            "label": "Queens Park Rangers or Draw",
+            "odds": 1.8,
+            "fair_probability": 0.5199999999999999,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.0,
-        "joint_probability": 0.2594208984669168
+        "combined_odds": 3.02,
+        "joint_probability": 0.27155902803863136
       }
     ]
   },
   {
     "date": "2026-10-18",
-    "generated_at": "2026-10-12T16:36:24+00:00",
+    "generated_at": "2026-10-13T14:53:28+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
@@ -1873,22 +1874,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f696a248965373d9071dc0662e5c58a8",
+            "fixture_id": "676b3b0b609e9cf565da450786618d26",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Nottingham Forest",
-            "away_team": "Arsenal",
-            "kickoff": "2026-10-18T16:30:00+01:00",
-            "market": "h2h",
-            "label": "Arsenal",
-            "odds": 1.53,
-            "fair_probability": 0.6070511323838431,
-            "price_source": "skybet",
+            "home_team": "Leeds United",
+            "away_team": "Manchester United",
+            "kickoff": "2026-10-18T14:00:00+01:00",
+            "market": "double_chance",
+            "label": "Manchester United or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6115906288532675,
+            "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.53,
-        "joint_probability": 0.6070511323838431
+        "combined_odds": 1.52,
+        "joint_probability": 0.6115906288532675
       }
     ]
   }
