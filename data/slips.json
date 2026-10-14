@@ -1673,10 +1673,37 @@
   },
   {
     "date": "2026-10-17",
-    "generated_at": "2026-10-13T14:53:28+00:00",
+    "generated_at": "2026-10-14T12:45:00+00:00",
     "stake": 10.0,
     "fixture_count": 30,
     "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "b6bf48e65d78b5615da5f3ab904fa5d4",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Swansea City",
+            "away_team": "West Ham United",
+            "kickoff": "2026-10-17T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Swansea City or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.6067006554989074,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.54,
+        "joint_probability": 0.6067006554989074
+      },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
@@ -1710,7 +1737,7 @@
             "market": "h2h",
             "label": "Middlesbrough",
             "odds": 1.5,
-            "fair_probability": 0.6244131455399061,
+            "fair_probability": 0.6306306306306306,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1737,8 +1764,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Stockport County FC",
-            "odds": 1.22,
-            "fair_probability": 0.7367167733293646,
+            "odds": 1.2,
+            "fair_probability": 0.7399103139013453,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1757,8 +1784,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 4.09,
-        "joint_probability": 0.16092809522287882
+        "combined_odds": 4.02,
+        "joint_probability": 0.1632350505052638
       },
       {
         "kind": "double",
@@ -1860,7 +1887,7 @@
   },
   {
     "date": "2026-10-18",
-    "generated_at": "2026-10-13T14:53:28+00:00",
+    "generated_at": "2026-10-14T12:45:00+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
@@ -1874,22 +1901,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "676b3b0b609e9cf565da450786618d26",
+            "fixture_id": "f696a248965373d9071dc0662e5c58a8",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Leeds United",
-            "away_team": "Manchester United",
-            "kickoff": "2026-10-18T14:00:00+01:00",
-            "market": "double_chance",
-            "label": "Manchester United or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6115906288532675,
-            "price_source": "derived",
+            "home_team": "Nottingham Forest",
+            "away_team": "Arsenal",
+            "kickoff": "2026-10-18T16:30:00+01:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.55,
+            "fair_probability": 0.6039488966318235,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.6115906288532675
+        "combined_odds": 1.55,
+        "joint_probability": 0.6039488966318235
       }
     ]
   }
