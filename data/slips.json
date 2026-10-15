@@ -1673,7 +1673,7 @@
   },
   {
     "date": "2026-10-17",
-    "generated_at": "2026-10-14T12:45:00+00:00",
+    "generated_at": "2026-10-15T12:32:14+00:00",
     "stake": 10.0,
     "fixture_count": 30,
     "bets": [
@@ -1687,22 +1687,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "b6bf48e65d78b5615da5f3ab904fa5d4",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Swansea City",
-            "away_team": "West Ham United",
+            "fixture_id": "bfbbbbd59a80f0dea2410fe523972b3c",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Barnsley",
+            "away_team": "Cambridge United",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Swansea City or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6067006554989074,
+            "label": "Cambridge United or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6021347228642264,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6067006554989074
+        "combined_odds": 1.52,
+        "joint_probability": 0.6021347228642264
       },
       {
         "kind": "underdog_acca",
@@ -1710,7 +1710,7 @@
         "stake": 1.0,
         "status": "pending",
         "returns": 0.0,
-        "note": null,
+        "note": "All 6 legs landing is a 8.98% shot \u2014 this is a lottery ticket, not a strategy. The same 6 selections as an \u201cany 4 from 6\u201d system bet (15 lines) pays out 69.4% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
         "legs": [
           {
@@ -1723,7 +1723,7 @@
             "market": "h2h",
             "label": "Manchester City",
             "odds": 1.2,
-            "fair_probability": 0.7809330628803246,
+            "fair_probability": 0.7729729729729731,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1737,7 +1737,21 @@
             "market": "h2h",
             "label": "Middlesbrough",
             "odds": 1.5,
-            "fair_probability": 0.6306306306306306,
+            "fair_probability": 0.6188925081433224,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "1d647c4a829133678cfb3a0425b1cd16",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Millwall",
+            "away_team": "Lincoln City",
+            "kickoff": "2026-10-17T12:30:00+01:00",
+            "market": "h2h",
+            "label": "Millwall",
+            "odds": 1.62,
+            "fair_probability": 0.574915973819211,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1750,8 +1764,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Southampton",
-            "odds": 1.4,
-            "fair_probability": 0.668724279835391,
+            "odds": 1.44,
+            "fair_probability": 0.6480218281036835,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1764,8 +1778,8 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Stockport County FC",
-            "odds": 1.2,
-            "fair_probability": 0.7399103139013453,
+            "odds": 1.22,
+            "fair_probability": 0.7459374573262324,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1778,14 +1792,14 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "h2h",
             "label": "Salford City",
-            "odds": 1.33,
-            "fair_probability": 0.669882100750268,
+            "odds": 1.36,
+            "fair_probability": 0.6751142501038637,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 4.02,
-        "joint_probability": 0.1632350505052638
+        "combined_odds": 6.97,
+        "joint_probability": 0.08975388082800768
       },
       {
         "kind": "double",
@@ -1797,17 +1811,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "bf2142d1ca76ba2fc9e61afce80f86c0",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Manchester City",
-            "away_team": "Ipswich Town",
+            "fixture_id": "33ad80e4f2bfa519396049639fd4d31a",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wrexham AFC",
+            "away_team": "Preston North End",
             "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Manchester City",
-            "odds": 1.2,
-            "fair_probability": 0.7809330628803246,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Wrexham AFC or Draw",
+            "odds": 1.16,
+            "fair_probability": 0.8037026153394065,
+            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -1819,14 +1833,14 @@
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
             "label": "Birmingham City or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.74,
+            "odds": 1.31,
+            "fair_probability": 0.7164265129682997,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5778904665314402
+        "combined_odds": 1.52,
+        "joint_probability": 0.5757938621711137
       },
       {
         "kind": "treble",
@@ -1838,31 +1852,31 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "bf2142d1ca76ba2fc9e61afce80f86c0",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Manchester City",
-            "away_team": "Ipswich Town",
+            "fixture_id": "530a906583ad9f1e013f382e2fe19c5e",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Bristol City",
+            "away_team": "Sheffield United",
             "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Manchester City",
-            "odds": 1.2,
-            "fair_probability": 0.7809330628803246,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Bristol City or Draw",
+            "odds": 1.31,
+            "fair_probability": 0.7164265129682997,
+            "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "899f15da06998732d951a91ed8f5e32f",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Southampton",
-            "away_team": "Bolton Wanderers",
+            "fixture_id": "4e7d1b70f3303f659ef3ef5521589615",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Bradford City",
+            "away_team": "Stevenage",
             "kickoff": "2026-10-17T15:00:00+01:00",
-            "market": "h2h",
-            "label": "Southampton",
-            "odds": 1.4,
-            "fair_probability": 0.668724279835391,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Stevenage or Draw",
+            "odds": 1.77,
+            "fair_probability": 0.5186373734880276,
+            "price_source": "derived",
             "result": "pending"
           },
           {
@@ -1873,21 +1887,21 @@
             "away_team": "Queens Park Rangers",
             "kickoff": "2026-10-17T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Queens Park Rangers or Draw",
-            "odds": 1.8,
-            "fair_probability": 0.5199999999999999,
+            "label": "Birmingham City or Draw",
+            "odds": 1.31,
+            "fair_probability": 0.7164265129682997,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.27155902803863136
+        "combined_odds": 3.04,
+        "joint_probability": 0.2661994220599137
       }
     ]
   },
   {
     "date": "2026-10-18",
-    "generated_at": "2026-10-14T12:45:00+00:00",
+    "generated_at": "2026-10-15T12:32:14+00:00",
     "stake": 10.0,
     "fixture_count": 4,
     "bets": [
@@ -1901,22 +1915,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f696a248965373d9071dc0662e5c58a8",
+            "fixture_id": "9fc08b390a49c4434f7cf631a0bb88fb",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Nottingham Forest",
-            "away_team": "Arsenal",
-            "kickoff": "2026-10-18T16:30:00+01:00",
+            "home_team": "Brighton and Hove Albion",
+            "away_team": "Crystal Palace",
+            "kickoff": "2026-10-18T14:00:00+01:00",
             "market": "h2h",
-            "label": "Arsenal",
-            "odds": 1.55,
-            "fair_probability": 0.6039488966318235,
+            "label": "Brighton and Hove Albion",
+            "odds": 1.5,
+            "fair_probability": 0.6135458167330677,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6039488966318235
+        "combined_odds": 1.5,
+        "joint_probability": 0.6135458167330677
       }
     ]
   }
