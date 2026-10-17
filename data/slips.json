@@ -1681,7 +1681,7 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1698,7 +1698,7 @@
             "odds": 1.54,
             "fair_probability": 0.6065937679848722,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.54,
@@ -1708,7 +1708,7 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1725,7 +1725,7 @@
             "odds": 1.2,
             "fair_probability": 0.7777777777777778,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "fbbd46f088071f0f022dce6850bcfa80",
@@ -1739,7 +1739,7 @@
             "odds": 1.5,
             "fair_probability": 0.6188925081433224,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "1d647c4a829133678cfb3a0425b1cd16",
@@ -1753,7 +1753,7 @@
             "odds": 1.62,
             "fair_probability": 0.578368999421631,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "899f15da06998732d951a91ed8f5e32f",
@@ -1767,7 +1767,7 @@
             "odds": 1.44,
             "fair_probability": 0.6436693572143994,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "4bbcd3c17ad0671952aeaf7fa5918483",
@@ -1781,7 +1781,7 @@
             "odds": 1.22,
             "fair_probability": 0.7459374573262324,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 5.12,
@@ -1791,7 +1791,7 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1808,7 +1808,7 @@
             "odds": 1.16,
             "fair_probability": 0.8037026153394065,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "530a906583ad9f1e013f382e2fe19c5e",
@@ -1822,7 +1822,7 @@
             "odds": 1.31,
             "fair_probability": 0.7164265129682997,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.52,
@@ -1832,7 +1832,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -1849,7 +1849,7 @@
             "odds": 1.38,
             "fair_probability": 0.6771355751048261,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "530a906583ad9f1e013f382e2fe19c5e",
@@ -1863,7 +1863,7 @@
             "odds": 1.31,
             "fair_probability": 0.7164265129682997,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "33ad80e4f2bfa519396049639fd4d31a",
@@ -1877,7 +1877,7 @@
             "odds": 1.67,
             "fair_probability": 0.5583308845136645,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 3.02,
