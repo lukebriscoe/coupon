@@ -1895,8 +1895,8 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.0,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -1912,7 +1912,7 @@
             "odds": 1.5,
             "fair_probability": 0.6264014466546112,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.5,
@@ -1922,10 +1922,37 @@
   },
   {
     "date": "2026-10-24",
-    "generated_at": "2026-10-18T12:30:12+00:00",
+    "generated_at": "2026-10-18T23:24:27+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "48ff496c5b9ad78f94388b4b86605144",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Swansea City",
+            "kickoff": "2026-10-24T15:00:00+01:00",
+            "market": "double_chance",
+            "label": "Swansea City or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6121941103276649,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.52,
+        "joint_probability": 0.6121941103276649
+      },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
@@ -1991,36 +2018,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Arsenal",
-            "away_team": "Everton",
+            "fixture_id": "0b4ff381f91d622a9204399080535072",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Watford",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Arsenal or Draw",
-            "odds": 1.06,
-            "fair_probability": 0.8832670762558729,
+            "label": "Wolverhampton Wanderers or Draw",
+            "odds": 1.08,
+            "fair_probability": 0.8739933680720037,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "89b4f56843ed131dcd5a5ef7d36c6234",
+            "fixture_id": "48ff496c5b9ad78f94388b4b86605144",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Blackburn Rovers",
-            "away_team": "Wrexham AFC",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Swansea City",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Blackburn Rovers or Draw",
-            "odds": 1.42,
-            "fair_probability": 0.6549560853199499,
+            "label": "Queens Park Rangers or Draw",
+            "odds": 1.41,
+            "fair_probability": 0.6615512235586893,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5785011465565442
+        "combined_odds": 1.52,
+        "joint_probability": 0.5781913820302139
       },
       {
         "kind": "treble",
@@ -2032,16 +2059,16 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0918c2918971325f8e0354f4d3e58cde",
+            "fixture_id": "1f14f3dec415d830f18715ea1ecdd134",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Barnet",
-            "away_team": "Oldham Athletic",
+            "home_team": "York City",
+            "away_team": "Port Vale",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Barnet or Draw",
-            "odds": 1.2,
-            "fair_probability": 0.744413407821229,
+            "label": "Port Vale or Draw",
+            "odds": 1.72,
+            "fair_probability": 0.5148204020059527,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2053,9 +2080,9 @@
             "away_team": "West Bromwich Albion",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Preston North End or Draw",
-            "odds": 1.8,
-            "fair_probability": 0.5199999999999999,
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7419171866137265,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2074,8 +2101,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.2613028589273001
+        "combined_odds": 3.01,
+        "joint_probability": 0.25783259051697577
       }
     ]
   }
