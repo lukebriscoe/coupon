@@ -1922,7 +1922,7 @@
   },
   {
     "date": "2026-10-24",
-    "generated_at": "2026-10-18T10:10:19+00:00",
+    "generated_at": "2026-10-18T12:30:12+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -2032,16 +2032,16 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "1f14f3dec415d830f18715ea1ecdd134",
+            "fixture_id": "0918c2918971325f8e0354f4d3e58cde",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "York City",
-            "away_team": "Port Vale",
+            "home_team": "Barnet",
+            "away_team": "Oldham Athletic",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Port Vale or Draw",
-            "odds": 1.72,
-            "fair_probability": 0.5148204020059527,
+            "label": "Barnet or Draw",
+            "odds": 1.2,
+            "fair_probability": 0.744413407821229,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2053,29 +2053,29 @@
             "away_team": "West Bromwich Albion",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "West Bromwich Albion or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.7245152620464579,
+            "label": "Preston North End or Draw",
+            "odds": 1.8,
+            "fair_probability": 0.5199999999999999,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Arsenal",
-            "away_team": "Everton",
+            "fixture_id": "0b4ff381f91d622a9204399080535072",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Watford",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "h2h",
-            "label": "Arsenal",
-            "odds": 1.36,
-            "fair_probability": 0.6866642573183954,
+            "label": "Wolverhampton Wanderers",
+            "odds": 1.4,
+            "fair_probability": 0.6750355281856939,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
         "combined_odds": 3.02,
-        "joint_probability": 0.25612249840469486
+        "joint_probability": 0.2613028589273001
       }
     ]
   }
