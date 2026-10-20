@@ -1922,37 +1922,10 @@
   },
   {
     "date": "2026-10-24",
-    "generated_at": "2026-10-19T14:28:19+00:00",
+    "generated_at": "2026-10-20T12:36:47+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
-      {
-        "kind": "banker",
-        "title": "Banker of the Day",
-        "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "48ff496c5b9ad78f94388b4b86605144",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Queens Park Rangers",
-            "away_team": "Swansea City",
-            "kickoff": "2026-10-24T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Swansea City or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6121941103276649,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.6121941103276649
-      },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
@@ -2018,36 +1991,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0b4ff381f91d622a9204399080535072",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Wolverhampton Wanderers",
-            "away_team": "Watford",
+            "fixture_id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Arsenal",
+            "away_team": "Everton",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Wolverhampton Wanderers or Draw",
-            "odds": 1.08,
-            "fair_probability": 0.8739933680720037,
+            "label": "Arsenal or Draw",
+            "odds": 1.06,
+            "fair_probability": 0.8832670762558729,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "48ff496c5b9ad78f94388b4b86605144",
+            "fixture_id": "89b4f56843ed131dcd5a5ef7d36c6234",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Queens Park Rangers",
-            "away_team": "Swansea City",
+            "home_team": "Blackburn Rovers",
+            "away_team": "Wrexham AFC",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Queens Park Rangers or Draw",
-            "odds": 1.41,
-            "fair_probability": 0.6615512235586893,
+            "label": "Blackburn Rovers or Draw",
+            "odds": 1.45,
+            "fair_probability": 0.6440306681270537,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.5781913820302139
+        "combined_odds": 1.54,
+        "joint_probability": 0.568851085255699
       },
       {
         "kind": "treble",
@@ -2108,7 +2081,7 @@
   },
   {
     "date": "2026-10-25",
-    "generated_at": "2026-10-19T14:28:19+00:00",
+    "generated_at": "2026-10-20T12:36:47+00:00",
     "stake": 10.0,
     "fixture_count": 5,
     "bets": [
