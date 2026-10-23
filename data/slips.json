@@ -1922,7 +1922,7 @@
   },
   {
     "date": "2026-10-24",
-    "generated_at": "2026-10-22T12:51:41+00:00",
+    "generated_at": "2026-10-23T12:29:52+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -1936,22 +1936,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "60d0f45831035c374992df8ca58ca380",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Cardiff City",
-            "away_team": "Birmingham City",
+            "fixture_id": "a5357ed080be2e6433ac6795af028eae",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Rotherham United",
+            "away_team": "Shrewsbury Town",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Cardiff City or Draw",
-            "odds": 1.55,
-            "fair_probability": 0.6062386962059177,
+            "label": "Shrewsbury Town or Draw",
+            "odds": 1.53,
+            "fair_probability": 0.6010060104863805,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6062386962059177
+        "combined_odds": 1.53,
+        "joint_probability": 0.6010060104863805
       },
       {
         "kind": "underdog_acca",
@@ -1986,7 +1986,7 @@
             "market": "h2h",
             "label": "Wolverhampton Wanderers",
             "odds": 1.36,
-            "fair_probability": 0.6827492034592626,
+            "fair_probability": 0.6880733944954128,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -1999,8 +1999,8 @@
             "kickoff": "2026-10-24T12:30:00+01:00",
             "market": "h2h",
             "label": "Huddersfield Town",
-            "odds": 1.33,
-            "fair_probability": 0.6861848124428179,
+            "odds": 1.3,
+            "fair_probability": 0.7148659626320064,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2013,8 +2013,8 @@
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "h2h",
             "label": "Stockport County FC",
-            "odds": 1.53,
-            "fair_probability": 0.5939172431797415,
+            "odds": 1.6,
+            "fair_probability": 0.5743651753325272,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2028,13 +2028,13 @@
             "market": "h2h",
             "label": "Bristol Rovers",
             "odds": 1.57,
-            "fair_probability": 0.5859947260474655,
+            "fair_probability": 0.6013630896699185,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 6.08,
-        "joint_probability": 0.10798096692920586
+        "combined_odds": 6.22,
+        "joint_probability": 0.11251476569087636
       },
       {
         "kind": "double",
@@ -2046,28 +2046,28 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Arsenal",
-            "away_team": "Everton",
+            "fixture_id": "0b4ff381f91d622a9204399080535072",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Watford",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Arsenal or Draw",
+            "label": "Wolverhampton Wanderers or Draw",
             "odds": 1.06,
-            "fair_probability": 0.8763790607092604,
+            "fair_probability": 0.8830275229357798,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "521959853c7567aee403433718c0d82a",
+            "fixture_id": "4c825bab95f88ab62ebb47ffe4f0680a",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
-            "home_team": "Cambridge United",
-            "away_team": "Plymouth Argyle",
+            "home_team": "Blackpool",
+            "away_team": "Mansfield Town",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Cambridge United or Draw",
+            "label": "Mansfield Town or Draw",
             "odds": 1.42,
             "fair_probability": 0.6499176276771004,
             "price_source": "derived",
@@ -2075,7 +2075,7 @@
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5695742000820481
+        "joint_probability": 0.5738951528800084
       },
       {
         "kind": "treble",
@@ -2087,56 +2087,56 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0fbb2626ed9534b9dcf21d16925f9bd7",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Coventry City",
-            "away_team": "Fulham",
+            "fixture_id": "0b4ff381f91d622a9204399080535072",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Watford",
+            "kickoff": "2026-10-24T15:00:00+01:00",
+            "market": "h2h",
+            "label": "Wolverhampton Wanderers",
+            "odds": 1.36,
+            "fair_probability": 0.6880733944954128,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "3768f51852c54237b7ac7d4d76df7167",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stevenage",
+            "away_team": "Milton Keynes Dons",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.32,
-            "fair_probability": 0.7079646017699115,
+            "label": "Stevenage or Draw",
+            "odds": 1.22,
+            "fair_probability": 0.7547169811320755,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "60d0f45831035c374992df8ca58ca380",
+            "fixture_id": "e902b8d3a22b31adbdb83678f4a796b3",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Cardiff City",
-            "away_team": "Birmingham City",
+            "home_team": "Preston North End",
+            "away_team": "West Bromwich Albion",
             "kickoff": "2026-10-24T15:00:00+01:00",
             "market": "double_chance",
-            "label": "Birmingham City or Draw",
-            "odds": 1.46,
-            "fair_probability": 0.6436684779353933,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "35338730dd2de8ae05fc62d9d314e05b",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Lincoln City",
-            "away_team": "Burnley",
-            "kickoff": "2026-10-24T15:00:00+01:00",
-            "market": "double_chance",
-            "label": "Lincoln City or Draw",
-            "odds": 1.56,
-            "fair_probability": 0.5959729328271992,
+            "label": "Preston North End or Draw",
+            "odds": 1.81,
+            "fair_probability": 0.5133932709240894,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.27158158623969963
+        "combined_odds": 3.0,
+        "joint_probability": 0.26660547217799346
       }
     ]
   },
   {
     "date": "2026-10-25",
-    "generated_at": "2026-10-22T12:51:41+00:00",
+    "generated_at": "2026-10-23T12:29:52+00:00",
     "stake": 10.0,
     "fixture_count": 5,
     "bets": [
@@ -2158,14 +2158,14 @@
             "kickoff": "2026-10-25T16:30:00+00:00",
             "market": "double_chance",
             "label": "Sunderland or Draw",
-            "odds": 1.55,
-            "fair_probability": 0.6055979643765903,
+            "odds": 1.52,
+            "fair_probability": 0.6095390041145352,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6055979643765903
+        "combined_odds": 1.52,
+        "joint_probability": 0.6095390041145352
       }
     ]
   }
