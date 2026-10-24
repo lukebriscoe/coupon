@@ -2136,7 +2136,7 @@
   },
   {
     "date": "2026-10-25",
-    "generated_at": "2026-10-23T12:29:52+00:00",
+    "generated_at": "2026-10-24T09:21:11+00:00",
     "stake": 10.0,
     "fixture_count": 5,
     "bets": [
@@ -2158,14 +2158,14 @@
             "kickoff": "2026-10-25T16:30:00+00:00",
             "market": "double_chance",
             "label": "Sunderland or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6095390041145352,
+            "odds": 1.5,
+            "fair_probability": 0.6205149852258337,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.6095390041145352
+        "combined_odds": 1.5,
+        "joint_probability": 0.6205149852258337
       }
     ]
   }
