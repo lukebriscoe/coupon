@@ -2171,7 +2171,7 @@
   },
   {
     "date": "2026-10-31",
-    "generated_at": "2026-10-25T10:28:53+00:00",
+    "generated_at": "2026-10-25T13:01:43+00:00",
     "stake": 10.0,
     "fixture_count": 30,
     "bets": [
@@ -2322,20 +2322,6 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0e7ece126e98406b8cb7c11f1e916381",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Peterborough United",
-            "away_team": "Luton",
-            "kickoff": "2026-10-31T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Peterborough United or Draw",
-            "odds": 1.79,
-            "fair_probability": 0.5017421602787457,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
             "fixture_id": "a6c06eabdf4e6710354b6098d39449e7",
             "league_key": "soccer_epl",
             "league_short": "PL",
@@ -2346,6 +2332,20 @@
             "label": "Bournemouth or Draw",
             "odds": 1.31,
             "fair_probability": 0.713314557638147,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "0e7ece126e98406b8cb7c11f1e916381",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Peterborough United",
+            "away_team": "Luton",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Peterborough United or Draw",
+            "odds": 1.79,
+            "fair_probability": 0.5017421602787457,
             "price_source": "derived",
             "result": "pending"
           },
