@@ -2168,5 +2168,205 @@
         "joint_probability": 0.6120401337792643
       }
     ]
+  },
+  {
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T10:28:53+00:00",
+    "stake": 10.0,
+    "fixture_count": 30,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "36f913b9a56f5a16fa4b8456678022f3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Bolton Wanderers",
+            "away_team": "Bristol City",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Bolton Wanderers or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.6071428571428571,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.54,
+        "joint_probability": 0.6071428571428571
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "f1340f4249745bb9c83bf2ddf43195d1",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Norwich City",
+            "away_team": "Watford",
+            "kickoff": "2026-10-31T12:30:00+00:00",
+            "market": "h2h",
+            "label": "Norwich City",
+            "odds": 1.55,
+            "fair_probability": 0.5955757231990924,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "fed16730abbab026655e7617fa765171",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Charlton Athletic",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.25,
+            "fair_probability": 0.7373107747105967,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "86255d2aca5651bf267f22acf6140d5d",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "West Bromwich Albion",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.53,
+            "fair_probability": 0.6079850440894466,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "c8684b92092ba2bbe4b31e8d24690a6e",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Wimbledon",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.22,
+            "fair_probability": 0.7324142252859157,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.62,
+        "joint_probability": 0.19554073091350838
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "d1394e49a7258d4a4daeae7a803cae0a",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Cardiff City",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Wolverhampton Wanderers or Draw",
+            "odds": 1.17,
+            "fair_probability": 0.8025957743870297,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b9254b648ca25ce7831988b53ed17c3c",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Nottingham Forest",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.725609756097561,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.5823713240979057
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "0e7ece126e98406b8cb7c11f1e916381",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Peterborough United",
+            "away_team": "Luton",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Peterborough United or Draw",
+            "odds": 1.79,
+            "fair_probability": 0.5017421602787457,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "a6c06eabdf4e6710354b6098d39449e7",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Bournemouth",
+            "away_team": "Leeds United",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Bournemouth or Draw",
+            "odds": 1.31,
+            "fair_probability": 0.713314557638147,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b9254b648ca25ce7831988b53ed17c3c",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brentford",
+            "away_team": "Nottingham Forest",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Brentford or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.725609756097561,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.02,
+        "joint_probability": 0.25969572235249616
+      }
+    ]
   }
 ]
