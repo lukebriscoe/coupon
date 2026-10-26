@@ -2171,7 +2171,7 @@
   },
   {
     "date": "2026-10-31",
-    "generated_at": "2026-10-25T23:23:06+00:00",
+    "generated_at": "2026-10-26T14:01:59+00:00",
     "stake": 10.0,
     "fixture_count": 30,
     "bets": [
@@ -2185,22 +2185,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "36f913b9a56f5a16fa4b8456678022f3",
+            "fixture_id": "86255d2aca5651bf267f22acf6140d5d",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Bolton Wanderers",
-            "away_team": "Bristol City",
+            "home_team": "West Ham United",
+            "away_team": "West Bromwich Albion",
             "kickoff": "2026-10-31T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Bolton Wanderers or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6071428571428571,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.53,
+            "fair_probability": 0.6079850440894466,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6071428571428571
+        "combined_odds": 1.53,
+        "joint_probability": 0.6079850440894466
       },
       {
         "kind": "underdog_acca",
@@ -2221,7 +2221,7 @@
             "market": "h2h",
             "label": "Tottenham Hotspur",
             "odds": 1.5,
-            "fair_probability": 0.6221653026800774,
+            "fair_probability": 0.6176089211618258,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2283,7 +2283,7 @@
           }
         ],
         "combined_odds": 5.42,
-        "joint_probability": 0.12314479880901541
+        "joint_probability": 0.12224295699471752
       },
       {
         "kind": "double",
@@ -2336,31 +2336,31 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0e7ece126e98406b8cb7c11f1e916381",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Peterborough United",
-            "away_team": "Luton",
+            "fixture_id": "36f913b9a56f5a16fa4b8456678022f3",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Bolton Wanderers",
+            "away_team": "Bristol City",
             "kickoff": "2026-10-31T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Peterborough United or Draw",
-            "odds": 1.79,
-            "fair_probability": 0.5017421602787457,
+            "label": "Bolton Wanderers or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6170779154295076,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "bfd0294b9c79d8d885b0e6fc1dd47c5f",
+            "fixture_id": "86255d2aca5651bf267f22acf6140d5d",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Burnley",
-            "away_team": "Portsmouth",
+            "home_team": "West Ham United",
+            "away_team": "West Bromwich Albion",
             "kickoff": "2026-10-31T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Burnley or Draw",
-            "odds": 1.31,
-            "fair_probability": 0.7164265129682997,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.53,
+            "fair_probability": 0.6079850440894466,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -2378,8 +2378,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.2608286888379533
+        "combined_odds": 3.0,
+        "joint_probability": 0.27223001884551784
       }
     ]
   }
