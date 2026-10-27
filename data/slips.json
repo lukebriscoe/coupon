@@ -2171,7 +2171,7 @@
   },
   {
     "date": "2026-10-31",
-    "generated_at": "2026-10-26T14:01:59+00:00",
+    "generated_at": "2026-10-27T13:04:07+00:00",
     "stake": 10.0,
     "fixture_count": 30,
     "bets": [
@@ -2249,7 +2249,7 @@
             "market": "h2h",
             "label": "Middlesbrough",
             "odds": 1.25,
-            "fair_probability": 0.7463175122749591,
+            "fair_probability": 0.7359154929577465,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2283,7 +2283,7 @@
           }
         ],
         "combined_odds": 5.42,
-        "joint_probability": 0.12224295699471752
+        "joint_probability": 0.12053915991219137
       },
       {
         "kind": "double",
@@ -2295,16 +2295,16 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "d1394e49a7258d4a4daeae7a803cae0a",
+            "fixture_id": "008a57fc1a5004ab4f915bdfa41a11c9",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Wolverhampton Wanderers",
-            "away_team": "Cardiff City",
+            "home_team": "Millwall",
+            "away_team": "Derby County",
             "kickoff": "2026-10-31T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Wolverhampton Wanderers or Draw",
+            "label": "Millwall or Draw",
             "odds": 1.17,
-            "fair_probability": 0.8025957743870297,
+            "fair_probability": 0.7936893203883496,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2324,7 +2324,7 @@
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5823713240979057
+        "joint_probability": 0.5759087141842293
       },
       {
         "kind": "treble",
@@ -2336,34 +2336,6 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "36f913b9a56f5a16fa4b8456678022f3",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Bolton Wanderers",
-            "away_team": "Bristol City",
-            "kickoff": "2026-10-31T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Bolton Wanderers or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6170779154295076,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "86255d2aca5651bf267f22acf6140d5d",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "West Ham United",
-            "away_team": "West Bromwich Albion",
-            "kickoff": "2026-10-31T15:00:00+00:00",
-            "market": "h2h",
-            "label": "West Ham United",
-            "odds": 1.53,
-            "fair_probability": 0.6079850440894466,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
             "fixture_id": "b9254b648ca25ce7831988b53ed17c3c",
             "league_key": "soccer_epl",
             "league_short": "PL",
@@ -2371,15 +2343,43 @@
             "away_team": "Nottingham Forest",
             "kickoff": "2026-10-31T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Brentford or Draw",
+            "label": "Nottingham Forest or Draw",
+            "odds": 1.75,
+            "fair_probability": 0.5335365853658537,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "d20fbb0cd5ad9369b8ed6f2c4a198619",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Coventry City",
+            "away_team": "Sunderland",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Sunderland or Draw",
+            "odds": 1.34,
+            "fair_probability": 0.6984842277755018,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "bfd0294b9c79d8d885b0e6fc1dd47c5f",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Burnley",
+            "away_team": "Portsmouth",
+            "kickoff": "2026-10-31T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Burnley or Draw",
             "odds": 1.29,
             "fair_probability": 0.725609756097561,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.0,
-        "joint_probability": 0.27223001884551784
+        "combined_odds": 3.03,
+        "joint_probability": 0.27041073102738
       }
     ]
   }
