@@ -2379,7 +2379,7 @@
   },
   {
     "date": "2026-11-07",
-    "generated_at": "2026-11-01T00:15:34+00:00",
+    "generated_at": "2026-11-01T12:26:33+00:00",
     "stake": 10.0,
     "fixture_count": 10,
     "bets": [
@@ -2553,13 +2553,13 @@
             "market": "double_chance",
             "label": "Fulham or Draw",
             "odds": 1.33,
-            "fair_probability": 0.6994808306709266,
+            "fair_probability": 0.7003567181926279,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 3.0,
-        "joint_probability": 0.26949563625029227
+        "joint_probability": 0.2698330977711722
       }
     ]
   }
