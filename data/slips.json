@@ -2179,7 +2179,7 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -2196,7 +2196,7 @@
             "odds": 1.53,
             "fair_probability": 0.6129214075959531,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "f1340f4249745bb9c83bf2ddf43195d1",
@@ -2210,7 +2210,7 @@
             "odds": 1.55,
             "fair_probability": 0.5955757231990924,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "fed16730abbab026655e7617fa765171",
@@ -2224,7 +2224,7 @@
             "odds": 1.25,
             "fair_probability": 0.7422680412371134,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "86255d2aca5651bf267f22acf6140d5d",
@@ -2238,7 +2238,7 @@
             "odds": 1.55,
             "fair_probability": 0.5955757231990924,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 4.59,
@@ -2248,7 +2248,7 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -2265,7 +2265,7 @@
             "odds": 1.17,
             "fair_probability": 0.7973552537526805,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "b9254b648ca25ce7831988b53ed17c3c",
@@ -2279,7 +2279,7 @@
             "odds": 1.29,
             "fair_probability": 0.725609756097561,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.51,
@@ -2289,7 +2289,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -2306,7 +2306,7 @@
             "odds": 1.34,
             "fair_probability": 0.6984842277755018,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "bfd0294b9c79d8d885b0e6fc1dd47c5f",
@@ -2320,7 +2320,7 @@
             "odds": 1.75,
             "fair_probability": 0.5335365853658537,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "b9254b648ca25ce7831988b53ed17c3c",
@@ -2334,7 +2334,7 @@
             "odds": 1.29,
             "fair_probability": 0.725609756097561,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 3.03,
@@ -2344,9 +2344,9 @@
   },
   {
     "date": "2026-11-01",
-    "generated_at": "2026-10-28T13:54:06+00:00",
+    "generated_at": "2026-11-01T00:15:34+00:00",
     "stake": 10.0,
-    "fixture_count": 1,
+    "fixture_count": 2,
     "bets": [
       {
         "kind": "sunday_banker",
@@ -2366,14 +2366,200 @@
             "kickoff": "2026-11-01T16:30:00+00:00",
             "market": "double_chance",
             "label": "Liverpool or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6065937679848722,
+            "odds": 1.56,
+            "fair_probability": 0.6061776061776062,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6065937679848722
+        "combined_odds": 1.56,
+        "joint_probability": 0.6061776061776062
+      }
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "generated_at": "2026-11-01T00:15:34+00:00",
+    "stake": 10.0,
+    "fixture_count": 10,
+    "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "a30b201e4df636949371d73491c620b5",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Watford",
+            "away_team": "Middlesbrough",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.55,
+            "fair_probability": 0.6044325050369376,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.55,
+        "joint_probability": 0.6044325050369376
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "842fcc5b9feb8c63054a661ad1fc8926",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Arsenal",
+            "away_team": "Hull City",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.17,
+            "fair_probability": 0.8025682182985554,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "4330962b4e3ef6768d90008d6befb10d",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Preston North End",
+            "away_team": "Southampton",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.55,
+            "fair_probability": 0.5995320050399457,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "a30b201e4df636949371d73491c620b5",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Watford",
+            "away_team": "Middlesbrough",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.55,
+            "fair_probability": 0.6044325050369376,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 2.81,
+        "joint_probability": 0.29083196762127794
+      },
+      {
+        "kind": "double",
+        "title": "Banker Double",
+        "stake": 5.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "842fcc5b9feb8c63054a661ad1fc8926",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Arsenal",
+            "away_team": "Hull City",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.17,
+            "fair_probability": 0.8025682182985554,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b990dcb534c9019a2846d11c7d879030",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Millwall",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.725609756097561,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.51,
+        "joint_probability": 0.5823513291312689
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "611adbd4bc3a3e1b8b03def9d8a29e54",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Lincoln City",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Queens Park Rangers",
+            "odds": 1.75,
+            "fair_probability": 0.5309734513274337,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "b990dcb534c9019a2846d11c7d879030",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Millwall",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "West Bromwich Albion or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.725609756097561,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "3903e98a54db0f2cc23095407fe9dad8",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Fulham",
+            "away_team": "Newcastle United",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Fulham or Draw",
+            "odds": 1.33,
+            "fair_probability": 0.6994808306709266,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.0,
+        "joint_probability": 0.26949563625029227
       }
     ]
   }
