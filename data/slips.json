@@ -2352,7 +2352,7 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -2369,7 +2369,7 @@
             "odds": 1.56,
             "fair_probability": 0.6061776061776062,
             "price_source": "derived",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.56,
@@ -2379,7 +2379,7 @@
   },
   {
     "date": "2026-11-07",
-    "generated_at": "2026-11-01T14:49:42+00:00",
+    "generated_at": "2026-11-02T00:55:01+00:00",
     "stake": 10.0,
     "fixture_count": 10,
     "bets": [
@@ -2428,8 +2428,8 @@
             "kickoff": "2026-11-07T15:00:00+00:00",
             "market": "h2h",
             "label": "Arsenal",
-            "odds": 1.17,
-            "fair_probability": 0.8025682182985554,
+            "odds": 1.14,
+            "fair_probability": 0.8143322475570033,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2462,8 +2462,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 2.81,
-        "joint_probability": 0.29083196762127794
+        "combined_odds": 2.74,
+        "joint_probability": 0.29509497691865827
       },
       {
         "kind": "double",
@@ -2475,36 +2475,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "842fcc5b9feb8c63054a661ad1fc8926",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Arsenal",
-            "away_team": "Hull City",
+            "fixture_id": "611adbd4bc3a3e1b8b03def9d8a29e54",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Lincoln City",
             "kickoff": "2026-11-07T15:00:00+00:00",
-            "market": "h2h",
-            "label": "Arsenal",
-            "odds": 1.17,
-            "fair_probability": 0.8025682182985554,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Queens Park Rangers or Draw",
+            "odds": 1.19,
+            "fair_probability": 0.7787610619469028,
+            "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "b990dcb534c9019a2846d11c7d879030",
+            "fixture_id": "82688a32b0049a0c66b2e56309b6b67b",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "West Bromwich Albion",
-            "away_team": "Millwall",
+            "home_team": "Birmingham City",
+            "away_team": "Swansea City",
             "kickoff": "2026-11-07T15:00:00+00:00",
             "market": "double_chance",
-            "label": "West Bromwich Albion or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.725609756097561,
+            "label": "Birmingham City or Draw",
+            "odds": 1.27,
+            "fair_probability": 0.7388059701492538,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5823513291312689
+        "joint_probability": 0.5753533218861446
       },
       {
         "kind": "treble",
