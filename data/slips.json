@@ -2379,10 +2379,37 @@
   },
   {
     "date": "2026-11-07",
-    "generated_at": "2026-11-04T15:15:25+00:00",
+    "generated_at": "2026-11-05T15:16:53+00:00",
     "stake": 10.0,
     "fixture_count": 10,
     "bets": [
+      {
+        "kind": "banker",
+        "title": "Banker of the Day",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "a30b201e4df636949371d73491c620b5",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Watford",
+            "away_team": "Middlesbrough",
+            "kickoff": "2026-11-07T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.53,
+            "fair_probability": 0.6075334143377886,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.53,
+        "joint_probability": 0.6075334143377886
+      },
       {
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
@@ -2402,7 +2429,7 @@
             "market": "h2h",
             "label": "Arsenal",
             "odds": 1.14,
-            "fair_probability": 0.8071955719557197,
+            "fair_probability": 0.8143322475570033,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2415,14 +2442,14 @@
             "kickoff": "2026-11-07T15:00:00+00:00",
             "market": "h2h",
             "label": "Middlesbrough",
-            "odds": 1.44,
-            "fair_probability": 0.639599555061179,
+            "odds": 1.53,
+            "fair_probability": 0.6075334143377886,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.64,
-        "joint_probability": 0.5162819286702323
+        "combined_odds": 1.74,
+        "joint_probability": 0.49473405076367155
       },
       {
         "kind": "double",
@@ -2434,36 +2461,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "4330962b4e3ef6768d90008d6befb10d",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Preston North End",
-            "away_team": "Southampton",
+            "fixture_id": "842fcc5b9feb8c63054a661ad1fc8926",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Arsenal",
+            "away_team": "Hull City",
             "kickoff": "2026-11-07T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Southampton or Draw",
-            "odds": 1.18,
-            "fair_probability": 0.7925143655847182,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Arsenal",
+            "odds": 1.14,
+            "fair_probability": 0.8143322475570033,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "3903e98a54db0f2cc23095407fe9dad8",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Fulham",
-            "away_team": "Newcastle United",
+            "fixture_id": "463c2870517b0ad28afcbd8775287064",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Cardiff City",
+            "away_team": "Burnley",
             "kickoff": "2026-11-07T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.7245152620464579,
+            "label": "Cardiff City or Draw",
+            "odds": 1.33,
+            "fair_probability": 0.6995178399228543,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.52,
-        "joint_probability": 0.5741887532571944
+        "joint_probability": 0.569639934790598
       },
       {
         "kind": "treble",
@@ -2503,22 +2530,22 @@
             "result": "pending"
           },
           {
-            "fixture_id": "3903e98a54db0f2cc23095407fe9dad8",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Fulham",
-            "away_team": "Newcastle United",
+            "fixture_id": "463c2870517b0ad28afcbd8775287064",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Cardiff City",
+            "away_team": "Burnley",
             "kickoff": "2026-11-07T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.7245152620464579,
+            "label": "Cardiff City or Draw",
+            "odds": 1.33,
+            "fair_probability": 0.6995178399228543,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.26844625717477083
+        "combined_odds": 3.11,
+        "joint_probability": 0.2591842515834119
       }
     ]
   }
