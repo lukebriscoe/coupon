@@ -2579,7 +2579,7 @@
   },
   {
     "date": "2026-11-08",
-    "generated_at": "2026-11-06T14:52:03+00:00",
+    "generated_at": "2026-11-07T11:35:07+00:00",
     "stake": 10.0,
     "fixture_count": 5,
     "bets": [
@@ -2601,14 +2601,14 @@
             "kickoff": "2026-11-08T14:00:00+00:00",
             "market": "h2h",
             "label": "Liverpool",
-            "odds": 1.55,
-            "fair_probability": 0.6057427559984266,
+            "odds": 1.53,
+            "fair_probability": 0.6079850440894466,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6057427559984266
+        "combined_odds": 1.53,
+        "joint_probability": 0.6079850440894466
       }
     ]
   }
