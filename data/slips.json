@@ -2614,9 +2614,9 @@
   },
   {
     "date": "2026-11-14",
-    "generated_at": "2026-11-08T12:32:36+00:00",
+    "generated_at": "2026-11-08T14:51:44+00:00",
     "stake": 10.0,
-    "fixture_count": 16,
+    "fixture_count": 8,
     "bets": [
       {
         "kind": "double",
@@ -2669,30 +2669,30 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "56de4f6858f896d0278456d0f2f8988a",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Milton Keynes Dons",
-            "away_team": "Burton Albion",
+            "fixture_id": "0e3335b3ccccc54d5457fca8f68a7c16",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Shrewsbury Town",
+            "away_team": "Oldham Athletic",
             "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "h2h",
-            "label": "Milton Keynes Dons",
-            "odds": 1.57,
-            "fair_probability": 0.5675218213799741,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Shrewsbury Town or Draw",
+            "odds": 1.37,
+            "fair_probability": 0.6462505822077316,
+            "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "7147fa15092c5d85c5ff46f815e2d5ee",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Wycombe Wanderers",
-            "away_team": "Huddersfield Town",
+            "fixture_id": "1cf6ac52aa2dbb22a0eeb97e0bc80579",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Bristol Rovers",
+            "away_team": "Chesterfield FC",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Wycombe Wanderers or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.5920679886685553,
+            "label": "Chesterfield FC or Draw",
+            "odds": 1.35,
+            "fair_probability": 0.6613279568674535,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2704,15 +2704,15 @@
             "away_team": "Grimsby Town",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Grimsby Town or Draw",
-            "odds": 1.26,
-            "fair_probability": 0.7102167182662539,
+            "label": "Swindon Town or Draw",
+            "odds": 1.67,
+            "fair_probability": 0.5393188854489164,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.01,
-        "joint_probability": 0.2386409871805077
+        "combined_odds": 3.09,
+        "joint_probability": 0.23049603449085934
       }
     ]
   }
