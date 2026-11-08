@@ -2614,7 +2614,7 @@
   },
   {
     "date": "2026-11-14",
-    "generated_at": "2026-11-08T00:49:38+00:00",
+    "generated_at": "2026-11-08T12:32:36+00:00",
     "stake": 10.0,
     "fixture_count": 16,
     "bets": [
@@ -2642,22 +2642,22 @@
             "result": "pending"
           },
           {
-            "fixture_id": "c85f68dde3ac31fe8f0da78b1ddca180",
+            "fixture_id": "f6d830e8821f774883ee2ac32d083bd9",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Rochdale",
-            "away_team": "York City",
+            "home_team": "Colchester United",
+            "away_team": "Gillingham",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "York City or Draw",
+            "label": "Colchester United or Draw",
             "odds": 1.23,
-            "fair_probability": 0.7285027594801496,
+            "fair_probability": 0.7222222222222222,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5311999287876091
+        "joint_probability": 0.5266203703703705
       },
       {
         "kind": "treble",
@@ -2669,31 +2669,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f71d831db05c678e7208a069210cd59d",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Crewe Alexandra",
-            "away_team": "Newport County",
+            "fixture_id": "56de4f6858f896d0278456d0f2f8988a",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Milton Keynes Dons",
+            "away_team": "Burton Albion",
             "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Newport County or Draw",
-            "odds": 1.65,
-            "fair_probability": 0.5416666666666666,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "c85f68dde3ac31fe8f0da78b1ddca180",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Rochdale",
-            "away_team": "York City",
-            "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "York City or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7285027594801496,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Milton Keynes Dons",
+            "odds": 1.57,
+            "fair_probability": 0.5675218213799741,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -2709,10 +2695,24 @@
             "fair_probability": 0.5920679886685553,
             "price_source": "derived",
             "result": "pending"
+          },
+          {
+            "fixture_id": "8861bc687f5c3eab3ddd9ad6fec487ee",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Swindon Town",
+            "away_team": "Grimsby Town",
+            "kickoff": "2026-11-14T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Grimsby Town or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7102167182662539,
+            "price_source": "derived",
+            "result": "pending"
           }
         ],
-        "combined_odds": 3.08,
-        "joint_probability": 0.2336333802534899
+        "combined_odds": 3.01,
+        "joint_probability": 0.2386409871805077
       }
     ]
   }
