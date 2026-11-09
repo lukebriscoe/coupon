@@ -2587,8 +2587,8 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.0,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -2604,7 +2604,7 @@
             "odds": 1.5,
             "fair_probability": 0.6226415094339622,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.5,
@@ -2614,9 +2614,9 @@
   },
   {
     "date": "2026-11-14",
-    "generated_at": "2026-11-08T14:51:44+00:00",
+    "generated_at": "2026-11-09T01:02:58+00:00",
     "stake": 10.0,
-    "fixture_count": 8,
+    "fixture_count": 17,
     "bets": [
       {
         "kind": "double",
@@ -2628,36 +2628,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "f71d831db05c678e7208a069210cd59d",
+            "fixture_id": "fe8130a05bb9c0ca21e120279f2291de",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Crewe Alexandra",
-            "away_team": "Newport County",
+            "home_team": "Port Vale",
+            "away_team": "Accrington Stanley",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Crewe Alexandra or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7291666666666667,
+            "label": "Port Vale or Draw",
+            "odds": 1.17,
+            "fair_probability": 0.7618425022628985,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "f6d830e8821f774883ee2ac32d083bd9",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Colchester United",
-            "away_team": "Gillingham",
+            "fixture_id": "7147fa15092c5d85c5ff46f815e2d5ee",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Wycombe Wanderers",
+            "away_team": "Huddersfield Town",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Colchester United or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7222222222222222,
+            "label": "Huddersfield Town or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.6926543488057684,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.51,
-        "joint_probability": 0.5266203703703705
+        "joint_probability": 0.5276935222974651
       },
       {
         "kind": "treble",
@@ -2669,30 +2669,30 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "0e3335b3ccccc54d5457fca8f68a7c16",
+            "fixture_id": "c85f68dde3ac31fe8f0da78b1ddca180",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Shrewsbury Town",
-            "away_team": "Oldham Athletic",
+            "home_team": "Rochdale",
+            "away_team": "York City",
             "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Shrewsbury Town or Draw",
-            "odds": 1.37,
-            "fair_probability": 0.6462505822077316,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "York City",
+            "odds": 1.67,
+            "fair_probability": 0.5322128851540616,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "1cf6ac52aa2dbb22a0eeb97e0bc80579",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Bristol Rovers",
-            "away_team": "Chesterfield FC",
+            "fixture_id": "2a7644c3777bcd3ca72e318bb7799217",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stevenage",
+            "away_team": "Mansfield Town",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Chesterfield FC or Draw",
-            "odds": 1.35,
-            "fair_probability": 0.6613279568674535,
+            "label": "Mansfield Town or Draw",
+            "odds": 1.44,
+            "fair_probability": 0.6230366492146596,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2704,15 +2704,15 @@
             "away_team": "Grimsby Town",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Swindon Town or Draw",
-            "odds": 1.67,
-            "fair_probability": 0.5393188854489164,
+            "label": "Grimsby Town or Draw",
+            "odds": 1.26,
+            "fair_probability": 0.7102167182662539,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.09,
-        "joint_probability": 0.23049603449085934
+        "combined_odds": 3.03,
+        "joint_probability": 0.2354994353762447
       }
     ]
   }
