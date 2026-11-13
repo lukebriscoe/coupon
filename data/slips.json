@@ -2614,7 +2614,7 @@
   },
   {
     "date": "2026-11-14",
-    "generated_at": "2026-11-12T15:51:56+00:00",
+    "generated_at": "2026-11-13T15:12:11+00:00",
     "stake": 10.0,
     "fixture_count": 13,
     "bets": [
@@ -2628,22 +2628,49 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "1cf6ac52aa2dbb22a0eeb97e0bc80579",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Bristol Rovers",
-            "away_team": "Chesterfield FC",
+            "fixture_id": "3af2458dd9984d806bbf46e7bd2d7872",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Wigan Athletic",
+            "away_team": "Barnsley",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Bristol Rovers or Draw",
-            "odds": 1.51,
-            "fair_probability": 0.6029222174473572,
+            "label": "Barnsley or Draw",
+            "odds": 1.52,
+            "fair_probability": 0.6014339940953184,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.6029222174473572
+        "combined_odds": 1.52,
+        "joint_probability": 0.6014339940953184
+      },
+      {
+        "kind": "underdog_acca",
+        "title": "Opponents 4/1+ Acca",
+        "stake": 1.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "8c883d569a4f4682e918e8b2b37f65ea",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Salford City",
+            "away_team": "Northampton Town",
+            "kickoff": "2026-11-14T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Salford City",
+            "odds": 1.57,
+            "fair_probability": 0.5924839182936462,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.57,
+        "joint_probability": 0.5924839182936462
       },
       {
         "kind": "double",
@@ -2655,57 +2682,16 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "56de4f6858f896d0278456d0f2f8988a",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Milton Keynes Dons",
-            "away_team": "Burton Albion",
-            "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Milton Keynes Dons or Draw",
-            "odds": 1.17,
-            "fair_probability": 0.7873729640789916,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "8861bc687f5c3eab3ddd9ad6fec487ee",
+            "fixture_id": "c85f68dde3ac31fe8f0da78b1ddca180",
             "league_key": "soccer_england_league2",
             "league_short": "L2",
-            "home_team": "Swindon Town",
-            "away_team": "Grimsby Town",
+            "home_team": "Rochdale",
+            "away_team": "York City",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Grimsby Town or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.713375796178344,
-            "price_source": "derived",
-            "result": "pending"
-          }
-        ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.5616928151391533
-      },
-      {
-        "kind": "treble",
-        "title": "Treble",
-        "stake": 4.0,
-        "status": "pending",
-        "returns": 0.0,
-        "note": null,
-        "unavailable_reason": null,
-        "legs": [
-          {
-            "fixture_id": "1cf6ac52aa2dbb22a0eeb97e0bc80579",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Bristol Rovers",
-            "away_team": "Chesterfield FC",
-            "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Chesterfield FC or Draw",
-            "odds": 1.36,
-            "fair_probability": 0.6738289643317577,
+            "label": "York City or Draw",
+            "odds": 1.23,
+            "fair_probability": 0.7655070031627187,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2717,29 +2703,70 @@
             "away_team": "Accrington Stanley",
             "kickoff": "2026-11-14T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Accrington Stanley or Draw",
-            "odds": 1.72,
-            "fair_probability": 0.5310834813499112,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "8861bc687f5c3eab3ddd9ad6fec487ee",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Swindon Town",
-            "away_team": "Grimsby Town",
-            "kickoff": "2026-11-14T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Grimsby Town or Draw",
-            "odds": 1.29,
-            "fair_probability": 0.713375796178344,
+            "label": "Port Vale or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7419171866137265,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.02,
-        "joint_probability": 0.2552882573739623
+        "combined_odds": 1.54,
+        "joint_probability": 0.5679428021195893
+      },
+      {
+        "kind": "treble",
+        "title": "Treble",
+        "stake": 4.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "c85f68dde3ac31fe8f0da78b1ddca180",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Rochdale",
+            "away_team": "York City",
+            "kickoff": "2026-11-14T15:00:00+00:00",
+            "market": "h2h",
+            "label": "York City",
+            "odds": 1.73,
+            "fair_probability": 0.542180339508165,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "1cf6ac52aa2dbb22a0eeb97e0bc80579",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Bristol Rovers",
+            "away_team": "Chesterfield FC",
+            "kickoff": "2026-11-14T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Chesterfield FC or Draw",
+            "odds": 1.4,
+            "fair_probability": 0.6661290322580644,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "fe8130a05bb9c0ca21e120279f2291de",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Port Vale",
+            "away_team": "Accrington Stanley",
+            "kickoff": "2026-11-14T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Port Vale or Draw",
+            "odds": 1.25,
+            "fair_probability": 0.7419171866137265,
+            "price_source": "derived",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 3.03,
+        "joint_probability": 0.2679523430769296
       }
     ]
   }
