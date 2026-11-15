@@ -2772,9 +2772,9 @@
   },
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-15T01:09:52+00:00",
+    "generated_at": "2026-11-15T13:15:20+00:00",
     "stake": 10.0,
-    "fixture_count": 29,
+    "fixture_count": 32,
     "bets": [
       {
         "kind": "banker",
@@ -2809,7 +2809,7 @@
         "stake": 1.0,
         "status": "pending",
         "returns": 0.0,
-        "note": "All 8 legs landing is a 3.56% shot \u2014 this is a lottery ticket, not a strategy. The same 8 selections as an \u201cany 5 from 8\u201d system bet (56 lines) pays out 73.3% of the time, which keeps the idea intact at a realistic hit rate.",
+        "note": "All 9 legs landing is a 2.44% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 64.6% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
         "legs": [
           {
@@ -2923,10 +2923,24 @@
             "fair_probability": 0.714,
             "price_source": "skybet",
             "result": "pending"
+          },
+          {
+            "fixture_id": "fdf73f409e6889c50c880086f9e22463",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Reading",
+            "away_team": "Bromley FC",
+            "kickoff": "2026-11-21T12:30:00+00:00",
+            "market": "h2h",
+            "label": "Reading",
+            "odds": 1.3,
+            "fair_probability": 0.684931506849315,
+            "price_source": "skybet",
+            "result": "pending"
           }
         ],
-        "combined_odds": 15.86,
-        "joint_probability": 0.03563254306956396
+        "combined_odds": 20.62,
+        "joint_probability": 0.02440585141750956
       },
       {
         "kind": "double",
