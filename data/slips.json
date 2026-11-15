@@ -2772,7 +2772,7 @@
   },
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-15T13:15:20+00:00",
+    "generated_at": "2026-11-15T15:28:13+00:00",
     "stake": 10.0,
     "fixture_count": 32,
     "bets": [
@@ -2794,14 +2794,14 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
             "label": "Crystal Palace or Draw",
-            "odds": 1.52,
-            "fair_probability": 0.6170779154295076,
+            "odds": 1.54,
+            "fair_probability": 0.6071428571428571,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.52,
-        "joint_probability": 0.6170779154295076
+        "combined_odds": 1.54,
+        "joint_probability": 0.6071428571428571
       },
       {
         "kind": "underdog_acca",
@@ -2809,7 +2809,7 @@
         "stake": 1.0,
         "status": "pending",
         "returns": 0.0,
-        "note": "All 9 legs landing is a 2.44% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 64.6% of the time, which keeps the idea intact at a realistic hit rate.",
+        "note": "All 9 legs landing is a 2.41% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 64.4% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
         "legs": [
           {
@@ -2835,8 +2835,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "Tottenham Hotspur",
-            "odds": 1.5,
-            "fair_probability": 0.6176089211618258,
+            "odds": 1.53,
+            "fair_probability": 0.6088400411164703,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2939,8 +2939,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 20.62,
-        "joint_probability": 0.02440585141750956
+        "combined_odds": 21.04,
+        "joint_probability": 0.024059334428923457
       },
       {
         "kind": "double",
@@ -3030,13 +3030,13 @@
             "market": "double_chance",
             "label": "Coventry City or Draw",
             "odds": 1.42,
-            "fair_probability": 0.6588512337462885,
+            "fair_probability": 0.6599999999999999,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 3.06,
-        "joint_probability": 0.26774131660373723
+        "joint_probability": 0.2682081476173027
       }
     ]
   }
