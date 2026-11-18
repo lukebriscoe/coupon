@@ -2772,9 +2772,9 @@
   },
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-17T16:46:27+00:00",
+    "generated_at": "2026-11-18T16:18:06+00:00",
     "stake": 10.0,
-    "fixture_count": 14,
+    "fixture_count": 24,
     "bets": [
       {
         "kind": "banker",
@@ -2786,22 +2786,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "9f38413bdad666e2d2dfcc574dd12e66",
+            "fixture_id": "e67ee3a6f93bb90b8aefcf3dd204477c",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Coventry City",
-            "away_team": "Crystal Palace",
+            "home_team": "Tottenham Hotspur",
+            "away_team": "Ipswich Town",
             "kickoff": "2026-11-21T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Crystal Palace or Draw",
-            "odds": 1.54,
-            "fair_probability": 0.6071428571428571,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Tottenham Hotspur",
+            "odds": 1.53,
+            "fair_probability": 0.6088400411164703,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.54,
-        "joint_probability": 0.6071428571428571
+        "combined_odds": 1.53,
+        "joint_probability": 0.6088400411164703
       },
       {
         "kind": "underdog_acca",
@@ -2821,8 +2821,8 @@
             "kickoff": "2026-11-21T12:30:00+00:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.4,
-            "fair_probability": 0.668724279835391,
+            "odds": 1.36,
+            "fair_probability": 0.6819953234606391,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2863,14 +2863,14 @@
             "kickoff": "2026-11-21T12:30:00+00:00",
             "market": "h2h",
             "label": "Reading",
-            "odds": 1.33,
-            "fair_probability": 0.669882100750268,
+            "odds": 1.36,
+            "fair_probability": 0.6751142501038637,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 4.42,
-        "joint_probability": 0.16338400900993436
+        "combined_odds": 4.39,
+        "joint_probability": 0.16792786042726324
       },
       {
         "kind": "double",
@@ -2882,36 +2882,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "ac6cf70520a83c0949b4003bde53c709",
+            "fixture_id": "b8d6ab6ecc8bb356c6335d3f417d0ecf",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Chelsea",
-            "away_team": "Leeds United",
+            "home_team": "Aston Villa",
+            "away_team": "Sunderland",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Chelsea or Draw",
-            "odds": 1.23,
-            "fair_probability": 0.7602578210973117,
+            "label": "Aston Villa or Draw",
+            "odds": 1.21,
+            "fair_probability": 0.7758726270667484,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "cf68da11fa604c13fc9ef3219fad0314",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Bournemouth",
-            "away_team": "Nottingham Forest",
+            "fixture_id": "23954b4e9eb8ea22f15ce67aec779534",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "York City",
+            "away_team": "Walsall",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Bournemouth or Draw",
-            "odds": 1.22,
-            "fair_probability": 0.7565236952609478,
+            "label": "York City or Draw",
+            "odds": 1.24,
+            "fair_probability": 0.7435897435897435,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.5751530561675747
+        "joint_probability": 0.5769309278188641
       },
       {
         "kind": "treble",
@@ -2931,8 +2931,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
             "label": "Aston Villa or Draw",
-            "odds": 1.2,
-            "fair_probability": 0.7830018083182639,
+            "odds": 1.21,
+            "fair_probability": 0.7758726270667484,
             "price_source": "derived",
             "result": "pending"
           },
@@ -2959,20 +2959,20 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
             "label": "Coventry City or Draw",
-            "odds": 1.42,
-            "fair_probability": 0.6599999999999999,
+            "odds": 1.41,
+            "fair_probability": 0.6615512235586893,
             "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 3.05,
-        "joint_probability": 0.2664507713285552
+        "joint_probability": 0.2646453017469604
       }
     ]
   },
   {
     "date": "2026-11-22",
-    "generated_at": "2026-11-17T16:46:27+00:00",
+    "generated_at": "2026-11-18T16:18:06+00:00",
     "stake": 10.0,
     "fixture_count": 2,
     "bets": [
@@ -2995,13 +2995,13 @@
             "market": "h2h",
             "label": "Brighton and Hove Albion",
             "odds": 1.5,
-            "fair_probability": 0.6221653026800774,
+            "fair_probability": 0.6261180679785331,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
         "combined_odds": 1.5,
-        "joint_probability": 0.6221653026800774
+        "joint_probability": 0.6261180679785331
       }
     ]
   }
