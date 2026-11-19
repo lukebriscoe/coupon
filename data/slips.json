@@ -2772,9 +2772,9 @@
   },
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-18T16:18:06+00:00",
+    "generated_at": "2026-11-19T16:26:26+00:00",
     "stake": 10.0,
-    "fixture_count": 24,
+    "fixture_count": 32,
     "bets": [
       {
         "kind": "banker",
@@ -2786,22 +2786,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "e67ee3a6f93bb90b8aefcf3dd204477c",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Tottenham Hotspur",
-            "away_team": "Ipswich Town",
+            "fixture_id": "aab9ac008800f93bc7716756bd118cb2",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Sheffield United",
+            "away_team": "Watford",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
-            "label": "Tottenham Hotspur",
-            "odds": 1.53,
-            "fair_probability": 0.6088400411164703,
+            "label": "Sheffield United",
+            "odds": 1.55,
+            "fair_probability": 0.6008583690987125,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.53,
-        "joint_probability": 0.6088400411164703
+        "combined_odds": 1.55,
+        "joint_probability": 0.6008583690987125
       },
       {
         "kind": "underdog_acca",
@@ -2809,7 +2809,7 @@
         "stake": 1.0,
         "status": "pending",
         "returns": 0.0,
-        "note": null,
+        "note": "All 9 legs landing is a 2.59% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 65.6% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
         "legs": [
           {
@@ -2836,7 +2836,7 @@
             "market": "h2h",
             "label": "Tottenham Hotspur",
             "odds": 1.53,
-            "fair_probability": 0.6088400411164703,
+            "fair_probability": 0.6079850440894466,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2855,6 +2855,76 @@
             "result": "pending"
           },
           {
+            "fixture_id": "5d3dbb358ea091830f570b92cee04c38",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Southampton",
+            "away_team": "Derby County",
+            "kickoff": "2026-11-21T12:30:00+00:00",
+            "market": "h2h",
+            "label": "Southampton",
+            "odds": 1.36,
+            "fair_probability": 0.6819953234606391,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "17b291f71f74a662eb4bcad1957db62c",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Bristol City",
+            "kickoff": "2026-11-21T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.4,
+            "fair_probability": 0.6756756756756757,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "aab9ac008800f93bc7716756bd118cb2",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Sheffield United",
+            "away_team": "Watford",
+            "kickoff": "2026-11-21T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Sheffield United",
+            "odds": 1.55,
+            "fair_probability": 0.6008583690987125,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "7a8f99dc133efc267e941f67f5f59301",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "Preston North End",
+            "kickoff": "2026-11-21T15:00:00+00:00",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.2,
+            "fair_probability": 0.7809330628803246,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "88b33c34df3a5d9450602451e50dfcc9",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Wolverhampton Wanderers",
+            "away_team": "Charlton Athletic",
+            "kickoff": "2026-11-21T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Wolverhampton Wanderers",
+            "odds": 1.3,
+            "fair_probability": 0.714,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
             "fixture_id": "fdf73f409e6889c50c880086f9e22463",
             "league_key": "soccer_england_league1",
             "league_short": "L1",
@@ -2869,8 +2939,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 4.39,
-        "joint_probability": 0.16792786042726324
+        "combined_odds": 20.19,
+        "joint_probability": 0.02588905881195217
       },
       {
         "kind": "double",
@@ -2882,36 +2952,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "b8d6ab6ecc8bb356c6335d3f417d0ecf",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Aston Villa",
-            "away_team": "Sunderland",
+            "fixture_id": "17b291f71f74a662eb4bcad1957db62c",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Bristol City",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Aston Villa or Draw",
-            "odds": 1.21,
-            "fair_probability": 0.7758726270667484,
+            "label": "Middlesbrough or Draw",
+            "odds": 1.09,
+            "fair_probability": 0.8648648648648649,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "23954b4e9eb8ea22f15ce67aec779534",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "York City",
-            "away_team": "Walsall",
+            "fixture_id": "57de0f27db6ae789cdb8c425f36880c9",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Stoke City",
+            "away_team": "Birmingham City",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "York City or Draw",
-            "odds": 1.24,
-            "fair_probability": 0.7435897435897435,
+            "label": "Birmingham City or Draw",
+            "odds": 1.4,
+            "fair_probability": 0.6671543525969277,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.5,
-        "joint_probability": 0.5769309278188641
+        "combined_odds": 1.53,
+        "joint_probability": 0.5769983590027483
       },
       {
         "kind": "treble",
@@ -2923,17 +2993,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "b8d6ab6ecc8bb356c6335d3f417d0ecf",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Aston Villa",
-            "away_team": "Sunderland",
+            "fixture_id": "7a8f99dc133efc267e941f67f5f59301",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "West Ham United",
+            "away_team": "Preston North End",
             "kickoff": "2026-11-21T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Aston Villa or Draw",
-            "odds": 1.21,
-            "fair_probability": 0.7758726270667484,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "West Ham United",
+            "odds": 1.2,
+            "fair_probability": 0.7809330628803246,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -2951,30 +3021,30 @@
             "result": "pending"
           },
           {
-            "fixture_id": "9f38413bdad666e2d2dfcc574dd12e66",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Coventry City",
-            "away_team": "Crystal Palace",
+            "fixture_id": "17b291f71f74a662eb4bcad1957db62c",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Middlesbrough",
+            "away_team": "Bristol City",
             "kickoff": "2026-11-21T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Coventry City or Draw",
-            "odds": 1.41,
-            "fair_probability": 0.6615512235586893,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Middlesbrough",
+            "odds": 1.4,
+            "fair_probability": 0.6756756756756757,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.05,
-        "joint_probability": 0.2646453017469604
+        "combined_odds": 3.01,
+        "joint_probability": 0.2720585481061783
       }
     ]
   },
   {
     "date": "2026-11-22",
-    "generated_at": "2026-11-18T16:18:06+00:00",
+    "generated_at": "2026-11-19T16:26:26+00:00",
     "stake": 10.0,
-    "fixture_count": 2,
+    "fixture_count": 3,
     "bets": [
       {
         "kind": "sunday_banker",
