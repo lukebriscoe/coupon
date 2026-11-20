@@ -2772,7 +2772,7 @@
   },
   {
     "date": "2026-11-21",
-    "generated_at": "2026-11-19T16:26:26+00:00",
+    "generated_at": "2026-11-20T15:58:14+00:00",
     "stake": 10.0,
     "fixture_count": 32,
     "bets": [
@@ -2794,14 +2794,14 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "Sheffield United",
-            "odds": 1.55,
-            "fair_probability": 0.6008583690987125,
+            "odds": 1.57,
+            "fair_probability": 0.6067809651932196,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.55,
-        "joint_probability": 0.6008583690987125
+        "combined_odds": 1.57,
+        "joint_probability": 0.6067809651932196
       },
       {
         "kind": "underdog_acca",
@@ -2809,7 +2809,7 @@
         "stake": 1.0,
         "status": "pending",
         "returns": 0.0,
-        "note": "All 9 legs landing is a 2.59% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 65.6% of the time, which keeps the idea intact at a realistic hit rate.",
+        "note": "All 9 legs landing is a 3.08% shot \u2014 this is a lottery ticket, not a strategy. The same 9 selections as an \u201cany 6 from 9\u201d system bet (84 lines) pays out 68.8% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
         "legs": [
           {
@@ -2821,8 +2821,8 @@
             "kickoff": "2026-11-21T12:30:00+00:00",
             "market": "h2h",
             "label": "Manchester City",
-            "odds": 1.36,
-            "fair_probability": 0.6819953234606391,
+            "odds": 1.33,
+            "fair_probability": 0.7046463956269218,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2835,8 +2835,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "Tottenham Hotspur",
-            "odds": 1.53,
-            "fair_probability": 0.6079850440894466,
+            "odds": 1.5,
+            "fair_probability": 0.6226415094339622,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2849,8 +2849,8 @@
             "kickoff": "2026-11-21T17:30:00+00:00",
             "market": "h2h",
             "label": "Arsenal",
-            "odds": 1.55,
-            "fair_probability": 0.5990469707283866,
+            "odds": 1.53,
+            "fair_probability": 0.6065800751631832,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2863,8 +2863,8 @@
             "kickoff": "2026-11-21T12:30:00+00:00",
             "market": "h2h",
             "label": "Southampton",
-            "odds": 1.36,
-            "fair_probability": 0.6819953234606391,
+            "odds": 1.3,
+            "fair_probability": 0.7148659626320064,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2877,8 +2877,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "Middlesbrough",
-            "odds": 1.4,
-            "fair_probability": 0.6756756756756757,
+            "odds": 1.36,
+            "fair_probability": 0.6819953234606391,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2891,8 +2891,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "Sheffield United",
-            "odds": 1.55,
-            "fair_probability": 0.6008583690987125,
+            "odds": 1.57,
+            "fair_probability": 0.6067809651932196,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2905,8 +2905,8 @@
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
             "label": "West Ham United",
-            "odds": 1.2,
-            "fair_probability": 0.7809330628803246,
+            "odds": 1.18,
+            "fair_probability": 0.790760088181731,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2920,7 +2920,7 @@
             "market": "h2h",
             "label": "Wolverhampton Wanderers",
             "odds": 1.3,
-            "fair_probability": 0.714,
+            "fair_probability": 0.7197844495765973,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -2934,13 +2934,13 @@
             "market": "h2h",
             "label": "Reading",
             "odds": 1.36,
-            "fair_probability": 0.6751142501038637,
+            "fair_probability": 0.6865757633954291,
             "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 20.19,
-        "joint_probability": 0.02588905881195217
+        "combined_odds": 17.68,
+        "joint_probability": 0.03076600309440928
       },
       {
         "kind": "double",
@@ -2952,36 +2952,36 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "17b291f71f74a662eb4bcad1957db62c",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Middlesbrough",
-            "away_team": "Bristol City",
+            "fixture_id": "b8d6ab6ecc8bb356c6335d3f417d0ecf",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Aston Villa",
+            "away_team": "Sunderland",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Middlesbrough or Draw",
-            "odds": 1.09,
-            "fair_probability": 0.8648648648648649,
+            "label": "Aston Villa or Draw",
+            "odds": 1.19,
+            "fair_probability": 0.7910295940748276,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "57de0f27db6ae789cdb8c425f36880c9",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Stoke City",
-            "away_team": "Birmingham City",
+            "fixture_id": "ac6cf70520a83c0949b4003bde53c709",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Leeds United",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Birmingham City or Draw",
-            "odds": 1.4,
-            "fair_probability": 0.6671543525969277,
+            "label": "Chelsea or Draw",
+            "odds": 1.27,
+            "fair_probability": 0.7501787551664603,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.53,
-        "joint_probability": 0.5769983590027483
+        "combined_odds": 1.51,
+        "joint_probability": 0.5934135961828846
       },
       {
         "kind": "treble",
@@ -2993,56 +2993,56 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "7a8f99dc133efc267e941f67f5f59301",
+            "fixture_id": "aab9ac008800f93bc7716756bd118cb2",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "West Ham United",
-            "away_team": "Preston North End",
+            "home_team": "Sheffield United",
+            "away_team": "Watford",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "h2h",
-            "label": "West Ham United",
-            "odds": 1.2,
-            "fair_probability": 0.7809330628803246,
+            "label": "Sheffield United",
+            "odds": 1.57,
+            "fair_probability": 0.6067809651932196,
             "price_source": "skybet",
             "result": "pending"
           },
           {
-            "fixture_id": "cf68da11fa604c13fc9ef3219fad0314",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Bournemouth",
-            "away_team": "Nottingham Forest",
+            "fixture_id": "8b0a9e9635075014926f341e23a85adb",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Mansfield Town",
+            "away_team": "Milton Keynes Dons",
             "kickoff": "2026-11-21T15:00:00+00:00",
             "market": "double_chance",
-            "label": "Nottingham Forest or Draw",
-            "odds": 1.79,
-            "fair_probability": 0.5155968806238752,
+            "label": "Mansfield Town or Draw",
+            "odds": 1.51,
+            "fair_probability": 0.6190094245037097,
             "price_source": "derived",
             "result": "pending"
           },
           {
-            "fixture_id": "17b291f71f74a662eb4bcad1957db62c",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Middlesbrough",
-            "away_team": "Bristol City",
+            "fixture_id": "ac6cf70520a83c0949b4003bde53c709",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Chelsea",
+            "away_team": "Leeds United",
             "kickoff": "2026-11-21T15:00:00+00:00",
-            "market": "h2h",
-            "label": "Middlesbrough",
-            "odds": 1.4,
-            "fair_probability": 0.6756756756756757,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Chelsea or Draw",
+            "odds": 1.27,
+            "fair_probability": 0.7501787551664603,
+            "price_source": "derived",
             "result": "pending"
           }
         ],
         "combined_odds": 3.01,
-        "joint_probability": 0.2720585481061783
+        "joint_probability": 0.2817694930491554
       }
     ]
   },
   {
     "date": "2026-11-22",
-    "generated_at": "2026-11-19T16:26:26+00:00",
+    "generated_at": "2026-11-20T15:58:14+00:00",
     "stake": 10.0,
     "fixture_count": 3,
     "bets": [
