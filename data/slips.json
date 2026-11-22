@@ -3050,7 +3050,7 @@
         "kind": "sunday_banker",
         "title": "Sunday Banker",
         "stake": 10.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -3067,7 +3067,7 @@
             "odds": 1.5,
             "fair_probability": 0.6261180679785331,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 1.5,
@@ -3077,9 +3077,9 @@
   },
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-22T13:51:51+00:00",
+    "generated_at": "2026-11-22T16:01:32+00:00",
     "stake": 10.0,
-    "fixture_count": 19,
+    "fixture_count": 9,
     "bets": [
       {
         "kind": "banker",
@@ -3158,38 +3158,10 @@
             "fair_probability": 0.6079850440894466,
             "price_source": "skybet",
             "result": "pending"
-          },
-          {
-            "fixture_id": "357d454707738be33e74f2297f2eeecf",
-            "league_key": "soccer_england_league1",
-            "league_short": "L1",
-            "home_team": "Stockport County FC",
-            "away_team": "Leyton Orient",
-            "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "h2h",
-            "label": "Stockport County FC",
-            "odds": 1.33,
-            "fair_probability": 0.6711934938977324,
-            "price_source": "skybet",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "35de4b6a3e1f918c37a97b0b20ccef94",
-            "league_key": "soccer_england_league2",
-            "league_short": "L2",
-            "home_team": "Salford City",
-            "away_team": "Gillingham",
-            "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "h2h",
-            "label": "Salford City",
-            "odds": 1.44,
-            "fair_probability": 0.6118881118881119,
-            "price_source": "skybet",
-            "result": "pending"
           }
         ],
-        "combined_odds": 6.33,
-        "joint_probability": 0.09893233552395447
+        "combined_odds": 3.3,
+        "joint_probability": 0.24088985381666275
       },
       {
         "kind": "double",
@@ -3256,20 +3228,6 @@
             "result": "pending"
           },
           {
-            "fixture_id": "dc42f49649c5329c2c47f94fc4ca0c89",
-            "league_key": "soccer_efl_champ",
-            "league_short": "CH",
-            "home_team": "Queens Park Rangers",
-            "away_team": "Sheffield United",
-            "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Queens Park Rangers or Draw",
-            "odds": 1.33,
-            "fair_probability": 0.7003567181926279,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
             "fixture_id": "ab87184803a63f7b679f1d12b01c3271",
             "league_key": "soccer_epl",
             "league_short": "PL",
@@ -3280,6 +3238,20 @@
             "label": "Manchester United or Draw",
             "odds": 1.28,
             "fair_probability": 0.7260466423152571,
+            "price_source": "derived",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "dc42f49649c5329c2c47f94fc4ca0c89",
+            "league_key": "soccer_efl_champ",
+            "league_short": "CH",
+            "home_team": "Queens Park Rangers",
+            "away_team": "Sheffield United",
+            "kickoff": "2026-11-28T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Queens Park Rangers or Draw",
+            "odds": 1.33,
+            "fair_probability": 0.7003567181926279,
             "price_source": "derived",
             "result": "pending"
           }
