@@ -3077,9 +3077,9 @@
   },
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-22T16:01:32+00:00",
+    "generated_at": "2026-11-23T01:52:06+00:00",
     "stake": 10.0,
-    "fixture_count": 9,
+    "fixture_count": 22,
     "bets": [
       {
         "kind": "banker",
@@ -3158,10 +3158,38 @@
             "fair_probability": 0.6079850440894466,
             "price_source": "skybet",
             "result": "pending"
+          },
+          {
+            "fixture_id": "357d454707738be33e74f2297f2eeecf",
+            "league_key": "soccer_england_league1",
+            "league_short": "L1",
+            "home_team": "Stockport County FC",
+            "away_team": "Leyton Orient",
+            "kickoff": "2026-11-28T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Stockport County FC",
+            "odds": 1.33,
+            "fair_probability": 0.6711934938977324,
+            "price_source": "skybet",
+            "result": "pending"
+          },
+          {
+            "fixture_id": "35de4b6a3e1f918c37a97b0b20ccef94",
+            "league_key": "soccer_england_league2",
+            "league_short": "L2",
+            "home_team": "Salford City",
+            "away_team": "Gillingham",
+            "kickoff": "2026-11-28T15:00:00+00:00",
+            "market": "h2h",
+            "label": "Salford City",
+            "odds": 1.44,
+            "fair_probability": 0.6118881118881119,
+            "price_source": "skybet",
+            "result": "pending"
           }
         ],
-        "combined_odds": 3.3,
-        "joint_probability": 0.24088985381666275
+        "combined_odds": 6.33,
+        "joint_probability": 0.09893233552395447
       },
       {
         "kind": "double",
@@ -3214,31 +3242,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "9cd8c682c6864b59a7f1a58964083e08",
+            "fixture_id": "b67372e7107fdd259a978e614711e657",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Wrexham AFC",
-            "away_team": "Portsmouth",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Bristol City",
             "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Portsmouth or Draw",
-            "odds": 1.78,
-            "fair_probability": 0.5223377353189097,
-            "price_source": "derived",
-            "result": "pending"
-          },
-          {
-            "fixture_id": "ab87184803a63f7b679f1d12b01c3271",
-            "league_key": "soccer_epl",
-            "league_short": "PL",
-            "home_team": "Manchester United",
-            "away_team": "Brentford",
-            "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Manchester United or Draw",
-            "odds": 1.28,
-            "fair_probability": 0.7260466423152571,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "West Bromwich Albion",
+            "odds": 1.75,
+            "fair_probability": 0.5345239074973253,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -3254,10 +3268,24 @@
             "fair_probability": 0.7003567181926279,
             "price_source": "derived",
             "result": "pending"
+          },
+          {
+            "fixture_id": "ab87184803a63f7b679f1d12b01c3271",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Manchester United",
+            "away_team": "Brentford",
+            "kickoff": "2026-11-28T15:00:00+00:00",
+            "market": "double_chance",
+            "label": "Manchester United or Draw",
+            "odds": 1.29,
+            "fair_probability": 0.7245152620464579,
+            "price_source": "derived",
+            "result": "pending"
           }
         ],
-        "combined_odds": 3.03,
-        "joint_probability": 0.26560437358144895
+        "combined_odds": 3.0,
+        "joint_probability": 0.2712276567518395
       }
     ]
   }
