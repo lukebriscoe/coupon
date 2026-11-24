@@ -3077,7 +3077,7 @@
   },
   {
     "date": "2026-11-28",
-    "generated_at": "2026-11-23T19:05:25+00:00",
+    "generated_at": "2026-11-24T18:44:41+00:00",
     "stake": 10.0,
     "fixture_count": 28,
     "bets": [
@@ -3126,8 +3126,8 @@
             "kickoff": "2026-11-28T15:00:00+00:00",
             "market": "h2h",
             "label": "Leeds United",
-            "odds": 1.5,
-            "fair_probability": 0.6222222222222222,
+            "odds": 1.44,
+            "fair_probability": 0.6410256410256411,
             "price_source": "skybet",
             "result": "pending"
           },
@@ -3188,8 +3188,8 @@
             "result": "pending"
           }
         ],
-        "combined_odds": 6.33,
-        "joint_probability": 0.09893233552395447
+        "combined_odds": 6.08,
+        "joint_probability": 0.10192204896011794
       },
       {
         "kind": "double",
@@ -3242,17 +3242,17 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "9cd8c682c6864b59a7f1a58964083e08",
+            "fixture_id": "b67372e7107fdd259a978e614711e657",
             "league_key": "soccer_efl_champ",
             "league_short": "CH",
-            "home_team": "Wrexham AFC",
-            "away_team": "Portsmouth",
+            "home_team": "West Bromwich Albion",
+            "away_team": "Bristol City",
             "kickoff": "2026-11-28T15:00:00+00:00",
-            "market": "double_chance",
-            "label": "Portsmouth or Draw",
-            "odds": 1.78,
-            "fair_probability": 0.5223377353189097,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "West Bromwich Albion",
+            "odds": 1.75,
+            "fair_probability": 0.5345239074973253,
+            "price_source": "skybet",
             "result": "pending"
           },
           {
@@ -3278,14 +3278,49 @@
             "kickoff": "2026-11-28T15:00:00+00:00",
             "market": "double_chance",
             "label": "Manchester United or Draw",
-            "odds": 1.31,
-            "fair_probability": 0.7224520496427227,
+            "odds": 1.35,
+            "fair_probability": 0.6972318339100345,
             "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 3.03,
-        "joint_probability": 0.2684561773552613
+        "combined_odds": 3.07,
+        "joint_probability": 0.2651290494567046
+      }
+    ]
+  },
+  {
+    "date": "2026-11-29",
+    "generated_at": "2026-11-24T18:44:41+00:00",
+    "stake": 10.0,
+    "fixture_count": 7,
+    "bets": [
+      {
+        "kind": "sunday_banker",
+        "title": "Sunday Banker",
+        "stake": 10.0,
+        "status": "pending",
+        "returns": 0.0,
+        "note": null,
+        "unavailable_reason": null,
+        "legs": [
+          {
+            "fixture_id": "e9c2b74ecaafd494e3b2d8521b52216a",
+            "league_key": "soccer_epl",
+            "league_short": "PL",
+            "home_team": "Brighton and Hove Albion",
+            "away_team": "Newcastle United",
+            "kickoff": "2026-11-29T14:05:00+00:00",
+            "market": "h2h",
+            "label": "Brighton and Hove Albion",
+            "odds": 1.53,
+            "fair_probability": 0.6079850440894466,
+            "price_source": "skybet",
+            "result": "pending"
+          }
+        ],
+        "combined_odds": 1.53,
+        "joint_probability": 0.6079850440894466
       }
     ]
   }
