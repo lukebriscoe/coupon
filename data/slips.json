@@ -3085,8 +3085,8 @@
         "kind": "banker",
         "title": "Banker of the Day",
         "stake": 10.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 15.4,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -3102,7 +3102,7 @@
             "odds": 1.54,
             "fair_probability": 0.606562599553998,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.54,
@@ -3209,8 +3209,8 @@
         "kind": "double",
         "title": "Banker Double",
         "stake": 5.0,
-        "status": "pending",
-        "returns": 0.0,
+        "status": "won",
+        "returns": 7.55,
         "note": null,
         "unavailable_reason": null,
         "legs": [
@@ -3226,7 +3226,7 @@
             "odds": 1.18,
             "fair_probability": 0.8011571245935749,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "dc42f49649c5329c2c47f94fc4ca0c89",
@@ -3240,7 +3240,7 @@
             "odds": 1.28,
             "fair_probability": 0.7381600435492651,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           }
         ],
         "combined_odds": 1.51,
@@ -3250,7 +3250,7 @@
         "kind": "treble",
         "title": "Treble",
         "stake": 4.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": null,
         "unavailable_reason": null,
@@ -3267,7 +3267,7 @@
             "odds": 1.28,
             "fair_probability": 0.7381600435492651,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "9cd8c682c6864b59a7f1a58964083e08",
@@ -3281,7 +3281,7 @@
             "odds": 1.31,
             "fair_probability": 0.7215732087227413,
             "price_source": "derived",
-            "result": "pending"
+            "result": "won"
           },
           {
             "fixture_id": "15cc33a71e190cb051dc95888b8744ca",
@@ -3295,7 +3295,7 @@
             "odds": 1.8,
             "fair_probability": 0.5198358413132695,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           }
         ],
         "combined_odds": 3.02,
@@ -3305,7 +3305,7 @@
   },
   {
     "date": "2026-11-29",
-    "generated_at": "2026-11-28T15:58:07+00:00",
+    "generated_at": "2026-11-28T17:04:30+00:00",
     "stake": 10.0,
     "fixture_count": 7,
     "bets": [
