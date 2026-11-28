@@ -3305,7 +3305,7 @@
   },
   {
     "date": "2026-11-29",
-    "generated_at": "2026-11-27T17:19:37+00:00",
+    "generated_at": "2026-11-28T13:58:10+00:00",
     "stake": 10.0,
     "fixture_count": 7,
     "bets": [
@@ -3319,22 +3319,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "56ea91809ff11d3a67557a21b3371cb9",
+            "fixture_id": "e9c2b74ecaafd494e3b2d8521b52216a",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Fulham",
-            "away_team": "Bournemouth",
+            "home_team": "Brighton and Hove Albion",
+            "away_team": "Newcastle United",
             "kickoff": "2026-11-29T14:05:00+00:00",
-            "market": "double_chance",
-            "label": "Fulham or Draw",
-            "odds": 1.51,
-            "fair_probability": 0.6130653266331658,
-            "price_source": "derived",
+            "market": "h2h",
+            "label": "Brighton and Hove Albion",
+            "odds": 1.53,
+            "fair_probability": 0.6039689387402934,
+            "price_source": "skybet",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.51,
-        "joint_probability": 0.6130653266331658
+        "combined_odds": 1.53,
+        "joint_probability": 0.6039689387402934
       }
     ]
   }
