@@ -3112,7 +3112,7 @@
         "kind": "underdog_acca",
         "title": "Opponents 4/1+ Acca",
         "stake": 1.0,
-        "status": "pending",
+        "status": "lost",
         "returns": 0.0,
         "note": "All 6 legs landing is a 7.15% shot \u2014 this is a lottery ticket, not a strategy. The same 6 selections as an \u201cany 4 from 6\u201d system bet (15 lines) pays out 63.6% of the time, which keeps the idea intact at a realistic hit rate.",
         "unavailable_reason": null,
@@ -3143,7 +3143,7 @@
             "odds": 1.5,
             "fair_probability": 0.6153846153846154,
             "price_source": "skybet",
-            "result": "pending"
+            "result": "lost"
           },
           {
             "fixture_id": "15fc58a442321c2a85f7a814466c0ab9",
@@ -3305,7 +3305,7 @@
   },
   {
     "date": "2026-11-29",
-    "generated_at": "2026-11-28T13:58:10+00:00",
+    "generated_at": "2026-11-28T15:58:07+00:00",
     "stake": 10.0,
     "fixture_count": 7,
     "bets": [
@@ -3319,22 +3319,22 @@
         "unavailable_reason": null,
         "legs": [
           {
-            "fixture_id": "e9c2b74ecaafd494e3b2d8521b52216a",
+            "fixture_id": "56ea91809ff11d3a67557a21b3371cb9",
             "league_key": "soccer_epl",
             "league_short": "PL",
-            "home_team": "Brighton and Hove Albion",
-            "away_team": "Newcastle United",
+            "home_team": "Fulham",
+            "away_team": "Bournemouth",
             "kickoff": "2026-11-29T14:05:00+00:00",
-            "market": "h2h",
-            "label": "Brighton and Hove Albion",
-            "odds": 1.53,
-            "fair_probability": 0.6039689387402934,
-            "price_source": "skybet",
+            "market": "double_chance",
+            "label": "Fulham or Draw",
+            "odds": 1.54,
+            "fair_probability": 0.6098360655737705,
+            "price_source": "derived",
             "result": "pending"
           }
         ],
-        "combined_odds": 1.53,
-        "joint_probability": 0.6039689387402934
+        "combined_odds": 1.54,
+        "joint_probability": 0.6098360655737705
       }
     ]
   }
